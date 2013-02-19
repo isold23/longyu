@@ -1,6 +1,6 @@
 ﻿<?php 
   define('IN_PBBLOG', true);
-	require(dirname(__FILE__) . '/include/core.php');
+require(dirname(__FILE__) . '/include/core.php');
   $smarty->display('about.html');
  ?>
   
