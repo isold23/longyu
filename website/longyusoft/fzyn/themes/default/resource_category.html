@@ -1,0 +1,16 @@
+            <div id="sidebar-item">
+                <div id="unit">
+                    <div id="unit-header">
+                        <h1>
+                            艺术品类别</h1>
+                    </div>
+                    <div id="unit-body">
+                        <ul>
+                        	<{foreach from=$resource_category_list item=resource_category}>
+                            <li><a href="resource.php?cat=<{$resource_category.id}>"><{$resource_category.name}>[<{$resource_category.resource_count}>]</a> </li>
+                         <{/foreach}>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar item end -->

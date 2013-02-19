@@ -1,0 +1,128 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "client", "client", "{F137031E-0E83-41DE-91FF-09A72B027ADD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "server", "server", "{1B64CA6A-F21B-4F01-BFDF-D5F0172C015A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{80005CEB-DA96-4B3B-A00A-338D5964F04F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{2673C226-93A4-4D99-B546-C18B0A0EEAB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bin", "bin", "{42BEAA16-C5F1-4DBF-93B4-FA26B8C9BD67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{89993C62-7F90-40FF-ACE7-5878FED5A5D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{A036B9A7-C50D-4496-B571-BC5E9630C83C}"
+	ProjectSection(SolutionItems) = preProject
+		server\src\configure.ac = server\src\configure.ac
+		server\src\install_debug.sh = server\src\install_debug.sh
+		server\src\install_release.sh = server\src\install_release.sh
+		server\src\Makefile.am = server\src\Makefile.am
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{A296CB6A-CB14-4B23-A345-F9DC3118A4B2}"
+	ProjectSection(SolutionItems) = preProject
+		server\src\Common\BaseCompress.h = server\src\Common\BaseCompress.h
+		server\src\Common\BaseEncrypt.h = server\src\Common\BaseEncrypt.h
+		server\src\Common\BasePack.h = server\src\Common\BasePack.h
+		server\src\Common\Common.cpp = server\src\Common\Common.cpp
+		server\src\Common\Common.h = server\src\Common\Common.h
+		server\src\Common\Configure.cpp = server\src\Common\Configure.cpp
+		server\src\Common\Configure.h = server\src\Common\Configure.h
+		server\src\Common\CriticalSection.cpp = server\src\Common\CriticalSection.cpp
+		server\src\Common\CriticalSection.h = server\src\Common\CriticalSection.h
+		server\src\Common\debugtrace.cpp = server\src\Common\debugtrace.cpp
+		server\src\Common\debugtrace.h = server\src\Common\debugtrace.h
+		server\src\Common\define.h = server\src\Common\define.h
+		server\src\Common\FileStream.cpp = server\src\Common\FileStream.cpp
+		server\src\Common\FileStream.h = server\src\Common\FileStream.h
+		server\src\Common\include.h = server\src\Common\include.h
+		server\src\Common\list.h = server\src\Common\list.h
+		server\src\Common\LMEnDecrypt.cpp = server\src\Common\LMEnDecrypt.cpp
+		server\src\Common\LMEnDecrypt.h = server\src\Common\LMEnDecrypt.h
+		server\src\Common\Makefile.am = server\src\Common\Makefile.am
+		server\src\Common\NetAddress.h = server\src\Common\NetAddress.h
+		server\src\Common\NetEpoll.cpp = server\src\Common\NetEpoll.cpp
+		server\src\Common\NetEpoll.h = server\src\Common\NetEpoll.h
+		server\src\Common\NetPack.cpp = server\src\Common\NetPack.cpp
+		server\src\Common\NetPack.h = server\src\Common\NetPack.h
+		server\src\Common\NetSocket.cpp = server\src\Common\NetSocket.cpp
+		server\src\Common\NetSocket.h = server\src\Common\NetSocket.h
+		server\src\Common\Pool.h = server\src\Common\Pool.h
+		server\src\Common\SafeList.h = server\src\Common\SafeList.h
+		server\src\Common\sigslot.h = server\src\Common\sigslot.h
+		server\src\Common\StandardSerialize.cpp = server\src\Common\StandardSerialize.cpp
+		server\src\Common\StandardSerialize.h = server\src\Common\StandardSerialize.h
+		server\src\Common\SWDPProtocol.cpp = server\src\Common\SWDPProtocol.cpp
+		server\src\Common\SWDPProtocol.h = server\src\Common\SWDPProtocol.h
+		server\src\Common\ThreadGroup.cpp = server\src\Common\ThreadGroup.cpp
+		server\src\Common\ThreadGroup.h = server\src\Common\ThreadGroup.h
+		server\src\Common\Time.cpp = server\src\Common\Time.cpp
+		server\src\Common\Time.h = server\src\Common\Time.h
+		server\src\Common\TimeStamp.cpp = server\src\Common\TimeStamp.cpp
+		server\src\Common\TimeStamp.h = server\src\Common\TimeStamp.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dcs", "dcs", "{70952257-9A4F-42CE-8A1C-138395D15F8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dns", "dns", "{DC1C7013-4B9C-4CC1-BC2C-080D3C308AB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "conf", "conf", "{CD27F9BB-0346-474A-842F-421CC5C6B6EB}"
+	ProjectSection(SolutionItems) = preProject
+		server\src\dcs\conf\dcs.conf = server\src\dcs\conf\dcs.conf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "conf", "conf", "{E50FCE62-A9F3-49B3-98B9-E4E53E129B99}"
+	ProjectSection(SolutionItems) = preProject
+		server\src\dns\conf\dns.conf = server\src\dns\conf\dns.conf
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "longyuim", "client\src\longyuim\longyuim.vcxproj", "{E55069FC-B70B-46D0-BA94-505F6D131EB1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dcs", "server\src\dcs\src\dcs.vcxproj", "{79487F60-89DD-499A-85B6-01C25188496B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dns", "server\src\dns\src\dns.vcxproj", "{EBA4E0A3-8BB5-4BC5-8270-3DDECC23DCD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E55069FC-B70B-46D0-BA94-505F6D131EB1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E55069FC-B70B-46D0-BA94-505F6D131EB1}.Debug|Win32.Build.0 = Debug|Win32
+		{E55069FC-B70B-46D0-BA94-505F6D131EB1}.Release|Win32.ActiveCfg = Release|Win32
+		{E55069FC-B70B-46D0-BA94-505F6D131EB1}.Release|Win32.Build.0 = Release|Win32
+		{79487F60-89DD-499A-85B6-01C25188496B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{79487F60-89DD-499A-85B6-01C25188496B}.Debug|Win32.Build.0 = Debug|Win32
+		{79487F60-89DD-499A-85B6-01C25188496B}.Release|Win32.ActiveCfg = Release|Win32
+		{79487F60-89DD-499A-85B6-01C25188496B}.Release|Win32.Build.0 = Release|Win32
+		{EBA4E0A3-8BB5-4BC5-8270-3DDECC23DCD9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EBA4E0A3-8BB5-4BC5-8270-3DDECC23DCD9}.Debug|Win32.Build.0 = Debug|Win32
+		{EBA4E0A3-8BB5-4BC5-8270-3DDECC23DCD9}.Release|Win32.ActiveCfg = Release|Win32
+		{EBA4E0A3-8BB5-4BC5-8270-3DDECC23DCD9}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{80005CEB-DA96-4B3B-A00A-338D5964F04F} = {F137031E-0E83-41DE-91FF-09A72B027ADD}
+		{2673C226-93A4-4D99-B546-C18B0A0EEAB6} = {F137031E-0E83-41DE-91FF-09A72B027ADD}
+		{42BEAA16-C5F1-4DBF-93B4-FA26B8C9BD67} = {F137031E-0E83-41DE-91FF-09A72B027ADD}
+		{89993C62-7F90-40FF-ACE7-5878FED5A5D3} = {1B64CA6A-F21B-4F01-BFDF-D5F0172C015A}
+		{E55069FC-B70B-46D0-BA94-505F6D131EB1} = {80005CEB-DA96-4B3B-A00A-338D5964F04F}
+		{A036B9A7-C50D-4496-B571-BC5E9630C83C} = {89993C62-7F90-40FF-ACE7-5878FED5A5D3}
+		{A296CB6A-CB14-4B23-A345-F9DC3118A4B2} = {89993C62-7F90-40FF-ACE7-5878FED5A5D3}
+		{70952257-9A4F-42CE-8A1C-138395D15F8A} = {89993C62-7F90-40FF-ACE7-5878FED5A5D3}
+		{DC1C7013-4B9C-4CC1-BC2C-080D3C308AB8} = {89993C62-7F90-40FF-ACE7-5878FED5A5D3}
+		{CD27F9BB-0346-474A-842F-421CC5C6B6EB} = {70952257-9A4F-42CE-8A1C-138395D15F8A}
+		{79487F60-89DD-499A-85B6-01C25188496B} = {70952257-9A4F-42CE-8A1C-138395D15F8A}
+		{E50FCE62-A9F3-49B3-98B9-E4E53E129B99} = {DC1C7013-4B9C-4CC1-BC2C-080D3C308AB8}
+		{EBA4E0A3-8BB5-4BC5-8270-3DDECC23DCD9} = {DC1C7013-4B9C-4CC1-BC2C-080D3C308AB8}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

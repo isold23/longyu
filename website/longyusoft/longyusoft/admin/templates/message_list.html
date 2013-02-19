@@ -1,0 +1,22 @@
+<{include file="header.html"}>
+<{include file="page.html"}>
+<p>
+<table id="datalist">
+  <tr>
+    <th class="th1">留言内容</th>
+    <th class="th1">发布日期</th>
+    <th class="th1">发布用户</th>
+    <th class="th1">操作</th>
+  </tr>
+  <{foreach from=$message_list item=message}>
+  <tr>
+    <td><{$message.content}></td>
+    <td><{$message.post_time}></td>
+    <td><{$message.user_name}></td>
+    <td><a href="admin.php?act=edit_message&id=<{$message.id}>" >编辑</a> | <a href="admin.php?act=del_message&id=<{$message.id}>" >删除</a> </td>
+  </tr>
+  <{/foreach}>
+</table>
+</p>
+<{include file="page.html"}>
+<{include file="footer.html"}>

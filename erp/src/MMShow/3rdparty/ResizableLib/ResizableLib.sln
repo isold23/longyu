@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ResizableLib", "ResizableLib.vcproj", "{DF6F1DDC-53D1-4A64-A807-A5788FE4D44F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Unicode Debug Static|Win32 = Unicode Debug Static|Win32
+		Unicode Release Static|Win32 = Unicode Release Static|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF6F1DDC-53D1-4A64-A807-A5788FE4D44F}.Unicode Debug Static|Win32.ActiveCfg = Unicode Debug Static|Win32
+		{DF6F1DDC-53D1-4A64-A807-A5788FE4D44F}.Unicode Debug Static|Win32.Build.0 = Unicode Debug Static|Win32
+		{DF6F1DDC-53D1-4A64-A807-A5788FE4D44F}.Unicode Release Static|Win32.ActiveCfg = Unicode Release Static|Win32
+		{DF6F1DDC-53D1-4A64-A807-A5788FE4D44F}.Unicode Release Static|Win32.Build.0 = Unicode Release Static|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

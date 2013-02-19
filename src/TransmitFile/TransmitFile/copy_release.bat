@@ -1,0 +1,1 @@
+@copy Release\TransmitFile.exe ..\..\..\bin

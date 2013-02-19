@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="google-site-verification" content="lfjbQk5SKAEgwpNRyX9DsmIG_9eieZ0WFsyWiTJzpLA" />
+    <meta name="baidu_union_verify" content="c78ca8dc63be59f9f8a76f44745771fa">
+    <meta name="keywords" content="野牛艺术品, 非洲艺术品, fzyn, fzyn.net, 艺术品, 非洲,木雕,石雕,古董" />
+    <meta name="description" content="<{$page_title}>" />
+    
+    <title><{$page_title}></title>
+    	
+    
+    <link rel="icon" href="<{$domain}><{$templates_dir}>images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="<{$domain}><{$templates_dir}>images/favicon.ico" type="image/x-icon" />
+    	
+    <link href="<{$domain}><{$templates_dir}>style.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="<{$domain}><{$templates_dir}>scrollable-horizontal.css">
+	<link rel="stylesheet" type="text/css" href="<{$domain}><{$templates_dir}>scrollable-buttons.css">
+	<link rel="stylesheet" type="text/css" href="<{$domain}><{$templates_dir}>boxed-02.css">
+		
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{$domain}feed.php" />
+    
+    <script type="text/javascript" language="javascript" src="<{$domain}>res/jquery.js"></script>
+    <script type="text/javascript" src="<{$domain}>res/jquery.cycle.js"></script>
+    <script type="text/javascript" src="<{$domain}>res/s3Slider.js"></script>
+    	
+	<script src="<{$domain}>res/reflection.js"></script>
+		
+
+			
+		<script type="text/javascript">
+    $(document).ready(function() {
+        $('#slider1').s3Slider({
+            timeOut: 4000 
+        });
+    });
+</script>
+    
+    <script language="javascript" type="text/javascript">
+
+function AutoResizeImage(maxWidth,maxHeight,objImg){
+var img = new Image();
+img.src = objImg.src;
+var hRatio;
+var wRatio;
+var Ratio = 1;
+var w = img.width;
+var h = img.height;
+wRatio = maxWidth / w;
+hRatio = maxHeight / h;
+if (maxWidth ==0 && maxHeight==0){
+Ratio = 1;
+}else if (maxWidth==0){//
+if (hRatio<1) Ratio = hRatio;
+}else if (maxHeight==0){
+if (wRatio<1) Ratio = wRatio;
+}else if (wRatio<1 || hRatio<1){
+Ratio = (wRatio<=hRatio?wRatio:hRatio);
+}
+if (Ratio<1){
+w = w * Ratio;
+h = h * Ratio;
+}
+objImg.height = h;
+objImg.width = w;
+objImg.style.marginTop = ((maxHeight-objImg.height)/2)+"px";
+}
+
+</script>
+
+   
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="login">
+            	<div id="date_item">
+            		<SCRIPT language=JavaScript>
+<!--
+function CalConv()
+{
+FIRSTYEAR = 1998;
+LASTYEAR = 2031;
+today = new Date();
+SolarYear = today.getFullYear();
+SolarMonth = today.getMonth() + 1;
+SolarDate = today.getDate();
+Weekday = today.getDay();
+LunarCal = [
+new tagLunarCal( 27, 5, 3, 43, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1 ),
+new tagLunarCal( 46, 0, 4, 48, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1 ),
+new tagLunarCal( 35, 0, 5, 53, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1 ),
+new tagLunarCal( 23, 4, 0, 59, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1 ),
+new tagLunarCal( 42, 0, 1, 4, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1 ),
+new tagLunarCal( 31, 0, 2, 9, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0 ),
+new tagLunarCal( 21, 2, 3, 14, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1 ),
+new tagLunarCal( 39, 0, 5, 20, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1 ),
+new tagLunarCal( 28, 7, 6, 25, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1 ),
+new tagLunarCal( 48, 0, 0, 30, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1 ),
+new tagLunarCal( 37, 0, 1, 35, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1 ),
+new tagLunarCal( 25, 5, 3, 41, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1 ),
+new tagLunarCal( 44, 0, 4, 46, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1 ),
+new tagLunarCal( 33, 0, 5, 51, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1 ),
+new tagLunarCal( 22, 4, 6, 56, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0 ),
+new tagLunarCal( 40, 0, 1, 2, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0 ),
+new tagLunarCal( 30, 9, 2, 7, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1 ),
+new tagLunarCal( 49, 0, 3, 12, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1 ),
+new tagLunarCal( 38, 0, 4, 17, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0 ),
+new tagLunarCal( 27, 6, 6, 23, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1 ),
+new tagLunarCal( 46, 0, 0, 28, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0 ),
+new tagLunarCal( 35, 0, 1, 33, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0 ),
+new tagLunarCal( 24, 4, 2, 38, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1 ),
+new tagLunarCal( 42, 0, 4, 44, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1 ),
+new tagLunarCal( 31, 0, 5, 49, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0 ),
+new tagLunarCal( 21, 2, 6, 54, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1 ),
+new tagLunarCal( 40, 0, 0, 59, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1 ),
+new tagLunarCal( 28, 6, 2, 5, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0 ),
+new tagLunarCal( 47, 0, 3, 10, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1 ),
+new tagLunarCal( 36, 0, 4, 15, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1 ),
+new tagLunarCal( 25, 5, 5, 20, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0 ),
+new tagLunarCal( 43, 0, 0, 26, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1 ),
+new tagLunarCal( 32, 0, 1, 31, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0 ),
+new tagLunarCal( 22, 3, 2, 36, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0 ) ];
+
+SolarCal = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
+
+SolarDays = [ 0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365, 396, 0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366, 397 ];
+
+
+if ( SolarYear <= FIRSTYEAR || SolarYear > LASTYEAR ) return 1;
+sm = SolarMonth - 1;
+  if ( sm < 0 || sm > 11 ) return 2;
+  leap = GetLeap( SolarYear );
+if ( sm == 1 )
+  d = leap + 28;
+else
+  d = SolarCal[sm];
+if ( SolarDate < 1 || SolarDate > d ) return 3;
+y = SolarYear - FIRSTYEAR;
+acc = SolarDays[ leap*14 + sm ] + SolarDate;
+kc = acc + LunarCal[y].BaseKanChih;
+Kan = kc % 10;
+Chih = kc % 12;
+
+Age = kc % 60;
+if ( Age < 22 )
+  Age = 22 - Age;
+else
+  Age = 82 - Age;
+
+if ( acc <= LunarCal[y].BaseDays ) {
+  y--;
+  LunarYear = SolarYear - 1;
+  leap = GetLeap( LunarYear );
+  sm += 12;
+  acc = SolarDays[leap*14 + sm] + SolarDate;
+  }
+else
+  LunarYear = SolarYear;
+  l1 = LunarCal[y].BaseDays;
+for ( i=0; i<13; i++ ) {
+  l2 = l1 + LunarCal[y].MonthDays[i] + 29;
+  if ( acc <= l2 ) break;
+  l1 = l2;
+  }
+LunarMonth = i + 1;
+LunarDate = acc - l1;
+im = LunarCal[y].Intercalation;
+if ( im != 0 && LunarMonth > im ) {
+  LunarMonth--;
+  if ( LunarMonth == im ) LunarMonth = -im;
+  }
+if ( LunarMonth > 12 ) LunarMonth -= 12;
+today=new Date();
+function initArray(){
+this.length=initArray.arguments.length
+for(var i=0;i<this.length;i++)
+this[i+1]=initArray.arguments[i] }
+var d=new initArray("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+document.write("", today.getFullYear(),"年",today.getMonth()+1,"月",today.getDate(),"日 ",d[today.getDay()+1],"");
+
+months = ["一","二","三","四","五","六","七","八","九","十","十一","十二"];
+
+days = ["初一","初二","初三","初四","初五","初六","初七","初八","初九","初十","十一","十二","十三","十四","十五","十六","十七","十八","十九","二十","廿一","廿二","廿三","廿四","廿五","廿六","廿七","廿八","廿九","三十"];
+
+  document.write( " 农历"+months[LunarMonth-1]+"月" + days[LunarDate-1] + "");
+
+return 0;
+}
+
+function GetLeap( year )
+{
+if ( year % 400 == 0 )
+return 1;
+else if ( year % 100 == 0 )
+return 0;
+else if ( year % 4 == 0 )
+return 1;
+else
+return 0;
+}
+function tagLunarCal( d, i, w, k, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13) {
+this.BaseDays = d;
+this.Intercalation = i;
+this.BaseWeekday = w;
+this.BaseKanChih = k;
+this.MonthDays = [ m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13 ];
+}
+//-->
+</SCRIPT>
+<SCRIPT>CalConv();</SCRIPT>
+
+
+            	</div>
+                <div id="login-item">
+                    <{if $user_id eq -1}> <a href="#logindialog" name="modal">登录</a> &nbsp&nbsp| <{else}> <span>欢迎</span>&nbsp <{$user_name}> &nbsp&nbsp <a href="user.php?act=logout">登出</a> &nbsp&nbsp| <{/if}> &nbsp 
+                    <{if $user_id eq -1}> <a href="#regdialog" name="modal">注册</a> &nbsp&nbsp| <{else}> <a href="user.php?act=profile">用户信息</a> &nbsp&nbsp| <{/if}> &nbsp
+                        	<a href="javascript:;" onclick="javascript:addfavor('http://www.fzyn.net','野牛非洲艺术馆');">收藏本站</a>&nbsp&nbsp&nbsp|&nbsp&nbsp
+                        	<a href="#helpdialog" name="modal"">帮助</a>
+                </div>
+                <!--end login-item-->
+            </div>
+            <!--end login-->
+            <div id="logo-item">
+                <div id="logo">
+                </div>
+            </div>
+            <!--end log-item-->
+                        <div id="menu-item">
+                <ul id="menu-one" class="menu">
+                    <li><a href="index.php">首页</a></li>
+                    <li><a href="about.php">关于我们</a></li>
+                    <li><a href="blog.php">非洲文化</a></li>
+                    <li><a href="resource.php">艺术品展示</a></li>
+                    <li><a href="contactus.php">联系我们</a></li>
+                </ul>
+                <div id="hot_line">
+                	热线电话：010-57626301
+                </div>
+            </div>
+            <!--end menu-item-->
+        </div>
+        <!--end header-->
+        <div id="boxes">
+            <!-- Start of Login Dialog -->
+            <div id="logindialog" class="window">
+                <form action="user.php?act=act_login" method="post">
+                <div id="unit-header">
+                    <h1>
+                        用户登录</h1>
+                    <h2>
+                        <a href="#" class="close">close</a></h2>
+                </div>
+                <div id="unit-body">
+                    <p>
+                        用户名：<br />
+                        <input name="name" type="text" id="name" size="25" />
+                    </p>
+                    <p>
+                        密码：<br />
+                        <input name="password" type="password" id="password" size="25" />
+                    </p>
+                    <p>
+                        <input name="safe_url" type="hidden" value="<{$safe_url}>" />
+                        <input type="submit" name="button" id="button" value="登录" />
+                    </p>
+                </div>
+                </form>
+            </div>
+            <!-- End of Login Dialog -->
+            <!-- Start of reg Dialog -->
+            <div id="regdialog" class="window">
+            <form action="user.php?act=act_reg" method="post">
+            	
+                <div id="unit-header">
+                    <h1>
+                        新用户注册</h1>
+                    <h2>
+                        <a href="#" class="close">close</a></h2>
+                </div>
+                <div id="unit-body">
+                    <p>
+                        用户名：<br />
+                        <input name="user_name" type="text" id="user_name" />
+                    </p>
+                    <p>
+                        密码：<br />
+                        <input type="password" name="password" id="password" />
+                    </p>
+                    <p>
+                        密码确认：<br />
+                        <input type="password" name="re_password" id="re_password" />
+                    </p>
+                    <p>
+                        EMAIL：<br />
+                        <input name="email" type="text" id="email" size="50" />
+                        <span id="email_notice"></span>
+                    </p>
+                    <p>
+                        个人主页地址：<br />
+                        <input name="homepage" type="text" id="homepage" size="50" />
+                    </p>
+                    <p>
+                        <input type="submit" name="button" id="button" value="注册" />
+                    </p>
+                </div>
+                </form>
+            </div>
+            <!-- End of reg Dialog -->
+            
+           <!-- Start of help Dialog -->
+            <div id="helpdialog" class="window">
+                <form action="admin/admin.php?act=login" method="post">
+                <div id="unit-header">
+                    <h1>
+                        帮助</h1>
+                    <h2>
+                        <a href="#" class="close">close</a></h2>
+                </div>
+                <div id="unit-body">
+                    <p>
+帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助
+                    </p>
+                    <p>
+帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助
+                    </p>
+                    <p>
+帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助
+                    </p>
+                    <p>
+帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助
+                    </p>
+                    <p>
+帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助
+                    </p>
+                    <p>
+帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助帮助
+                    </p>
+	            <p>
+<input type="submit" name="button" id="button" class="close" value="关闭" />
+	            </p>
+                </div>
+                </form>
+            </div>
+            <!-- End of help Dialog -->
+            
+            <!-- Mask to cover the whole screen -->
+            <div id="mask">
+            </div>
+        </div>
+        <!-- boxes end -->
+        <div id="content">

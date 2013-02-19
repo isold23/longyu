@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SMClient", "SMClient\SMClient.vcproj", "{763E34EF-8F72-4AEE-9E23-E79C217583E2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SMServer", "SMServer\SMServer.vcproj", "{800F9274-F701-434E-8790-22ED95858DA5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DaxShortMsg", "DaxShortMsg\DaxShortMsg.vcproj", "{64BB08C3-1241-4B92-B493-B54D00D9D026}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{763E34EF-8F72-4AEE-9E23-E79C217583E2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{763E34EF-8F72-4AEE-9E23-E79C217583E2}.Debug|Win32.Build.0 = Debug|Win32
+		{763E34EF-8F72-4AEE-9E23-E79C217583E2}.Release|Win32.ActiveCfg = Release|Win32
+		{763E34EF-8F72-4AEE-9E23-E79C217583E2}.Release|Win32.Build.0 = Release|Win32
+		{800F9274-F701-434E-8790-22ED95858DA5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{800F9274-F701-434E-8790-22ED95858DA5}.Debug|Win32.Build.0 = Debug|Win32
+		{800F9274-F701-434E-8790-22ED95858DA5}.Release|Win32.ActiveCfg = Release|Win32
+		{800F9274-F701-434E-8790-22ED95858DA5}.Release|Win32.Build.0 = Release|Win32
+		{64BB08C3-1241-4B92-B493-B54D00D9D026}.Debug|Win32.ActiveCfg = Debug|Win32
+		{64BB08C3-1241-4B92-B493-B54D00D9D026}.Debug|Win32.Build.0 = Debug|Win32
+		{64BB08C3-1241-4B92-B493-B54D00D9D026}.Release|Win32.ActiveCfg = Release|Win32
+		{64BB08C3-1241-4B92-B493-B54D00D9D026}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

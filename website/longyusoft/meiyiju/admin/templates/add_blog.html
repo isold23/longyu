@@ -1,0 +1,127 @@
+<{include file="header.html"}>
+<p>
+<form action="admin.php?act=<{$type}>" method="post">
+  <table width="100%"  border="1">
+  	<tbody>
+    <tr>
+      <td width="150">博客名字</td>
+      <td width="720"><input type="text" name="title" id="title" value="<{$blog.title}>" /></td>
+    </tr>
+
+        <tr>
+      <td>选择分类</td>
+      <td>
+      <select name="cat">
+      <{foreach from=$cat_list item=cat}>
+        <option value="<{$cat.id}>" <{if $blog.id eq $cat.id }> selected="selected"<{/if}> ><{$cat.name}></option>
+        <{foreach from=$cat.children item=children}>
+     		 <option value="<{$children.id}>" <{if $blog.id eq $children.id }>selected="selected"<{/if}> >&nbsp;&nbsp;<{$children.name}></option>
+      	<{/foreach}>
+      <{/foreach}>
+      
+      </select></td>
+        </tr>
+    <tr>
+      <td>设置url</td>
+      <td>
+      <p>
+     <{if $rewrite}>
+          <input type="radio" name="url_type" value="1" id="set_url" <{if $url_type eq 1}>checked="checked" <{/if}> />
+          简单重写 (类似<{$u}>blog/1.html)
+        <br />
+   
+          <input type="radio" name="url_type" value="2" id="set_url" <{if $url_type != 1}>checked="checked" <{/if}> />
+          自定义 
+          <{$u}>blog/<input name="url" type="text" value="<{if $url_type != 1}><{$url_type}><{/if}>" size="40" />
+        <br />
+      <{else}>
+      <input type="hidden" name="url_type" value="<{$url_type}>" id="set_url" />
+          网站没有开启rewrite，如果需要使用伪静态优化请到博客设置中开启
+      <{/if}>
+      </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      博客描述</td>
+      <td><textarea name="description" id="description" cols="45" rows="5"><{$blog.description}></textarea></td>
+    </tr>
+    <tr>
+      <td>博客内容</td>
+      <td>
+      <div id="edit_notice" style="font-size: 13px;font-family: verdana,arial; color:#FF0000"></div>
+      <div id="edit_mode"><input type="checkbox" id="edit_mode_checkbox" name="checkbox" value="0" onclick="edit_mode(this.checked?1:0)" />高级模式（支持上传图片，上传文件等)</div>
+      <div id="content_box" style="background:#fff">
+      <textarea id="editor" name="editor" style="height:500px;width:900px"><{$blog.content}></textarea>
+      <!-- {literal} -->
+		<script type="text/javascript">
+		bkLib.onDomLoaded(function() {
+			new nicEditor({buttonList : ['fontSize','bold','italic','underline','image','link','unlink']}).panelInstance('editor');
+		});
+		</script>
+	  <!-- {/literal} -->
+	  </div>
+      </td>
+    </tr>
+    <tr>
+      <td>评论设置</td>
+      <td>开放
+      <input name="blog_comment" type="radio" value="0" <{if $blog.open_type eq 0}>checked<{/if}> />
+      关闭
+      <input name="blog_comment" type="radio" value="1" <{if $blog.open_type eq 1}>checked<{/if}>/></td></td>
+    </tr>
+    <tr>
+      <td>权限控制</td>
+      <td><p>查看密码：
+          <input type="text" name="password" id="password" value="<{$blog.password}>" />
+（如果不需要设置查看密码，请保留为空）</p>
+      <p>允许查看的用户组（默认为所有用户组）：<br />
+      <!--{foreach from=$group_list item=group}-->
+          <input name="group[]" type="checkbox" value="<{$group.group_id}>" <{if $group.flag eq 1}>checked="checked"<{/if}> />
+          <{$group.group_name}>
+        <br />
+      <!--{/foreach}-->
+      </p>
+
+</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="button" id="button" value="提交" /></td>
+    </tr>
+  </tbody>
+  </table>
+</form>
+</p>
+
+<{include file="footer.html"}>
+
+
+<script type="text/javascript">
+var ajax_post=2;
+var content;
+function edit_mode(check)
+{
+	if(check==1)
+	{
+		content=$('#editor').html();
+		$('#edit_mode').html('编辑器加载中...');
+		$("#content_box").css('background','');
+		$('#content_box').html('<textarea id="editor" name="editor" style="height:500px;width:900px">'+content+'</textarea>');
+		CKEDITOR.replace( 'editor',
+		{
+			toolbar :
+			[
+			[ 'Source','Image','Flash', 'Link', 'Unlink', 'Anchor','Code' ],
+			[ '-', 'Bold', 'Italic', 'Underline', 'Strike' ],
+			[ '-','TextColor','BGColor'],
+			]
+		});
+		$('#edit_mode').html('');
+	}
+}
+</script>
+
+<script type="text/javascript" src="include/niceditor/nicEdit.js"></script>
+<script type="text/javascript" src="../include/ckeditor/ckeditor.js"></script>
+

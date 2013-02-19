@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MMShow", "MMShow\MMShow.vcproj", "{31E3D183-EBE0-49C1-BF85-ED7F5789DD26}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C14D9535-35E5-4B7F-8614-B772A214EB0B} = {C14D9535-35E5-4B7F-8614-B772A214EB0B}
+		{F7D09CB5-50BD-4FBF-BCAD-99C9F30A61F7} = {F7D09CB5-50BD-4FBF-BCAD-99C9F30A61F7}
+		{DF6F1DDC-53D1-4A64-A807-A5788FE4D44F} = {DF6F1DDC-53D1-4A64-A807-A5788FE4D44F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ResizableLib", "3rdparty\ResizableLib\ResizableLib.vcproj", "{DF6F1DDC-53D1-4A64-A807-A5788FE4D44F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BaseClasses", "3rdparty\BaseClasses\baseclasses.vcproj", "{C14D9535-35E5-4B7F-8614-B772A214EB0B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Utils", "Utils\Utils.vcproj", "{F7D09CB5-50BD-4FBF-BCAD-99C9F30A61F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Unicode Debug|Win32 = Unicode Debug|Win32
+		Unicode Release|Win32 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31E3D183-EBE0-49C1-BF85-ED7F5789DD26}.Unicode Debug|Win32.ActiveCfg = Unicode Debug|Win32
+		{31E3D183-EBE0-49C1-BF85-ED7F5789DD26}.Unicode Debug|Win32.Build.0 = Unicode Debug|Win32
+		{31E3D183-EBE0-49C1-BF85-ED7F5789DD26}.Unicode Release|Win32.ActiveCfg = Unicode Release|Win32
+		{31E3D183-EBE0-49C1-BF85-ED7F5789DD26}.Unicode Release|Win32.Build.0 = Unicode Release|Win32
+		{DF6F1DDC-53D1-4A64-A807-A5788FE4D44F}.Unicode Debug|Win32.ActiveCfg = Unicode Debug|Win32
+		{DF6F1DDC-53D1-4A64-A807-A5788FE4D44F}.Unicode Debug|Win32.Build.0 = Unicode Debug|Win32
+		{DF6F1DDC-53D1-4A64-A807-A5788FE4D44F}.Unicode Release|Win32.ActiveCfg = Unicode Release|Win32
+		{DF6F1DDC-53D1-4A64-A807-A5788FE4D44F}.Unicode Release|Win32.Build.0 = Unicode Release|Win32
+		{C14D9535-35E5-4B7F-8614-B772A214EB0B}.Unicode Debug|Win32.ActiveCfg = Unicode Debug|Win32
+		{C14D9535-35E5-4B7F-8614-B772A214EB0B}.Unicode Debug|Win32.Build.0 = Unicode Debug|Win32
+		{C14D9535-35E5-4B7F-8614-B772A214EB0B}.Unicode Release|Win32.ActiveCfg = Unicode Release|Win32
+		{C14D9535-35E5-4B7F-8614-B772A214EB0B}.Unicode Release|Win32.Build.0 = Unicode Release|Win32
+		{F7D09CB5-50BD-4FBF-BCAD-99C9F30A61F7}.Unicode Debug|Win32.ActiveCfg = Unicode Debug|Win32
+		{F7D09CB5-50BD-4FBF-BCAD-99C9F30A61F7}.Unicode Debug|Win32.Build.0 = Unicode Debug|Win32
+		{F7D09CB5-50BD-4FBF-BCAD-99C9F30A61F7}.Unicode Release|Win32.ActiveCfg = Unicode Release|Win32
+		{F7D09CB5-50BD-4FBF-BCAD-99C9F30A61F7}.Unicode Release|Win32.Build.0 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

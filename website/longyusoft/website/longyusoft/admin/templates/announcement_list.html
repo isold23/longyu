@@ -1,0 +1,22 @@
+<{include file="header.html"}>
+<p>
+
+<table>
+  <tr>
+    <td>公告标题</td>
+    <td>公告内容</td>
+    <td>发布时间</td>
+    <td>操作</td>
+  </tr>
+  <{foreach from=$announcement_list item=announcement}>
+  <tr>
+    <td><{$announcement.title}></td>
+    <td><{$announcement.content}></td>
+<td><{$announcement.post_time}></td>
+    <td><a href="admin.php?act=edit_announcement&id=<{$announcement.id}>" >编辑</a> | <a href="admin.php?act=del_announcement&id=<{$announcement.id}>" >删除</a> </td>
+  </tr>
+  <{/foreach}>
+</table>
+<{include file="page.html"}>
+</p>
+<{include file="footer.html"}>

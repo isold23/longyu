@@ -1,0 +1,15 @@
+<div id="sidebar-item">
+    <div id="unit">
+        <div id="unit-header">
+            <h1>最新日志</h1>
+        </div>
+        <div id="unit-body">
+            <ul>
+                <{foreach from=$last_blog_list item=last_blog}>
+                            <li><a href="detail.php?id=<{$last_blog.id}>"><{$last_blog.title}></a> </li>
+                <{/foreach}>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- sidebar item end -->

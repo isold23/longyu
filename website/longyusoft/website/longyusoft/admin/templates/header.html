@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><{$admin_title}></title>
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="templates/style.css" media="all" rev="stylesheet" rel="stylesheet" type="text/css" />
+    <meta name="keywords" content="龙宇, 龙宇网, longyusoft, longyusoft.com, LINUX, C/C++, PHP, 网络, TCP/IP, 移动, Android, IOS, IPhone, mobile, 云, 搜索, 存储, 安全, 软件, 资源下载" />
+    <meta name="description" content="龙宇网" />
+    <meta name="robots" content="nofollow" />
+    <script src="<{$domain}>/res/jquery.js" type="text/javascript"></script>
+    <script src="<{$domain}>/include/ckeditor/ckeditor.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#datalist tr:even").addClass("tabEven");
+            $("#datalist tr:odd").addClass("tabOdd");
+        });
+    </script>
+</head>
+
+<body class="body">
+    <div id="main">
+        <div id="header">
+            <h1>龙宇网系统管理后台</h1>
+            <h2>
+                <a href="../index.php" target="_blank">网站首页</a>
+                <a href="./" target="_blank">网站后台</a>
+                <a href="admin.php?act=logout">退出</a>
+            </h2>
+        </div>
+
+        <div style="clear: both"></div>
+
+        <div id="wrapper">
+            <div id="menu">
+
+                <dl>
+                    <dt>
+                        <h1>日志管理</h1>
+                    </dt>
+                    <dd>
+                        <a href="admin.php?act=add_blog">添加日志</a>
+                        <a href="admin.php?act=blog_list">日志列表</a>
+                        <a href="admin.php?act=cat_list">日志分类</a>
+                        <a href="admin.php?act=comment_list">评论列表</a>
+                        <a href="admin.php?act=friend_link_list">友情链接</a>
+                    </dd>
+                </dl>
+
+                <dl>
+
+                    <dt>
+                        <h1>资料管理</h1>
+                    </dt>
+                    <dd>
+                        <a href="admin.php?act=add_resource">添加资料</a>
+                        <a href="admin.php?act=resource_list">资料列表</a>
+                        <a href="admin.php?act=resource_cat_list">资料分类</a>
+                        <a href="admin.php?act=resource_comment_list">资料评论列表</a>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        <h1>源码管理</h1>
+                    </dt>
+                    <dd>
+                        <a href="admin.php?act=add_online_resource">添加源码</a>
+                        <a href="admin.php?act=online_resource_list">源码列表</a>
+                        <a href="admin.php?act=add_online_small_cat">添加源码分类</a>
+                        <a href="admin.php?act=online_cat_list">源码分类列表</a>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        <h1>在线资源</h1>
+                    </dt>
+                    <dd>
+                        <a href="admin.php?act=add_online_resource">添加在线资源</a>
+                        <a href="admin.php?act=online_resource_list">在线资源列表</a>
+                        <a href="admin.php?act=add_online_small_cat">添加在线子分类</a>
+                        <a href="admin.php?act=online_small_cat_list">在线子分类列表</a>
+                        <a href="admin.php?act=add_online_cat">添加在线分类</a>
+                        <a href="admin.php?act=online_cat_list">在线分类列表</a>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        <h1>日记管理</h1>
+                    </dt>
+                    <dd>
+                        <a href="admin.php?act=add_daily">添加日记</a>
+                        <a href="admin.php?act=daily_list">日记列表</a>
+                        <a href="admin.php?act=comment_list">日记评论列表</a>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        <h1>留言管理</h1>
+                    </dt>
+                    <dd>
+                        <a href="admin.php?act=message_list">留言列表</a>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        <h1>网站友情链接</h1>
+                    </dt>
+                    <dd>
+                        <a href="admin.php?act=web_friend_link_list">链接列表</a>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        <h1>网站公告</h1>
+                    </dt>
+                    <dd>
+                        <a href="admin.php?act=announcement_list">公告列表</a>
+                        <a href="admin.php?act=add_announcement">添加公告</a>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        <h1>会员管理</h1>
+                    </dt>
+                    <dd>
+                        <a href="admin.php?act=member_list">会员列表</a>
+                        <a href="admin.php?act=add_member">添加会员</a>
+                        <a href="admin.php?act=group_list">会员分组</a>
+                        <a href="admin.php?act=add_group">添加会员分组</a>
+                    </dd>
+                </dl>
+
+            </div>
+
+            <div id="content">
+                <div class="admin_here">
+                    <{$admin_here}>
+                </div>

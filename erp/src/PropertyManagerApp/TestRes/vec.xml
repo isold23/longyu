@@ -1,0 +1,113 @@
+<Vector BkgndImage="././././Bkgnd.jpg" BkColor="0" CustomData="0" Desc="" XScale="1" YScale="1">
+  <Rectangle Outline="1" DashStyle="0" OutlineWidth="9" OutlineColor="255" Fill="1" FillColor="16750230" Text="hello thissssss" RectLeft="961" RectTop="387" RectRight="1179" RectBottom="485"/>
+  <Poly CustomData="1" Desc="hall tma中国共产党很伟大，大家都明白的" Outline="1" DashStyle="0" OutlineWidth="8" OutlineColor="13959039" Fill="1" FillColor="255">
+    <Point X="68" Y="602"/>
+    <Point X="335" Y="725"/>
+    <Point X="589" Y="585"/>
+    <Point X="319" Y="456"/>
+  </Poly>
+  <Poly Desc="big this one" Outline="1" DashStyle="0" OutlineWidth="8" OutlineColor="16711680" Fill="1" FillColor="16443110">
+    <Point X="630" Y="857"/>
+    <Point X="883" Y="719"/>
+    <Point X="1150" Y="848"/>
+    <Point X="900" Y="991"/>
+    <Point X="631" Y="865"/>
+  </Poly>
+  <Poly Desc="sdfasdfasdfasdfasdfsdfasdfasdfasdfasdfasdfasdfasdfsfasdfasdfs" Outline="1" DashStyle="0" OutlineWidth="8" OutlineColor="37632" Fill="1" FillColor="37632">
+    <Point X="980" Y="484"/>
+    <Point X="981" Y="469"/>
+    <Point X="1006" Y="453"/>
+    <Point X="1071" Y="484"/>
+    <Point X="1075" Y="492"/>
+    <Point X="1064" Y="505"/>
+    <Point X="1063" Y="515"/>
+    <Point X="1050" Y="515"/>
+    <Point X="985" Y="486"/>
+  </Poly>
+  <Poly CustomData="4" Desc="lalala " Outline="1" DashStyle="0" OutlineWidth="10" OutlineColor="65535" Fill="1" FillColor="16711680">
+    <Point X="1087" Y="37"/>
+    <Point X="803" Y="191"/>
+    <Point X="803" Y="200"/>
+    <Point X="1006" Y="296"/>
+    <Point X="1297" Y="135"/>
+    <Point X="1089" Y="36"/>
+  </Poly>
+  <Poly Desc="transf" Outline="1" DashStyle="0" OutlineWidth="6" OutlineColor="255" Fill="1" FillColor="16750230">
+    <Point X="1156" Y="352"/>
+    <Point X="1173" Y="359"/>
+    <Point X="1171" Y="368"/>
+    <Point X="1249" Y="400"/>
+    <Point X="1261" Y="396"/>
+    <Point X="1265" Y="385"/>
+    <Point X="1275" Y="383"/>
+    <Point X="1283" Y="377"/>
+    <Point X="1293" Y="369"/>
+    <Point X="1285" Y="361"/>
+    <Point X="1204" Y="320"/>
+    <Point X="1157" Y="342"/>
+  </Poly>
+  <Poly CustomData="3" Desc="This is river's top left." Outline="1" DashStyle="0" OutlineWidth="9" OutlineColor="65535" Fill="1" FillColor="16777215">
+    <Point X="883" Y="1"/>
+    <Point X="974" Y="0"/>
+    <Point X="530" Y="245"/>
+    <Point X="526" Y="239"/>
+    <Point X="487" Y="262"/>
+    <Point X="443" Y="242"/>
+    <Point X="880" Y="1"/>
+  </Poly>
+  <Poly CustomData="2" Desc="This is river's bottom left." Outline="1" DashStyle="0" OutlineWidth="8" OutlineColor="255" Fill="1" FillColor="16750230">
+    <Point X="387" Y="273"/>
+    <Point X="238" Y="355"/>
+    <Point X="240" Y="359"/>
+    <Point X="652" Y="558"/>
+    <Point X="675" Y="561"/>
+    <Point X="696" Y="549"/>
+    <Point X="347" Y="382"/>
+    <Point X="343" Y="356"/>
+    <Point X="345" Y="347"/>
+    <Point X="438" Y="296"/>
+  </Poly>
+  <Poly Desc="Main hall" Outline="1" DashStyle="0" OutlineWidth="9" OutlineColor="9342520" Fill="1" FillColor="16750230">
+    <Point X="812.835" Y="571.5362"/>
+    <Point X="807.0033" Y="576.6391"/>
+    <Point X="741.3931" Y="609.4442"/>
+    <Point X="720.2521" Y="599.967"/>
+    <Point X="722.4391" Y="590.4902"/>
+    <Point X="715.149" Y="583.9292"/>
+    <Point X="707.1299" Y="586.8451"/>
+    <Point X="709.3171" Y="558.4141"/>
+    <Point X="719.523" Y="551.8531"/>
+    <Point X="714.42" Y="549.6661"/>
+    <Point X="731.916" Y="538.7311"/>
+    <Point X="737.748" Y="540.1891"/>
+    <Point X="796.068" Y="510.3002"/>
+    <Point X="793.881" Y="507.3841"/>
+    <Point X="813.564" Y="497.9071"/>
+    <Point X="831.0601" Y="508.113"/>
+    <Point X="836.1632" Y="511.758"/>
+    <Point X="847.8271" Y="503.7392"/>
+    <Point X="929.475" Y="541.647"/>
+    <Point X="931.662" Y="543.105"/>
+    <Point X="926.5591" Y="548.9371"/>
+    <Point X="937.4941" Y="550.3951"/>
+    <Point X="932.3911" Y="556.9561"/>
+    <Point X="963.738" Y="570.8071"/>
+    <Point X="959.364" Y="575.91"/>
+    <Point X="977.5891" Y="583.2001"/>
+    <Point X="978.3182" Y="610.1731"/>
+    <Point X="973.2151" Y="614.5471"/>
+    <Point X="959.364" Y="608.7151"/>
+    <Point X="952.0741" Y="613.0892"/>
+    <Point X="929.475" Y="637.1462"/>
+    <Point X="874.8" Y="666.3062"/>
+    <Point X="866.7813" Y="658.287"/>
+    <Point X="855.1172" Y="661.9321"/>
+    <Point X="841.9951" Y="656.8291"/>
+    <Point X="841.9951" Y="624.0241"/>
+    <Point X="847.8271" Y="619.6501"/>
+    <Point X="852.9302" Y="614.5471"/>
+    <Point X="850.0141" Y="610.902"/>
+    <Point X="876.9871" Y="599.2381"/>
+    <Point X="815.022" Y="567.1621"/>
+  </Poly>
+</Vector>

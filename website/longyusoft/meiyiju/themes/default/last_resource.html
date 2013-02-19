@@ -1,0 +1,16 @@
+            <div id="sidebar-item">
+                <div id="unit">
+                    <div id="unit-header">
+                        <h1>
+                            最新案例</h1>
+                    </div>
+                    <div id="unit-body">
+                        <ul>
+                        	<{foreach from=$last_resource_list item=last_resource}>
+                            <li><a href="resource.php?id=<{$last_resource.id}>"><{$last_resource.name}></a> </li>
+                         <{/foreach}>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar item end -->

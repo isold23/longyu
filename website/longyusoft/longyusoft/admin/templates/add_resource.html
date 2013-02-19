@@ -1,0 +1,56 @@
+<{include file="header.html"}>
+<p>
+<script type="text/javascript" src="include/niceditor/nicEdit.js"></script>
+
+<form action="admin.php?act=<{$type}>" method="post">
+  <table>
+    <tr>
+      <td width="150" class="td2">资源名字</td>
+      <td width="720"><input type="text" name="title" id="title" value="<{$resource.name}>" /></td>
+    </tr>
+    <tr>
+      <td width="150" class="td2">关联博客ID</td>
+      <td width="720"><input type="text" name="blog_id" id="blog_id" value="<{$resource.blog_id}>" /></td>
+    </tr>
+        <tr>
+      <td class="td2">选择分类</td>
+      <td width="720">
+      <select name="cat">
+      <{foreach from=$cat_list item=cat}>
+        <option value="<{$cat.id}>" <{if $resource.cat_id eq $cat.id }> selected="selected"<{/if}> ><{$cat.name}></option>
+        <{foreach from=$cat.children item=children}>
+     		 <option value="<{$children.id}>" <{if $resource.id eq $children.id }>selected="selected"<{/if}> >&nbsp;&nbsp;<{$children.name}></option>
+      	<{/foreach}>
+      <{/foreach}>
+      
+      </select></td>
+        </tr>
+                    <tr>
+      <td class="td2">
+      图片路径</td>
+      <td><input type="text" name="image_path" id="image_path" style="width:450px" value="<{$resource.image_path}>" /></td>
+    </tr>
+            <tr>
+      <td class="td2">
+      资源路径</td>
+      <td><input type="text" name="path" id="path" style="width:450px" value="<{$resource.path}>" /></td>
+    </tr>
+    
+    <tr>
+      <td class="td2">
+      资源描述</td>
+      <td><textarea name="remark" id="remark" class="ckeditor" cols="52" rows="10"><{$resource.remark}></textarea></td>
+    </tr>
+   
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="button" id="button" value="提交" /></td>
+    </tr>
+  </table>
+</form>
+</p>
+
+
+<{include file="footer.html"}>
+
+

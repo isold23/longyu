@@ -1,0 +1,87 @@
+<{include file="header.html"}>
+<div id="subpage">
+<div id="subpage-item">
+
+<div id="subcontent">
+<div id="resource-list">
+<{include file="page.html"}><{foreach from=$resource_list item=resource}>
+<ul>
+<li>
+	
+<div id="resource_list_item">
+	
+<a href="resource.php?lan=<{$lang}>&id=<{$resource.id}>" target="_blank">
+	<img src = "<{$domain}>upload/<{$resource.image_path}>" alt="<{$resource.aname|truncate:20:""}>" onload="AutoResizeImage(198,200,this)" />
+</a>
+
+<h1>
+<a href="resource.php?lan=<{$lang}>&id=<{$resource.id}>" title="<{$resource.aname}>"><{$resource.aname}></a>
+</h1>
+
+</div>
+
+</li>
+</ul>
+
+<{/foreach}>
+</div>
+<!-- resource list end -->
+</div>
+<!-- subcontent end -->
+
+<div id="sidebar">
+            <div id="sidebar-item">
+                <div class="unit">
+                    <div class="unit-header unit_header2">
+                        <h1 class="unit_header">
+                            <{$top_destinations}></h1>
+                    </div>
+                    <div class="unit-body">
+                        <ul>
+                        	<{foreach from=$last_resource_list item=last_resource}>
+                            <li><a href="resource.php?lan=<{$last_resource.lang}>&id=<{$last_resource.id}>"><{$last_resource.name}></a> </li>
+                         <{/foreach}>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar item end -->
+            <div id="sidebar-item">
+            	<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7127835251433379";
+/* 300&#42;250 ¹ã¸æÎ» */
+google_ad_slot = "6398793104";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+             </div>
+            <!-- sidebar item end -->
+                        <div id="sidebar-item">
+                <div class="unit">
+                    <div class="unit-header unit_header2">
+                        <h1 class="unit_header">
+                            <{$top_tours}></h1>
+                    </div>
+                    <div class="unit-body">
+                        <ul>
+                        	<{foreach from=$last_resource_tour_list item=last_resource_tour}>
+                            <li><a href="resource.php?lan=<{$last_resource.lang}>&id=<{$last_resource_tour.id}>"><{$last_resource_tour.name}></a> </li>
+                         <{/foreach}>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar item end -->
+</div>
+<!-- sidebar -->
+
+
+</div>
+<!-- sub page item -->
+</div>
+<!-- sub page end -->
+<{include file="footer.html"}>

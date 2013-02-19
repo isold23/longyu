@@ -1,0 +1,35 @@
+<{include file="header.html"}>
+<{include file="page.html"}>
+<p>
+<table id="datalist" style="width:80%">
+  <tr>
+    <th class="th1" style="width:15%">分类名字</th>
+    <th class="th1" style="width:15%">分类位置</th>
+    <th class="th1" style="width:15%">分类描述</th>
+    <th class="th1" style="width:15%">日志个数</th>
+    <th class="th1" style="width:15%">父类ID</th>
+    <th class="th1" style="width:15%">操作</th>
+  </tr>
+  <{foreach from=$cat_list item=cat}>
+  <tr>
+    <td><a title="<{$cat.name}>" href="admin.php?act=edit_cat&id=<{$cat.id}>"><{$cat.name}></a></td>
+    <td><{$cat.cat_order}></td>
+    <td><{$cat.description}></td>
+    <td><{$cat.blog_count}></td>
+    <td><{$cat.parent_id}></td>
+    <td><a href="admin.php?act=edit_cat&id=<{$cat.id}>" >编辑</a> | <a href="admin.php?act=del_cat&id=<{$cat.id}>" >删除</a> </td>
+  </tr>
+  <{if $cat.children}>
+     <{foreach from=$cat.children item=children}>
+     <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a title="<{$children.cat_desc}>" href="admin.php?act=edit_cat&id=<{$children.cat_id}>"><{$children.cat_name}></a></td>
+      <td><{$children.listorder}></td>
+      <td><a href="admin.php?act=edit_cat&id=<{$children.cat_id}>" >编辑</a> | <a href="admin.php?act=del_cat&id=<{$children.cat_id}>" >删除</a> </td>
+     </tr>
+     <{/foreach}>
+  <{/if}>
+  <{/foreach}>
+</table>
+<{include file="page.html"}>
+</p>
+<{include file="footer.html"}>

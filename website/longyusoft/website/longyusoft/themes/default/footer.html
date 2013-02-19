@@ -1,0 +1,127 @@
+</div>
+<!--end content-->
+<div class="push">
+</div>
+</div>
+<!-- end wrapper1-->
+</div>
+<!--end wrapper-->
+<div id="footer">
+    <div id="footer-content">
+        <div id="footer-item">
+            <a href="index.php">首页</a> |
+					<a href="contactus.php">联系我们</a> |
+					<a href="about.php">关于我们</a> |
+					<a href="about.php">帮助中心</a> |
+					<a href="about.php">免责声明</a> |
+					<a href="contactus.php">广告服务</a> |
+					<a href="daily.php">随手记</a> |
+					<a href="contactus.php">版权所有</a>
+        </div>
+        <div id="footer-item">
+            反馈：isold.wang@gmail.com | 
+					新浪微博：<a href="http://weibo.com/zeyu" target="_parent">
+                http://weibo.com/zeyu
+                    </a>| 
+            微信：longyusoft
+        </div>
+        <div id="footer-item">
+            Copyright 版权所有 2009-2012
+            <a href="http://www.longyusoft.com" target="_parent">龙宇网
+            </a>
+            |
+            <a href="http://www.longyusoft.com/about.php" target="_parent">北京龙宇软件工作室
+            </a>
+            All Rights Reserved
+        </div>
+        <div id="footer-item">
+            许可证号：冀ICP备11008325号 龙宇网 www.longyusoft.com
+            <script type="text/javascript">
+                var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5fcaae3530a51cd77623c2e852149737' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+        </div>
+    </div>
+    <!--end footer-content-->
+</div>
+<!--end footer-->
+</body>
+<!-- header login logout -->
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        //select all the a tag with name equal to modal
+        $('a[name=modal]').click(function (e) {
+            //Cancel the link behavior
+            e.preventDefault();
+
+            //Get the A tag
+            var id = $(this).attr('href');
+
+            //Get the screen height and width
+            var maskHeight = $(document).height();
+            var maskWidth = $(window).width();
+
+            //Set heigth and width to mask to fill up the whole screen
+            $('#mask').css({
+                'width': maskWidth,
+                'height': maskHeight
+            });
+
+            //transition effect		
+            $('#mask').fadeIn(1000);
+            $('#mask').fadeTo("slow", 0.8);
+
+            //Get the window height and width
+            var winH = $(window).height();
+            var winW = $(window).width();
+
+            //Set the popup window to center
+            $(id).css('top', winH / 2 - $(id).height() / 2);
+            $(id).css('left', winW / 2 - $(id).width() / 2);
+
+            //transition effect
+            $(id).fadeIn(2000);
+
+        });
+
+        //if close button is clicked
+        $('.window .close').click(function (e) {
+            //Cancel the link behavior
+            e.preventDefault();
+
+            $('#mask').hide();
+            $('.window').hide();
+        });
+
+        //if mask is clicked
+        $('#mask').click(function () {
+            $(this).hide();
+            $('.window').hide();
+        });
+
+    });
+</script>
+<script language="javascript">
+    function addfavor(url, title) {
+
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.indexOf("msie 8") > -1) {
+            external.AddToFavoritesBar(url, title, '龙宇网');//IE8
+        } else {
+            try {
+                window.external.addFavorite(url, title);
+            } catch (e) {
+                try {
+                    window.sidebar.addPanel(title, url, "");//firefox
+                } catch (e) {
+                    alert("加入收藏失败，请使用Ctrl+D进行添加");
+                }
+            }
+
+        }
+        return false;
+    }
+</script>
+
+</html>

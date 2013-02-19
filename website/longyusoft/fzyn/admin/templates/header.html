@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><{$admin_title}></title>
+
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> 
+<link href="templates/style.css" media="all" rev="stylesheet" rel="stylesheet" type="text/css" />
+
+<script src="../include/js/jquery.js" type="text/javascript"></script>
+<script src="../res/ajaxupload.js" type="text/javascript"></script>
+</head>
+
+<body class="body">
+
+<div id="main">
+
+  <div id="header">
+<center><h1>野牛非洲艺术馆管理后台</h1></center>
+  </div>
+  
+<div style="clear:both"></div>
+ 
+  <div id="menu">
+
+
+ <dl>
+  <dt>首页图片</dt>
+<dd>
+<a href="admin.php?act=index_pic_list">首页图片列表</a>
+<a href="admin.php?act=add_index_pic">添加首页图片</a>
+</dd>
+</dl>
+
+  <dl>
+  <dt>日志管理</dt>
+<dd>
+<a href="admin.php?act=add_blog">添加日志</a>
+<a href="admin.php?act=blog_list">日志列表</a>
+<a href="admin.php?act=cat_list">日志分类</a>
+<a href="admin.php?act=comment_list">评论列表</a>
+<a href="admin.php?act=friend_link_list">友情链接</a>
+</dd>
+</dl>
+
+  <dl>
+  <dt>资料管理</dt>
+<dd>
+<a href="admin.php?act=add_resource">添加资料</a>
+<a href="admin.php?act=resource_list">资料列表</a>
+<a href="admin.php?act=resource_cat_list">资料分类</a>
+<a href="admin.php?act=resource_comment_list">评论列表</a>
+</dd>
+</dl>
+
+
+  <dl>
+  <dt>留言管理</dt>
+<dd>
+<a href="admin.php?act=message_list">留言列表</a>
+</dd>
+</dl>
+
+  <dl>
+  <dt>友情链接</dt>
+<dd>
+<a href="admin.php?act=web_friend_link_list">链接列表</a>
+</dd>
+</dl>
+
+  <dl>
+  <dt>网站公告</dt>
+<dd>
+<a href="admin.php?act=announcement_list">公告列表</a>
+<a href="admin.php?act=add_announcement">添加公告</a>
+</dd>
+</dl>
+
+<dl>
+<dt>会员管理</dt>
+<dd>
+<a href="admin.php?act=member_list">会员列表</a>
+<a href="admin.php?act=add_member">添加会员</a>
+<a href="admin.php?act=group_list">会员分组</a>
+<a href="admin.php?act=add_group">添加会员分组</a>
+</dd>
+</dl>
+
+<dl>
+<dt>系统设置</dt>
+<dd>
+<a href="admin.php?act=setting">网站设置</a>
+<a href="admin.php?act=templates_list">模板选择</a>
+<a href="admin.php?act=databak">数据备份</a>
+<a href="admin.php?act=re_data">数据恢复</a>
+<a href="admin.php?act=clear_cache">清除缓存</a></dd></dl>
+
+<dl>
+<dt>系统模块</dt>
+<dd>
+<a href="admin.php?act=sidebar_list">边栏插件列表</a>
+<a href="admin.php?act=add_sidebar">自定义边栏</a>
+<a href="admin.php?act=sidebar_setup_list">未安装边栏插件</a>
+<a href="admin.php?act=nav_list">自定义导航栏</a>
+<a href="admin.php?act=set_footer">自定义网站模板</a>
+</dd></dl>
+
+<dl>
+<dt>快捷菜单</dt>
+<dd>
+<a href="../index.php" target="_blank">网站首页</a>
+<a href="./">后台首页</a>
+<a href="admin.php?act=logout">退出</a>
+</dd></dl>
+</div>
+
+  <div id="content">
+  <div class="admin_here">
+  <{$admin_here}>
+   </div><br />
+	<div id="update_date" style="font-size: 13px;font-family: verdana,arial; color:#FF0000;"></div>

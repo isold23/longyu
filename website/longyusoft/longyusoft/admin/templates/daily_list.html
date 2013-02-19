@@ -1,0 +1,22 @@
+<{include file="header.html"}>
+<{include file="page.html"}>
+<p>
+<table id="datalist">
+  <tr class="tr1">
+    <th class="th1" style="width:60%">日记内容</th>
+    <th class="th1" style="width:20%">发布日期</th>
+    <th class="th1" style="width:10%">发布用户</th>
+    <th class="th1" style="width:10%">操作</td>
+  </tr>
+  <{foreach from=$daily_list item=daily}>
+  <tr>
+    <td style="width:60%"><{$daily.content}></td>
+    <td style="width:20%"><{$daily.post_time}></td>
+    <td style="width:10%"><{$daily.user_name}></td>
+    <td style="width:10%"><a href="admin.php?act=edit_daily&id=<{$daily.id}>" >编辑</a> | <a href="admin.php?act=del_daily&id=<{$daily.id}>" >删除</a> </td>
+  </tr>
+  <{/foreach}>
+</table>
+<{include file="page.html"}>
+</p>
+<{include file="footer.html"}>

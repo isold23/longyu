@@ -1,0 +1,117 @@
+<{include file="header.html"}>
+<p>
+<script type="text/javascript" src="include/niceditor/nicEdit.js"></script>
+<script type="text/javascript" src="../include/ckeditor/ckeditor.js"></script>
+<form action="" method="post" name="form1" enctype="multipart/form-data">
+  <table width="100%"  border="1">
+    <tr>
+      <td width="150">名称</td>
+      <td width="720"><input type="text" name="title" id="title" value="<{$resource.name}>" /></td>
+    </tr>
+    
+            <tr>
+      <td>选择分类</td>
+      <td>
+      <select name="cat">
+      <{foreach from=$cat_list item=cat}>
+        <option value="<{$cat.id}>" <{if $resource.cat_id eq $cat.id }> selected="selected"<{/if}> ><{$cat.name}></option>
+        <{foreach from=$cat.children item=children}>
+     		 <option value="<{$children.id}>" <{if $blog.id eq $children.id }>selected="selected"<{/if}> >&nbsp;&nbsp;<{$children.name}></option>
+      	<{/foreach}>
+      <{/foreach}>
+      
+      </select></td>
+        </tr>
+        
+             <tr>
+      <td width="150">图片</td>
+      <td>
+      	<input type="text" name="image_path" id="image_path" value="<{$image_path}>" />
+      	<input id="browsefile" type="file" name="browsefile"/>
+				<input type="button" id="upload_btn" name="upload_btn" value="上传" onclick="upload_btn_click()"/>
+			</td>
+    </tr>
+ 
+     <tr>
+      <td width="150">编号</td>
+      <td width="720"><input type="text" name="number" id="number" value="<{$resource.number}>" /></td>
+    </tr>
+    
+    <tr>
+      <td width="150">行程</td>
+      <td width="720"><input type="text" name="spec" id="spec" value="<{$resource.spec}>" /></td>
+    </tr>
+    
+        
+    <tr>
+      <td width="150">交通</td>
+      <td width="720"><input type="text" name="origin" id="origin" value="<{$resource.origin}>" /></td>
+    </tr>
+    
+        <tr>
+      <td width="150">住宿</td>
+      <td width="720"><input type="text" name="material" id="material" value="<{$resource.material}>" /></td>
+    </tr>
+    
+            <tr>
+      <td width="150">价格</td>
+      <td width="720"><input type="text" name="price" id="price" value="<{$resource.price}>" /></td>
+    </tr>
+    
+
+    
+            <tr>
+      <td>
+      旅游费用</td>
+      <td><textarea name="travel_price" id="travel_price" class="ckeditor"  style="height:200px;width:900px"><{$resource.travel_price}></textarea></td>
+    </tr>
+    
+        <tr>
+      <td>
+      行程特色</td>
+      <td><textarea name="travel_feature" id="travel_feature" style="height:200px;width:900px"><{$resource.travel_feature}></textarea></td>
+    </tr>
+    
+        <tr>
+      <td>
+      注意事项</td>
+      <td><textarea name="trave_note" id="description" style="height:200px;width:900px"><{$resource.trave_note}></textarea></td>
+    </tr>
+    
+    <tr>
+      <td>旅游行程</td>
+      <td>
+  <textarea name="remark" id="remark" class="ckeditor"  style="height:200px;width:900px"><{$resource.remark}></textarea>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="button" name="submit_btn" id="submit_btn" value="提交" onclick="submit_btn_click()"/></td>
+    </tr>
+  </table>
+</form>
+</p>
+
+<{include file="footer.html"}>
+
+<script type="text/javascript">
+	
+	function submit_btn_click()
+	{
+		this.document.form1.action='admin.php?act=<{$type}>';
+		document.form1.submit(); 
+	}
+	
+	function upload_btn_click()
+	{
+		this.document.form1.action='admin.php?act=upload_file';
+		document.form1.submit(); 
+	}
+
+</script>
+
+
+
+
+

@@ -1,0 +1,151 @@
+<{include file="header.html"}>
+<p>
+<script type="text/javascript" src="include/niceditor/nicEdit.js"></script>
+
+<form action="admin.php?act=<{$type}>&time=<{$time_now}>" method="post">
+  <table>
+    <tr>
+      <td  class="td2">
+      	标题：</br><input type="text" name="title" id="title" value="<{$blog.title}>" /></td>
+    </tr>
+        <tr>
+        	
+        	<td class="td2">选择分类：</br>
+        		    <label for="lab_first_cat">分类：</label> 
+        		    <select id="first_cat" name="first_cat">
+        		    <{foreach from=$cat_list item=cat}>
+        <option value="<{$cat.id}>" <{if $blog.cat_id eq $cat.id }> selected="selected"<{/if}> ><{$cat.name}></option>
+      <{/foreach}>
+    </select> 
+    
+  </br>
+    <label for="lab_second_cat">子类：</label> 
+    <select id="second_cat" name="second_cat">
+    </select>
+        		</td>
+        		 <td><input type=hidden name="child_cat" id="child_cat" value="<{$blog.child_cat}>" /></td>
+        </tr>
+    <tr>
+      
+      <td class="td2">
+      	内容：</br>
+      <div id="edit_notice" style="font-size: 13px;font-family: verdana,arial; color:#FF0000"></div>
+      <div id="edit_mode"><input type="checkbox" id="edit_mode_checkbox" name="checkbox" value="0" onclick="edit_mode(this.checked?1:0)" />高级模式（支持上传图片，上传文件等)</div>
+    <input type="hidden" value="<{$time_now}>" name="time_now">
+      <div id="content_box" style="background:#fff">
+      <textarea id="editor" name="editor" style="height:300px;width:600px"><{$blog.content}></textarea>
+      <!-- {literal} -->
+		<script type="text/javascript">
+		bkLib.onDomLoaded(function() {
+			new nicEditor({buttonList : ['fontSize','bold','italic','underline','image','link','unlink']}).panelInstance('editor');
+		});
+		</script>
+	  <!-- {/literal} -->
+	  </div>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="submit" name="button" id="button" value="提交" /></td>
+    </tr>
+  </table>
+</form>
+</p>
+
+<script type="text/javascript">
+var ajax_post=2;
+var content;
+<!-- {literal} -->
+function edit_mode(check)
+{
+	if(check==1)
+	{
+		content=$('#editor').html();
+		$('#edit_mode').html('编辑器加载中...');
+		$("#content_box").css('background','');
+		$('#content_box').html('<textarea id="editor" name="editor" style="height:300px;width:600px">'+content+'</textarea>');
+		
+		CKEDITOR.replace( 'editor',
+		{
+			toolbar :
+			[
+			[ 'Source','Image','Flash', 'Link', 'Unlink', 'Anchor','Code' ],
+			[ '-', 'Bold', 'Italic', 'Underline', 'Strike' ],
+			[ '-','TextColor','BGColor'],
+			]
+		});
+		$('#edit_mode').html('');
+	}
+}
+
+<!-- {/literal} -->
+</script>
+
+<{include file="footer.html"}>
+
+<script type="text/javascript">		
+
+
+DOMhelp = {
+	addEvent:function(elem, evType, fn, useCapture){
+		if(elem.attachEvent){
+			var r = elem.attachEvent("on"+ evType, fn);
+			return r;
+		}else if(elem.addEventListener){
+			elem.addEventListener(evType,fn, useCapture);
+			return true;
+		}else{
+			elem["on"+evType] = fn;	
+		}
+	}
+}
+
+</script>
+<script type="text/javascript">
+selected = {
+	init:function(){
+		if(!document.getElementById || !document.createTextNode){return;};
+		var first_cat = document.getElementById("first_cat");
+		if(!first_cat){return;};
+		first_cat.options[0].selected = true;
+		DOMhelp.addEvent(first_cat, "change", selected.selectArray, false);
+	},
+	selectArray:function(){
+		var first_cat = document.getElementById("first_cat");
+		var choice = first_cat.selectedIndex;
+		var a = <{$json_cat_list}>;
+
+		switch(choice){
+			case 0 :selected.changeArray(a[0].children);
+			break;
+			case 1: selected.changeArray(a[1].children);
+			break;
+			case 2 :selected.changeArray(a[2].children);
+			break;
+			case 3 :selected.changeArray(a[3].children);
+			break;
+			case 4 :selected.changeArray(a[4].children);
+			break;
+		}
+	},
+	changeArray:function(array){
+		var second_cat = document.getElementById("second_cat");
+		var AL = array.length;
+		
+		for (var q=second_cat.options.length;q>=0;q--) second_cat.options[q]=null;
+		
+		var b = 0;
+		var child_id = document.getElementById("child_cat").value;
+		for(var i = 0; i < AL; i++){
+			second_cat.add(new Option(array[i].name, array[i].id));
+			if(child_id == array[i].id){
+				b = i;
+			}
+		}
+		second_cat.options[b].selected = true;
+	}
+}
+DOMhelp.addEvent(window, "load", selected.init, false);
+DOMhelp.addEvent(window, "load", selected.selectArray, false);
+</script>
+
+

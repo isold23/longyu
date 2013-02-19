@@ -1,0 +1,353 @@
+<{include file="header.html"}>
+<!-- index page body start -->
+<div id="index-page">
+    <div id="index-page-item">
+    	<div id="index-page-item">
+        <div id="right">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>技术热点</h1>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                     <li><a href="/blog.php?cat=13" target="_blank">搜索技术</a></li>
+                     <li><a href="/blog.php?cat=195" target="_blank">数据结构和算法</a></li>
+                     <li><a href="/blog.php?cat=194" target="_blank">设计模式</a></li>
+                     <li><a href="/blog.php?cat=196" target="_blank">学习编程</a></li>
+                     <li><a href="/blog.php?cat=197" target="_blank">数据库</a></li>
+                     <li><a href="/blog.php?cat=195" target="_blank">移动开发</a></li>
+                     <li><a href="/blog.php?cat=194" target="_blank">音视频技术</a></li>
+                     <li><a href="/blog.php?cat=196" target="_blank">安全技术</a></li>
+                    </ul>
+                </div>
+                <!--unit body end -->
+            </div>
+            <!-- unit end -->
+        </div>
+        <!-- right end -->
+        <div id="middle">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>特别推荐</h1>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                        	<{foreach from=$last_blog_list item=last_blog}>
+                            <li><a href="detail.php?id=<{$last_blog.id}>" target="_blank">【<{$last_blog.name}>】&nbsp<{$last_blog.title}></a> </li>
+                         <{/foreach}>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+                <div id="left">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>猜你喜欢</h1>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                         <{foreach from=$algorithm_blog_list item=algorithm}>
+                            <li><a href="detail.php?id=<{$algorithm.id}>" target="_blank"><{$algorithm.title}></a> </li>
+                         <{/foreach}>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+    <!-- index-page-item end-->
+    
+           <div id="index-page-item">
+        <div id="right">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>开源项目</h1>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                     <li><a href="/resource.php?id=197" target="_blank">kafka</a></li>
+                     <li><a href="/resource.php?id=195" target="_blank">Nginx</a></li>
+                     <li><a href="/resource.php?id=194" target="_blank">MongoDB</a></li>
+                     <li><a href="/resource.php?id=196" target="_blank">openfire</a></li>
+                     <li><a href="/resource.php?id=197" target="_blank">kafka</a></li>
+                     <li><a href="/resource.php?id=195" target="_blank">Nginx</a></li>
+                     <li><a href="/resource.php?id=194" target="_blank">MongoDB</a></li>
+                     <li><a href="/resource.php?id=196" target="_blank">openfire</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- right end -->
+        <div id="middle">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>后台服务技术</h1>
+                    <h2>
+                        <a href="blog.php?cat=14" target="_blank">more</a>
+                    </h2>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                         <{foreach from=$service_blog_list item=service}>
+                            <li><a href="detail.php?id=<{$service.id}>" target="_blank"><{$service.title}></a> </li>
+                         <{/foreach}>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+                <div id="left">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>数据结构和算法</h1>
+                    <h2>
+                        <a href="blog.php?cat=21" target="_blank">more</a>
+                    </h2>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                         <{foreach from=$algorithm_blog_list item=algorithm}>
+                            <li><a href="detail.php?id=<{$algorithm.id}>" target="_blank"><{$algorithm.title}></a> </li>
+                         <{/foreach}>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- index page item end -->
+    
+    <div id="index-page-item">
+    	<script type="text/javascript">
+/*960*90，创建于2012-9-20*/
+var cpro_id = "u1068340";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+
+    </div>
+    <!-- index_page_item end-->
+        <div id="index-page-item">
+        <div id="right">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>在线资料</h1>
+                </div>
+                <div id="unit-body">
+                    <ul>
+<li><a href="linux_command.php?act=list" target="_blank">Linux命令</a></li>
+<li><a href="linux_c_fun.php?act=list" target="_blank">Linux C函数</a></li>
+<li><a href="php_fun.php?act=list" target="_blank">PHP函数</a></li>
+<li><a href="linux_c_fun.php?act=list" target="_blank">C/C++手册</a></li>
+<li><a href="http_protocol.php?act=list" target="_blank">HTTP协议</a></li>
+<li><a href="linux_c_fun.php?act=list" target="_blank">Linux C函数</a></li>
+<li><a href="php_fun.php?act=list" target="_blank">PHP函数</a></li>
+<li><a href="linux_c_fun.php?act=list" target="_blank">C/C++手册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- right end -->
+        <div id="middle">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>搜索技术</h1>
+                    <h2>
+                        <a href="blog.php?cat=13" target="_blank">more</a>
+                    </h2>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                         <{foreach from=$search_blog_list item=search}>
+                            <li><a href="detail.php?id=<{$search.id}>" target="_blank"><{$search.title}></a> </li>
+                         <{/foreach}>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+             <div id="left">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>学习编程</h1>
+                    <h2>
+                        <a href="blog.php?cat=7" target="_blank">more</a>
+                    </h2>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                    	   <{foreach from=$learning_blog_list item=learning}>
+                            <li><a href="detail.php?id=<{$learning.id}>" target="_blank"><{$learning.title}></a> </li>
+                         <{/foreach}>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- index page item end -->
+            <div id="index-page-item">
+        <div id="right">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>在线工具</h1>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                    	<li><a href="md5.php" target="_blank">MD5加密</a></li>
+                    	<li><a href="url.php" target="_blank">URL编解码</a></li>
+                    	<li><a href="base64.php" target="_blank">Base64转码</a></li>
+                    	<li><a href="md5.php" target="_blank">MD5加密</a></li>
+                    	<li><a href="url.php" target="_blank">URL编解码</a></li>
+                    	<li><a href="base64.php" target="_blank">Base64转码</a></li>
+                    	<li><a href="md5.php" target="_blank">MD5加密</a></li>
+                    	<li><a href="url.php" target="_blank">URL编解码</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- right end -->
+        <div id="middle">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>数据库</h1>
+                    <h2>
+                        <a href="blog.php?cat=5" target="_blank">more</a>
+                    </h2>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                         <{foreach from=$sql_blog_list item=sql}>
+                            <li><a href="detail.php?id=<{$sql.id}>" target="_blank"><{$sql.title}></a> </li>
+                         <{/foreach}>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+             <div id="left">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>设计模式</h1>
+                    <h2>
+                        <a href="blog.php?cat=4" target="_blank">more</a>
+                    </h2>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                    	   <{foreach from=$design_blog_list item=design}>
+                            <li><a href="detail.php?id=<{$design.id}>" target="_blank"><{$design.title}></a> </li>
+                         <{/foreach}>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- index page item end -->
+                         <div id="index-page-item">
+    	        <div id="fine">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>图书推荐</h1>
+                    <h2>
+                        <a href="resource.php?cat=4" target="_blank">more</a>
+                    </h2>
+                </div>
+                <div id="unit-body">
+                	<div id="fine_list">
+                    <ol>
+                        	<{foreach from=$hot_resource_list item=hot_resource}>
+                            <li> <a href="resource.php?id=<{$hot_resource.id}>" target="_blank">
+                            	<img src="<{$hot_resource.image_path}>" alt="<{$hot_resource.aname}>" width="120px" height="160px"/>
+                            	
+                            	</a>
+                            	<center>
+                            	<h1><a href="resource.php?id=<{$hot_resource.id}>" target="_blank"><{$hot_resource.aname}></a></h1>
+                            </center>
+                            </li>
+                         <{/foreach}>
+                    </ol>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- index-page-item end-->
+            <div id="index-page-item">
+        <div id="right">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>软件推荐</h1>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                     <li><a href="/resource.php?id=29" target="_blank">SecureCRT</a></li>
+                     <li><a href="/resource.php?id=30" target="_blank">SecureFX</a></li>
+                     <li><a href="/resource.php?id=27" target="_blank">在线获取颜色</a></li>
+                     <li><a href="/resource.php?id=196" target="_blank">openfire</a></li>
+                     <li><a href="/resource.php?id=197" target="_blank">kafka</a></li>
+                     <li><a href="/resource.php?id=195" target="_blank">Nginx</a></li>
+                     <li><a href="/resource.php?id=194" target="_blank">MongoDB</a></li>
+                     <li><a href="/resource.php?id=196" target="_blank">openfire</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- right end -->
+        <div id="middle">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>移动开发</h1>
+                    <h2>
+                        <a href="blog.php?cat=16" target="_blank">more</a>
+                    </h2>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                         <{foreach from=$mobile_blog_list item=mobile}>
+                            <li><a href="detail.php?id=<{$mobile.id}>" target="_blank"><{$mobile.title}></a> </li>
+                         <{/foreach}>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+             <div id="left">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>开源知识</h1>
+                    <h2>
+                        <a href="blog.php?cat=2" target="_blank">more</a>
+                    </h2>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                    	   <{foreach from=$open_source_blog_list item=open_source}>
+                            <li><a href="detail.php?id=<{$open_source.id}>" target="_blank"><{$open_source.title}></a> </li>
+                         <{/foreach}>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- index page item end -->
+    
+        <div id="index-page-item">
+        	        <div id="friend-links">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>网址导航</h1>
+                </div>
+                <div id="unit-body">
+                	<p>
+                	        <{foreach from=$friend_link_list item=friend_link}>
+                            <a href="<{$friend_link.link_url}>" target="_blank"><{$friend_link.name}></a> 
+                         <{/foreach}>
+                  </p>
+                </div>
+            </div>
+        </div>
+        <!-- friend links end -->
+        </div>
+        <!-- index page item end -->
+</div>
+<!--index page body end -->
+<{include file="footer.html"}>

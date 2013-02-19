@@ -1,0 +1,18 @@
+<{include file="header.html"}>
+<{include file="page.html"}>
+<table id="datalist">
+  <tr class="tr1">
+    <th width="20%" class="th1">资源标题</td>
+    <th width="20%" class="th1">发布时间</td>
+    <th width="20%" class="th1">操作</td>
+  </tr>
+  <{foreach from=$online_resource_list item=blog}>
+  <tr>
+    <td style="width:20%"><a title="<{$blog.title}>" href="admin.php?act=edit_online_resource&id=<{$blog.id}>"><{$blog.title}></a></td>
+    <td style="width:20%"><{$blog.post_time}></td>
+    <td style="width:20%"><a href="admin.php?act=edit_online_resource&id=<{$blog.id}>" >编辑</a> | <a href="admin.php?act=del_online_resource&id=<{$blog.id}>" >删除</a> </td>
+  </tr>
+  <{/foreach}>
+</table>
+<{include file="page.html"}>
+<{include file="footer.html"}>

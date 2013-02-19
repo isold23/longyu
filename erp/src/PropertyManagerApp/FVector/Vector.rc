@@ -1,0 +1,351 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Vector.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Vector.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 256, 51
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Vector"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "Vector 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,190,7,50,16,WS_GROUP
+END
+
+IDD_VECTOR_DIALOG DIALOGEX 0, 0, 742, 376
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_APPWINDOW
+CAPTION "Vector"
+MENU IDR_MENUMAIN
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "线条",IDC_CHKOUTLINE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,31,28,17
+    COMBOBOX        IDC_CBOUTLINESTYLE,21,50,54,114,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CBOUTLINEWIDTH,21,70,54,114,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "OutlineColor",IDC_BTNOUTLINECOLOR,21,90,54,12,BS_CENTER
+    CONTROL         "填充",IDC_CHKFILL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,107,29,17
+    PUSHBUTTON      "FillColor",IDC_BTNFILLCOLOR,23,124,54,12,BS_CENTER
+    PUSHBUTTON      "FillColor",IDC_BTNBKCOLOR,25,171,54,13,BS_CENTER
+    LTEXT           "背景",IDC_STATIC,6,173,18,9
+    EDITTEXT        IDC_EDITDESC,12,201,72,134,ES_MULTILINE | ES_AUTOVSCROLL
+    LTEXT           "描述",IDC_STATIC,7,189,17,8
+    EDITTEXT        IDC_EDITCUSTOMDATA,15,151,66,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "用户数据",IDC_STATIC,7,138,35,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Vector.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "Vector.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 44
+    END
+
+    IDD_VECTOR_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 374
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURBLTR             CURSOR                  "res\\BLTR.CUR"
+IDC_CURLR               CURSOR                  "res\\LR.CUR"
+IDC_CURM                CURSOR                  "res\\M.CUR"
+IDC_CURR                CURSOR                  "res\\R.CUR"
+IDC_CURTB               CURSOR                  "res\\TB.CUR"
+IDC_CURTLBR             CURSOR                  "res\\TLBR.CUR"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TBMAIN TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_RESET
+    BUTTON      ID_LINE
+    BUTTON      ID_FREELINE
+    BUTTON      ID_BEZIER
+    BUTTON      ID_REGION
+    BUTTON      ID_ARC
+    BUTTON      ID_POLY
+    BUTTON      ID_RECT
+    BUTTON      ID_ROUNDRECT
+    BUTTON      ID_ELLIPSE
+    BUTTON      ID_CHORD
+    BUTTON      ID_PIE
+    BUTTON      ID_BKGNDIMG
+    SEPARATOR
+    BUTTON      ID_GAUGE
+    SEPARATOR
+    BUTTON      ID_CLONE
+    BUTTON      ID_ERASE
+    BUTTON      ID_TOPMOST
+    BUTTON      ID_DOWNMOST
+    SEPARATOR
+    BUTTON      ID_CAPTURE
+    BUTTON      ID_LOAD
+    BUTTON      ID_SAVE
+    BUTTON      ID_ADD
+    BUTTON      ID_REMOVE
+    BUTTON      ID_ABOUT
+    SEPARATOR
+    BUTTON      ID_ZOOMIN
+    BUTTON      ID_ZOOMOUT
+    BUTTON      ID_ZOOMXIN
+    BUTTON      ID_ZOOMXOUT
+    BUTTON      ID_ZOOMYIN
+    BUTTON      ID_ZOOMYOUT
+    BUTTON      ID_ZOOMFIT
+    BUTTON      ID_ZOOMORG
+    BUTTON      ID_ZOOMXFIT
+    BUTTON      ID_ZOOMYFIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TBMAIN              BITMAP                  "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENUMAIN MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open",                       ID_OPEN
+        MENUITEM "&Save",                       ID_SAVE
+        MENUITEM "&Exit",                       ID_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Downmost",                   ID_DOWNMOST
+        MENUITEM "&Topmost",                    ID_TOPMOST
+        MENUITEM "&Erase",                      ID_ERASE
+    END
+    POPUP "&New"
+    BEGIN
+        MENUITEM "&None",                       ID_RESET
+        MENUITEM SEPARATOR
+        MENUITEM "&Line",                       ID_LINE
+        MENUITEM "&Bezier",                     ID_BEZIER
+        MENUITEM "&Arc",                        ID_ARC
+        MENUITEM "&Poly",                       ID_POLY
+        MENUITEM "&Rect",                       ID_RECT
+        MENUITEM "R&oundRect",                  ID_ROUNDRECT
+        MENUITEM "&Ellipse",                    ID_ELLIPSE
+        MENUITEM "&Chord",                      ID_CHORD
+        MENUITEM "&Pie",                        ID_PIE
+    END
+    POPUP "&Layer"
+    BEGIN
+        MENUITEM "&Add",                        ID_ADD
+        MENUITEM "&Remove",                     ID_REMOVE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      ID_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Vector(&A)..."
+    ID_RESET				"重置"
+    ID_LINE					"画直线"
+    ID_FREELINE				"画自由画线"
+    ID_BEZIER				"画贝塞尔曲线"
+    ID_REGION				"画贝塞尔填充"
+    ID_ARC					"画弧线"
+    ID_POLY					"画多边形"
+    ID_RECT					"画矩形"
+    ID_ROUNDRECT			"画圆角矩形"
+    ID_ELLIPSE				"画椭圆"
+    ID_CHORD				"画弦"
+    ID_PIE					"画饼"
+    ID_BKGNDIMG				"选择背景图片"
+    ID_GAUGE				"测距"
+    ID_CLONE				"复制并粘贴"
+    ID_ERASE				"删除所选"
+    ID_TOPMOST				"前置所选"
+    ID_DOWNMOST				"底置所选"
+    ID_CAPTURE				"截图"
+    ID_LOAD					"打开文件"
+    ID_SAVE					"保存到文件"
+    ID_ADD					"添加"	
+    ID_REMOVE				"移除"
+    ID_ABOUT				"关于"
+    ID_ZOOMIN				"放大"
+    ID_ZOOMOUT				"缩小"
+    ID_ZOOMXIN				"仅水平放大"
+    ID_ZOOMXOUT				"仅小平缩小"
+    ID_ZOOMYIN				"仅垂直放大"
+    ID_ZOOMYOUT				"仅垂直缩小"
+    ID_ZOOMFIT				"缩放到窗口大小"
+    ID_ZOOMORG				"缩放还原"
+    ID_ZOOMXFIT				"缩放适合窗口宽度"
+    ID_ZOOMYFIT				"缩放适合窗口高度"
+							
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Vector.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

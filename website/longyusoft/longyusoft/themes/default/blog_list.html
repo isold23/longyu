@@ -1,0 +1,130 @@
+	<{include file="header.html"}>
+	<div id="subpage">
+		<div id="blog_search">
+				<div id="blog_search_text">
+				<form action="blog_search.php" method="post">
+					<td><input type="text" name="search_text" id="search_text" class="search_text" onfocus="if (value==defaultValue)value=''" onblur="if(!value)value=defaultValue" value="输入查找内容" /></td>
+					<td><input type="submit" name="button" id="button" class="search_button" value="搜 索" /></td>
+				</form>
+		</div>
+	</div>
+</div>
+	
+	<div id="subpage-item">
+
+	<div id="subcontent_with_border">
+		
+	<div id="blog-list">
+	    <{include file="page.html"}><{foreach from=$blog_list item=blog}>
+	    <div id="blog-item">
+	        <div id="blog-item-title">
+	            <a href="detail.php?id=<{$blog.id}>"><{$blog.title}></a>
+	        </div>
+	        <div id="blog_item_author">
+	        <span>标签：<{$blog.tag}></span>
+	        </div>
+	        <div id="blog_item_author">
+	            <span>
+	              发布时间：<{$blog.post_time}> 发表者: <{$blog.author}></span>
+	        </div>
+	        <div id="blog-item-content">
+	        	
+	            <{$blog.description}>
+	            <br />
+	            <a href="detail.php?id=<{$blog.id}>">详细内容</a>
+	        </div>
+	        <div id="blog-item-botton-side">
+	            <p>
+	                分类：<a href="blog.php?cat=<{$blog.cat_id}>"><{$blog.name}></a> &nbsp;&nbsp;|&nbsp;&nbsp; 评论：<{$blog.comment_count}>
+	                &nbsp;&nbsp;|&nbsp;&nbsp; 引用：<{$blog.trackback_count}> &nbsp;&nbsp;|&nbsp;&nbsp;
+	                浏览次数：<{$blog.view_count}></p>
+	        </div>
+	        <br />
+	    </div>
+	   <{/foreach}>
+	</div>
+	<!-- blog list end -->
+	<{include file="page.html"}>
+	</div>
+	<!-- subcontent end -->
+	
+		<div id="sidebar">
+		<div id="sidebar-item">
+			<div id="blog_count">
+				<div id="blog_count_text">
+			文章总数：<{$blog_count}>
+		</div>
+		</div>
+		</div>
+		<div id="sidebar-item">
+			<script type="text/javascript" language="javascript">
+yiqifa_sid='e69e8ba30e879a6d';
+yiqifa_pid='356604';
+yiqifa_wid='582691';
+yiqifa_vid='28649';
+yiqifa_cid='4459';
+yiqifa_lid='120069';
+yiqifa_w='300';
+yiqifa_h='300';
+yiqifa_euid='isold';
+</script>
+<script type="text/javascript" language="javascript" src="http://p.yiqifa.com/js/show.js"></script>
+
+	</div>
+	<div id="sidebar-item">
+	<ul>
+	
+	<li>
+	<a href="http://fusion.google.com/add?feedurl=<{$feed_url}>" target="_blank"><img border="0" src="./themes/default/images/icon_subshot02_google.gif" alt="google reader" vspace="2" style="margin-right:8px;" ></a>
+	<a href="http://www.zhuaxia.com/add_channel.php?url=<{$feed_url}>" target="_blank"><img border="0" src="./themes/default/images/icon_subshot02_zhuaxia.gif" alt="&#25235;&#34430;" vspace="2" ></a>
+	</li>
+	
+	<li>
+	<a href="http://www.newsgator.com/ngs/subscriber/subfext.aspx?url=<{$feed_url}>" target="_blank"><img border="0" src="./themes/default/images/icon_subshot02_newsgator.gif" alt="newsgator" vspace="2" style="margin-right:8px;" ></a>
+	<a href="http://mail.qq.com/cgi-bin/feed?u=<{$feed_url}>" target="_blank"><img border="0" src="./themes/default/images/icon_subshot02_qq.gif" alt="qq mail" vspace="2" ></a>
+	</li>
+	<li>
+	<a href="http://www.rojo.com/add-subscription?resource=<{$feed_url}>" target="_blank"><img border="0" src="./themes/default/images/icon_subshot02_rojo.gif" alt="rojo" vspace="2" style="margin-right:8px;" ></a>
+	<a href="http://www.xianguo.com/subscribe.php?url=<{$feed_url}>" target="_blank"><img border="0" src="./themes/default/images/icon_subshot02_xianguo.gif" alt="xianguo" vspace="2" ></a>
+	</li>
+	
+	<li>
+	<a href="http://reader.yodao.com/#url=<{$feed_url}>" target="_blank"><img border="0" src="./themes/default/images/icon_subshot02_youdao.gif" alt="&#26377;&#36947;" vspace="2"  style="margin-right:8px;" ></a>
+	<a href="http://www.pageflakes.com/subscribe.aspx?url=<{$feed_url}>" target="_blank"><img border="0" src="./themes/default/images/icon_subshot02_pageflakes.gif" alt="pageflakes" vspace="2"></a>
+	</li>
+	
+	<li>
+	<a href="http://add.my.yahoo.com/rss?url=<{$feed_url}>" target="_blank"><img border="0" src="./themes/default/images/icon_subshot02_yahoo.gif" alt="my yahoo" vspace="2"  style="margin-right:8px;"></a>
+	<a href="http://www.580k.com/myLook/NewStakeOut_Submit.aspx?cm=1&WebUrl=<{$feed_url}>" target="_blank"><img border="0" src="./themes/default/images/icon_subshot02_580k.gif" alt="580k" vspace="2" ></a>
+	</li>
+	
+	<li>
+	<a href="http://www.netvibes.com/subscribe.php?url=<{$feed_url}>" target="_blank"><img border="0" src="./themes/default/images/icon_subshot02_netvibes.gif" alt="netvibes" vspace="2"  style="margin-right:8px;"></a>
+	<a href="http://www.bloglines.com/sub/<{$feed_url}>" target="_blank"><img border="0" src="./themes/default/images/icon_subshot02_bloglines.gif" alt="bloglines" vspace="2" ></a>
+	</li>
+
+	
+	
+	
+	</ul>
+
+	</div>
+					<{$last_blog}>
+						<div id="sidebar-item">
+<script type="text/javascript">/*300*250，创建于2012-8-31*/ var cpro_id = 'u1044606';</script><script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+	
+	</div>
+				<{$blog_category}>
+
+	<!-- sidebar item end -->
+	<{$web_link}>
+	</div>
+	<!-- sidebar -->
+	
+	</div>
+	<!-- sub page item -->
+	</div>
+	<!-- sub page end -->
+	<{include file="footer.html"}>
+	
+	<script type="text/javascript">/*120*270，创建于2012-8-31*/ var cpro_id = 'u1044506';</script><script src="http://cpro.baidustatic.com/cpro/ui/f.js" type="text/javascript"></script>

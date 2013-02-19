@@ -1,0 +1,20 @@
+<{include file="header.html"}>
+<{include file="page.html"}>
+<table id="datalist">
+  <tr>
+    <th class="th1" style="width:40%">资源名称</th>
+    <th class="th1" style="width:20%">关联博客ID</th>
+    <th class="th1" style="width:20%">发布时间</th>
+    <th class="th1" style="width:20%">操作</th>
+  </tr>
+  <{foreach from=$resource_list item=resource}>
+  <tr>
+    <td style="width:40%"><a title="<{$resource.title}>" href="admin.php?act=edit_resource&id=<{$resource.id}>"><{$resource.name}></a></td>
+    <td style="width:20%"><{$resource.blog_id}></td>
+    <td style="width:20%"><{$resource.upload_time}></td>
+    <td style="width:20%"><a href="admin.php?act=edit_resource&id=<{$resource.id}>" >编辑</a> | <a href="admin.php?act=del_resource&id=<{$resource.id}>" >删除</a> </td>
+  </tr>
+  <{/foreach}>
+</table>
+<{include file="page.html"}>
+<{include file="footer.html"}>

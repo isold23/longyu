@@ -1,0 +1,33 @@
+            <div id="sidebar-item">
+                <div class="unit">
+                    <div class="unit-header unit_header2">
+                        <h1 class="unit_header">
+                            <{$travel_blog}></h1>
+                    </div>
+                    <div class="unit-body">
+                        <ul>
+                        	<{foreach from=$last_blog_list item=last_blog}>
+                            <li><a href="detail.php?lan=<{$lang}>&id=<{$last_blog.id}>"><{$last_blog.title|truncate:50:"...":true}></a> </li>
+                         <{/foreach}>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar item end -->
+            
+                        <div id="sidebar-item">
+                <div class="unit">
+                    <div class="unit-header unit_header2">
+                        <h1 class="unit_header">
+                            <{$travel_advice}></h1>
+                    </div>
+                    <div class="unit-body">
+                        <ul>
+                        	<{foreach from=$last_trave_blog_list item=last_travel_blog}>
+                            <li><a href="detail.php?lan=<{$lang}>&id=<{$last_travel_blog.id}>"><{$last_travel_blog.title|truncate:56:"...":true}></a> </li>
+                         <{/foreach}>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar item end -->

@@ -1,0 +1,27 @@
+<{include file="header.html"}>
+<{include file="page.html"}>
+<p>
+<table id="datalist">
+  <tr class="tr1">
+    <th class="th1" style="width:20%">分类名字</th>
+    <th class="th1" style="width:20%">操作</th>
+  </tr>
+  <{foreach from=$cat_list item=cat}>
+  <tr>
+    <td style="width:20%"><a title="<{$cat.name}>" href="admin.php?act=edit_online_small_cat&id=<{$cat.id}>"><{$cat.name}></a></td>
+    <td style="width:20%"><a href="admin.php?act=edit_online_small_cat&id=<{$cat.id}>" >编辑</a> | <a href="admin.php?act=del_online_small_cat&id=<{$cat.id}>" >删除</a> </td>
+  </tr>
+  <{if $cat.children}>
+     <{foreach from=$cat.children item=children}>
+     <tr>
+      <td style="width:20%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a title="<{$children.cat_desc}>" href="admin.php?act=edit_online_small_cat&id=<{$children.cat_id}>"><{$children.cat_name}></a></td>
+      <td style="width:20%"><{$children.listorder}></td>
+      <td style="width:20%"><a href="admin.php?act=edit_online_small_cat&id=<{$children.cat_id}>" >编辑</a> | <a href="admin.php?act=del_online_small_cat&id=<{$children.cat_id}>" >删除</a> </td>
+     </tr>
+     <{/foreach}>
+  <{/if}>
+  <{/foreach}>
+</table>
+<{include file="page.html"}>
+</p>
+<{include file="footer.html"}>

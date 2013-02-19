@@ -1,0 +1,24 @@
+<{include file="header.html"}>
+<p>
+<form action="admin.php?act=<{$type}>" method="post">
+  <table>
+    <tr>
+      <td width="118" class="td2">分类名字</td>
+      <td width="381"><input type="text" name="cat_name" id="cat_name" value="<{$cat_name}>" /></td>
+    </tr>
+    <tr>
+      <td class="td2">分类描述</td>
+      <td><textarea name="cat_desc" id="cat_desc" cols="45" rows="5"><{$cat_desc}></textarea></td>
+    </tr>
+    <tr>
+      <td class="td2">分类位置</td>
+      <td><input name="list_sort" type="text" id="list_sort"  value="<{if $list_sort}><{$list_sort}><{else}>0<{/if}>" size="5" maxlength="5" /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="button" id="button" value="提交" /></td>
+    </tr>
+  </table>
+</form>
+</p>
+<{include file="footer.html"}>

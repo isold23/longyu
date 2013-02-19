@@ -1,0 +1,222 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\TransmitFile.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TransmitFile.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 TransmitFile"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TransmitFile 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_TRANSMITFILE_DIALOG DIALOGEX 0, 0, 356, 289
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TransmitFile"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "配置参数",IDC_STATIC,17,15,319,235
+    PUSHBUTTON      "接收文件",ID_BTN_RECV_FILE,99,259,50,14,BS_FLAT
+    PUSHBUTTON      "发送文件",IDC_BTN_SEND_FILE,182,259,50,14,BS_FLAT
+    PUSHBUTTON      "关闭",IDC_BTN_CLOSE,265,259,50,14,BS_FLAT
+    GROUPBOX        "对方网络环境信息",IDC_STATIC,29,26,298,89
+    GROUPBOX        "自己网络环境信息",IDC_STATIC,29,127,298,89
+    PUSHBUTTON      "...",IDC_BTN_FILE_PATH,307,228,15,14,BS_FLAT
+    EDITTEXT        IDC_EDIT1,66,228,230,14,ES_AUTOHSCROLL
+    LTEXT           "文件：",IDC_STATIC,35,232,25,8
+    EDITTEXT        IDC_EDIT2,82,84,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,157,85,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,261,66,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "NAT类型",IDC_STATIC,239,39,81,65
+    GROUPBOX        "NAT类型",IDC_STATIC,239,141,81,65
+    EDITTEXT        IDC_EDIT5,264,168,40,14,ES_AUTOHSCROLL
+    LTEXT           "ip",IDC_STATIC,55,86,9,8
+    LTEXT           "port",IDC_STATIC,134,86,17,8
+    LTEXT           "internet ip",IDC_STATIC,37,153,45,8
+    LTEXT           "internet port",IDC_STATIC,137,157,53,8
+    LTEXT           "local ip",IDC_STATIC,39,183,33,8
+    LTEXT           "local port",IDC_STATIC,139,185,41,8
+    EDITTEXT        IDC_EDIT6,85,155,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,189,157,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,82,181,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,188,187,40,14,ES_AUTOHSCROLL
+    CONTROL         "内网",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,117,51,32,10
+    CONTROL         "外网",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,174,53,32,10
+    LTEXT           "网络拓朴",IDC_STATIC,69,51,33,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "TransmitFile.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "TransmitFile.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TRANSMITFILE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 349
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 282
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 TransmitFile(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\TransmitFile.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

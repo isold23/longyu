@@ -1,0 +1,26 @@
+<{include file="header.html"}>
+<{include file="page.html"}>
+<table id="datalist">
+  <tr class="tr1">
+  	<th class="th1" style="width:20%">会员ID</th>
+    <th class="th1" style="width:20%">会员名</th>
+    <th class="th1" style="width:20%">会员邮箱</th>
+    <th class="th1" style="width:10%">所属分组</th>
+    <th class="th1" style="width:10%">注册时间</th>
+    <th class="th1" style="width:10%">最后登陆时间</th>
+    <th class="th1" style="width:10%">操作</th>
+  </tr>
+  <{foreach from=$user_list item=member}>
+  <tr>
+  	<td style="width:20%"><{$member.id}></td>
+    <td style="width:20%"><a title="<{$blog.description}>" href="admin.php?act=edit_member&id=<{$member.id}>"><{$member.uname}></a></td>
+    <td style="width:20%"><{$member.gname}></a></td>
+    	<td style="width:10%"><{$member.gname}></a></td>
+    <td style="width:10%"><{$member.reg_time}></td>
+    <td style="width:10%"><{$member.last_time}></td>
+    <td style="width:10%"><a href="admin.php?act=edit_member&id=<{$member.id}>" >编辑</a> | <a href="admin.php?act=del_member&id=<{$member.id}>" >删除</a> </td>
+  </tr>
+  <{/foreach}>
+</table>
+<{include file="page.html"}>
+<{include file="footer.html"}>

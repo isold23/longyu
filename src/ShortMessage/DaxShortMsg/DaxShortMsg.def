@@ -1,0 +1,19 @@
+; DaxShortMsg.def : Declares the module parameters for the DLL.
+
+LIBRARY      "DaxShortMsg"
+DESCRIPTION  'DaxShortMsg Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	OpenCom             @1
+	CloseCom            @2
+	ATCommand           @3
+	SendMsg             @4
+	DeleteMsg           @5
+	ReadMsg             @6
+	GetSmsc             @7
+	SMSInit             @8
+	SetSmsc             @9
+	ReadAllMsg          @10
+	SetSendModle        @11
+    GetSmCapacity       @12

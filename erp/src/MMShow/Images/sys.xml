@@ -1,0 +1,12 @@
+<XStudioSysDefault cfg="E:\MyProjects\MMShow\Images\cfg.xml">
+  <RecordFormats>
+    <Elem Val=".mpg"/>
+  </RecordFormats>
+  <SampleRates/>
+  <AudoioBitrates/>
+  <VideoFpses/>
+  <VideoBitrates/>
+  <OutputSizes>
+    <Elem Width="720" Height="576"/>
+  </OutputSizes>
+</XStudioSysDefault>

@@ -1,0 +1,86 @@
+<{include file="header.html"}>
+<div id = "subpage">
+<div id="subpage-item">
+
+<div id = "subcontent_no_background">
+        <div id="message_list">
+                <{include file="page.html"}><{foreach from=$message_list item=message}>
+                <div id="message_item">
+                    <div id="message_item_content">
+                        <p><{$message.content}></p>
+                    </div>
+                    <div id="message_item_author">
+                            <p><{$author}>: <{$message.user_name}> <{$post_time}>: <{$message.post_time}></p>
+                    </div>
+                </div>
+               <{/foreach}>
+        </div>
+            <!-- message list end -->
+            
+            <div id="post_message">
+            	            <form action="message.php?act=post_message" method="post">
+								<div class="unit">
+									                <div class="unit-header unit_header3">
+                    <h1 class="unit_header">
+                        <{$post_message}></h1>
+                </div>
+                <div class="unit-body">
+                	<{if $user_id eq -1}>
+                    <p>
+                        <{$user_name_key}>: <br />
+                        <input name="name" type="text" id="name" />
+                    </p>
+                    <p>
+                        <{$email_key}>: <br />
+                        <input name="email" type="text" id="email" size="50" />
+                        <span id="email_notice"></span>
+                    </p>
+                    <{else}>
+                    <p>
+                        <{$user_name_key}>: <{$user_name}>
+                    </p>
+                  <{/if}>
+                    <p>
+                        <textarea name="message_content" id="message_content" cols="45" rows="5"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" name="button" id="button" value="<{$post}>" />
+                    </p>
+                </div>
+              </div>
+                </form>
+            </div>
+            
+</div><!-- subcontent -->
+
+
+<div id = "sidebar">
+	<div id = "sidebar-item">
+<script language="javascript" type="text/javascript">
+	yigao_title_color = "null";
+	yigao_content_color = "null";
+	yigao_background_color = "null";
+	yigao_border_color = "D9D9D9";
+	yigao_title_bold = "0";
+	yigao_content_bold = "0";
+	yigao_title_underline = "0";
+	yigao_content_underline = "0";
+	yigao_width = 160;
+	yigao_height = 600;
+	yigao_sid = "477fb82134867094";
+	yigao_msid = "0da419b24f38185d";
+	yigao_uid = 72924;
+	yigao_zid = 122734;
+	yigao_pid = 5;
+	yigao_type = 1;
+	yigao_adamount = 1;
+	yigao_cols = 1;
+</script>
+<script language="javascript" src="http://monitor.yigao.com/info.js"></script>
+	</div><!-- sidebar item end -->
+</div><!-- sidebar end -->
+
+
+</div><!-- subpage item end -->
+</div><!-- subpage end -->
+<{include file="footer.html"}>

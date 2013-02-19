@@ -1,0 +1,33 @@
+            <div id="sidebar-item">
+                <div class="unit">
+                    <div class="unit-header unit_header2">
+                        <h1 class="unit_header">
+                            <{$top_destinations}></h1>
+                    </div>
+                    <div class="unit-body">
+                        <ul>
+                        	<{foreach from=$last_resource_list item=last_resource}>
+                            <li><a href="resource.php?lan=<{$last_resource.lang}>&id=<{$last_resource.id}>"><{$last_resource.name}></a> </li>
+                         <{/foreach}>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar item end -->
+            
+                        <div id="sidebar-item">
+                <div class="unit">
+                    <div class="unit-header unit_header2">
+                        <h1 class="unit_header">
+                            <{$top_tours}></h1>
+                    </div>
+                    <div class="unit-body">
+                        <ul>
+                        	<{foreach from=$last_resource_tour_list item=last_resource_tour}>
+                            <li><a href="resource.php?lan=<{$last_resource.lang}>&id=<{$last_resource_tour.id}>"><{$last_resource_tour.name}></a> </li>
+                         <{/foreach}>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar item end -->

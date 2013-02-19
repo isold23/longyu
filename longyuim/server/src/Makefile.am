@@ -1,0 +1,1 @@
+SUBDIRS = Common dcs/src dns/src

@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>longyusoft</Name>
+    <ProjectGuid>4191a6ed-bb32-45b2-9a6f-3ecce8570c95</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>website</RootNamespace>
+    <!-- important to be opened by PHP Tools, when also Phalanger Tools are installed -->
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>website</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="about.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\action_pri.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\admin_plugin.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\announcement.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\blog.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\cat.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\comment.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\daily.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\database.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\friendlink.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\group.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\index.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\login.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\member.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\message.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\nav_module.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\online_cat.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\online_resource.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\online_small_cat.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\resource.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\setting.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\set_page.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\sidebar_module.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\template.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\include\webfriendlink.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="baby.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="base64.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="blog.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="blog_category.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="blog_search.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="code.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contactus.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="daily.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="detail.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="feed.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="footer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="get_daily.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="header.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="home.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="index.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="install.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="last_blog.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="last_resource.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="linux_command.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="linux_c_fun.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="longyusoft.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="main.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="md5.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="message.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="news.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="php_fun.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="post.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="put_daily.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="recommend_blog.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="replay_message.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="resource.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="resource_category.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="server.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="url.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="user.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="web_link.php">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="admin" />
+    <Folder Include="admin\include" />
+    <Folder Include="admin\templates" />
+    <Folder Include="themes" />
+    <Folder Include="themes\default" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\templates\add_announcement.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\add_blog.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\add_cat.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\add_daily.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\add_friend_link.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\add_group.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\add_member.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\add_message.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\add_nav.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\add_online_cat.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\add_online_resource.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\add_online_small_cat.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\add_resource.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\add_web_friend_link.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\announcement_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\blog_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\cat_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\comment_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\daily_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\databak.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\editor_api.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\edit_comment.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\footer.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\friend_link_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\group_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\header.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\login.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\member_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\message_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\nav_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\notice.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\online_cat_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\online_cat_resource.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\online_resource_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\online_small_cat_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\page.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\resource_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\setting.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\setup_sidebar.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\set_page.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\sidebar_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\sidebar_setup_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\sql_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\template_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="admin\templates\web_friend_link_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\about.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\baby.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\base64.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\blog_category.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\blog_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\client.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\code.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\comments.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\contactus.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\daily.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\detail.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\footer.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\header.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\http_protocol.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\http_protocol_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\install.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\last_blog.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\last_resource.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\linux_command.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\linux_command_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\linux_c_fun.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\linux_c_fun_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\login.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\longyusoft.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\md5.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\message.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\news.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\notice.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\page.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\php_fun.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\php_fun_list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\reg.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\resource.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\resource_category.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\resource_detail.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\url.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\user.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\web_link.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="themes\default\_protocol_list.html">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>

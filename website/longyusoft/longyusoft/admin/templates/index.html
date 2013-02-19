@@ -1,0 +1,85 @@
+<{include file="header.html"}>
+<br />
+<table class="index">
+  <tr>
+    <td style="width:20%">网站信息</td>
+    <td style="width:40%"></td>
+  </tr>
+  <tr>
+    <td style="width:20%">个人信息：</td>
+    <td style="width:40%">用户名：<{$user_name}> 组别：<{$user_group}> 上次登录时间：<{$last_time}> 上次登录IP：<{$last_ip}></td>
+  </tr>
+  <tr>
+    <td style="width:20%">今日评论/评论总数</td>
+    <td style="width:40%"><{$today_comments}>/<{$comments}></td>
+  </tr>
+    <tr>
+    <td style="width:20%"></td>
+    <td style="width:40%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="width:20%">程序相关信息</td>
+    <td style="width:40%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="width:20%">龙宇网当前版本:</td>
+    <td style="width:40%"><{$version}></td>
+  </tr>
+  <tr>
+    <td style="width:20%">龙宇网最新版本:</td>
+    <td style="width:40%"><span id="new_version"><{$new_version}></span></td>
+  </tr>
+  <tr>
+    <td style="width:20%">程序开发:</td>
+    <td style="width:40%"><a href="http://www.longyusoft.com" target="_blank">isold</a></td>
+  </tr>
+  <tr>
+    <td style="width:20%">致谢:</td>
+    <td style="width:40%"><a href="http://www.longyusoft.com/api.php?act=url&amp;id=5" target="_blank">谢谢所有支持和帮助龙宇网的朋友</a></td>
+  </tr>
+  <tr>
+    <td style="width:20%">官方主页:</td>
+    <td style="width:40%"><a href="http://www.longyusoft.com" target="_blank">www.longyusoft.com</a></td>
+  </tr>
+  <tr>
+    <td style="width:20%">反馈：</td>
+    <td style="width:40%"><a href="http://www.longyusoft.com/api.php?act=url&amp;id=1">给我们建议</a>| <a href="http://www.longyusoft.com/api.php?act=url&amp;id=2">问题反馈</a> | <a href="http://www.longyusoft.com/api.php?act=url&amp;id=3">常见问题</a></td>
+  </tr>
+      <tr>
+    <td style="width:20%"></td>
+    <td style="width:40%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="width:20%">服务器信息</td>
+    <td style="width:40%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="width:20%">服务器信息：</td>
+    <td style="width:40%"><{$SERVER_SOFTWARE}></td>
+  </tr>
+  <tr>
+    <td style="width:20%">MySQL版本：</td>
+    <td style="width:40%"><{$mysql_version}></td>
+  </tr>
+  <tr>
+    <td style="width:20%">服务器文件上传允许大小</td>
+    <td style="width:40%"><{$upload_max_filesize}></td>
+  </tr>
+</table>
+
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+	$.ajax({url:'admin.php?act=get_version',type:'post', dataType:'json',success:show_data});
+	
+});
+
+function show_data(data)
+{
+	$('#new_version').html(data.version); 
+	$('#update_date').html(data.notice); 
+}
+</script>
+
+<{include file="footer.html"}>

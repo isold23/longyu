@@ -1,0 +1,30 @@
+<{include file="header.html"}>
+<p>
+<form action="admin.php?act=<{$type}>" method="post">
+<table>
+  <tr>
+    <td width="111"  class="td2">公告标题</td>
+    <td width="325" ><input name="module_title" type="text" id="module_title" value="<{$module.title}>" /></td>
+  </tr>
+    <tr>
+    <td  class="td2">公告内容</td>
+    <td><textarea name="module_content" cols="50" rows="5" id="module_content"><{$module.content}></textarea></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>
+    <input name="id" type="hidden" value="<{$id}>" />
+    
+    <!--{if $setup_type eq 1}-->
+    <input type="submit" name="button" id="button" value="添加" />
+    <!--{else}-->
+    <input type="submit" name="button" id="button" value="编辑" />
+    <!--{/if}-->
+    </td>
+  </tr>
+
+</table>
+
+</form>
+</p>
+<{include file="footer.html"}>

@@ -1,0 +1,158 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildConfig", "BuildConfig", "{0DBA46D6-1050-48F3-8338-D36ABC7C6BCC}"
+	ProjectSection(SolutionItems) = preProject
+		configure.ac = configure.ac
+		install_debug.sh = install_debug.sh
+		install_release.sh = install_release.sh
+		Makefile.am = Makefile.am
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{0D7CFEA8-3CF3-4B6D-831F-5419F6FBC692}"
+	ProjectSection(SolutionItems) = preProject
+		Common\Configure.cpp = Common\Configure.cpp
+		Common\Configure.h = Common\Configure.h
+		Common\CriticalSection.cpp = Common\CriticalSection.cpp
+		Common\CriticalSection.h = Common\CriticalSection.h
+		Common\debugtrace.cpp = Common\debugtrace.cpp
+		Common\debugtrace.h = Common\debugtrace.h
+		Common\define.h = Common\define.h
+		Common\FileStream.cpp = Common\FileStream.cpp
+		Common\FileStream.h = Common\FileStream.h
+		Common\include.h = Common\include.h
+		Common\list.h = Common\list.h
+		Common\Makefile.am = Common\Makefile.am
+		Common\NetAddress.h = Common\NetAddress.h
+		Common\NetEpoll.cpp = Common\NetEpoll.cpp
+		Common\NetEpoll.h = Common\NetEpoll.h
+		Common\NetPack.cpp = Common\NetPack.cpp
+		Common\NetPack.h = Common\NetPack.h
+		Common\NetSocket.cpp = Common\NetSocket.cpp
+		Common\NetSocket.h = Common\NetSocket.h
+		Common\sigslot.h = Common\sigslot.h
+		Common\Time.h = Common\Time.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pack", "Pack", "{81F228DE-A715-4F2E-9479-F5614E2C05EA}"
+	ProjectSection(SolutionItems) = preProject
+		Pack\PackBase.cpp = Pack\PackBase.cpp
+		Pack\PackBase.h = Pack\PackBase.h
+		Pack\StandardSerialize.cpp = Pack\StandardSerialize.cpp
+		Pack\StandardSerialize.h = Pack\StandardSerialize.h
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TaskProcessor", "TaskProcessor\src\TaskProcessor.vcxproj", "{333591E2-6EC7-4A85-9989-4D7B4FED4514}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TaskProcessorTest", "TaskProcessor\Test\TaskProcessorTest.vcxproj", "{8F860256-74FD-43D5-8A21-3FEBF77AF786}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aps", "aps", "{BE67D8B5-2B9F-4402-8CE0-175EDC33FE4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "licommon", "licommon", "{501C3353-84EF-475D-87F9-9A4FA946B50B}"
+	ProjectSection(SolutionItems) = preProject
+		libcommon\cgi-lib.cpp = libcommon\cgi-lib.cpp
+		libcommon\cgi-lib.h = libcommon\cgi-lib.h
+		libcommon\cgi-llist.cpp = libcommon\cgi-llist.cpp
+		libcommon\cgi-llist.h = libcommon\cgi-llist.h
+		libcommon\hj_cfg.cpp = libcommon\hj_cfg.cpp
+		libcommon\hj_cfg.h = libcommon\hj_cfg.h
+		libcommon\hj_cgi.cpp = libcommon\hj_cgi.cpp
+		libcommon\hj_cgi.h = libcommon\hj_cgi.h
+		libcommon\hj_cgi_html.cpp = libcommon\hj_cgi_html.cpp
+		libcommon\hj_cgi_html.h = libcommon\hj_cgi_html.h
+		libcommon\hj_conv.cpp = libcommon\hj_conv.cpp
+		libcommon\hj_conv.h = libcommon\hj_conv.h
+		libcommon\hj_debug_print.h = libcommon\hj_debug_print.h
+		libcommon\hj_hash_map.cpp = libcommon\hj_hash_map.cpp
+		libcommon\hj_hash_map.h = libcommon\hj_hash_map.h
+		libcommon\hj_hexshow.cpp = libcommon\hj_hexshow.cpp
+		libcommon\hj_hexshow.h = libcommon\hj_hexshow.h
+		libcommon\hj_html_head.cpp = libcommon\hj_html_head.cpp
+		libcommon\hj_html_head.h = libcommon\hj_html_head.h
+		libcommon\hj_http.cpp = libcommon\hj_http.cpp
+		libcommon\hj_http.h = libcommon\hj_http.h
+		libcommon\hj_http_macro.h = libcommon\hj_http_macro.h
+		libcommon\hj_ini.cpp = libcommon\hj_ini.cpp
+		libcommon\hj_ini.h = libcommon\hj_ini.h
+		libcommon\hj_log.cpp = libcommon\hj_log.cpp
+		libcommon\hj_log.h = libcommon\hj_log.h
+		libcommon\hj_macro.h = libcommon\hj_macro.h
+		libcommon\hj_mempool.cpp = libcommon\hj_mempool.cpp
+		libcommon\hj_mempool.h = libcommon\hj_mempool.h
+		libcommon\hj_misc.cpp = libcommon\hj_misc.cpp
+		libcommon\hj_misc.h = libcommon\hj_misc.h
+		libcommon\hj_mysql.cpp = libcommon\hj_mysql.cpp
+		libcommon\hj_mysql.h = libcommon\hj_mysql.h
+		libcommon\hj_net.cpp = libcommon\hj_net.cpp
+		libcommon\hj_net.h = libcommon\hj_net.h
+		libcommon\hj_rbtree.cpp = libcommon\hj_rbtree.cpp
+		libcommon\hj_rbtree.h = libcommon\hj_rbtree.h
+		libcommon\hj_rpt_api.cpp = libcommon\hj_rpt_api.cpp
+		libcommon\hj_rpt_api.h = libcommon\hj_rpt_api.h
+		libcommon\hj_shm.cpp = libcommon\hj_shm.cpp
+		libcommon\hj_shm.h = libcommon\hj_shm.h
+		libcommon\hj_str.cpp = libcommon\hj_str.cpp
+		libcommon\hj_str.h = libcommon\hj_str.h
+		libcommon\hj_string.cpp = libcommon\hj_string.cpp
+		libcommon\hj_string.h = libcommon\hj_string.h
+		libcommon\makefile = libcommon\makefile
+		libcommon\string-lib.cpp = libcommon\string-lib.cpp
+		libcommon\string-lib.h = libcommon\string-lib.h
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aps", "adpush\aps\src\aps.vcxproj", "{CD61C69A-0CDC-48E5-9BC2-195543359B3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apsdk", "apsdk", "{5B0DB621-E801-406A-A860-724109E88825}"
+	ProjectSection(SolutionItems) = preProject
+		adpush\apsdk\SdkKernel.cpp = adpush\apsdk\SdkKernel.cpp
+		adpush\apsdk\SdkKernel.h = adpush\apsdk\SdkKernel.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "android", "android", "{4EC70C15-5769-4133-999A-6A7A1BAB80AB}"
+	ProjectSection(SolutionItems) = preProject
+		adpush\apsdk\android\adpush_sdk_IADPush.cpp = adpush\apsdk\android\adpush_sdk_IADPush.cpp
+		adpush\apsdk\android\sinashow1android_roomkernel_IRoomKernel.cpp = adpush\apsdk\android\sinashow1android_roomkernel_IRoomKernel.cpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "base", "base", "{DBA159C5-FF68-42E4-85A7-BDA80C6F22A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "include", "include", "{A466FC22-2749-4E31-8BBB-56A0279FF0D0}"
+	ProjectSection(SolutionItems) = preProject
+		adpush\apsdk\include\SdkKernelDef.h = adpush\apsdk\include\SdkKernelDef.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pack", "pack", "{DD374D73-0C49-400A-8D42-6D64BDE71CA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "task", "task", "{94D32E56-3005-4424-A887-D1978012244B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{333591E2-6EC7-4A85-9989-4D7B4FED4514}.Debug|Win32.ActiveCfg = Debug|Win32
+		{333591E2-6EC7-4A85-9989-4D7B4FED4514}.Debug|Win32.Build.0 = Debug|Win32
+		{333591E2-6EC7-4A85-9989-4D7B4FED4514}.Release|Win32.ActiveCfg = Release|Win32
+		{333591E2-6EC7-4A85-9989-4D7B4FED4514}.Release|Win32.Build.0 = Release|Win32
+		{8F860256-74FD-43D5-8A21-3FEBF77AF786}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8F860256-74FD-43D5-8A21-3FEBF77AF786}.Debug|Win32.Build.0 = Debug|Win32
+		{8F860256-74FD-43D5-8A21-3FEBF77AF786}.Release|Win32.ActiveCfg = Release|Win32
+		{8F860256-74FD-43D5-8A21-3FEBF77AF786}.Release|Win32.Build.0 = Release|Win32
+		{CD61C69A-0CDC-48E5-9BC2-195543359B3F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CD61C69A-0CDC-48E5-9BC2-195543359B3F}.Debug|Win32.Build.0 = Debug|Win32
+		{CD61C69A-0CDC-48E5-9BC2-195543359B3F}.Release|Win32.ActiveCfg = Release|Win32
+		{CD61C69A-0CDC-48E5-9BC2-195543359B3F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CD61C69A-0CDC-48E5-9BC2-195543359B3F} = {BE67D8B5-2B9F-4402-8CE0-175EDC33FE4A}
+		{4EC70C15-5769-4133-999A-6A7A1BAB80AB} = {5B0DB621-E801-406A-A860-724109E88825}
+		{DBA159C5-FF68-42E4-85A7-BDA80C6F22A0} = {5B0DB621-E801-406A-A860-724109E88825}
+		{A466FC22-2749-4E31-8BBB-56A0279FF0D0} = {5B0DB621-E801-406A-A860-724109E88825}
+		{DD374D73-0C49-400A-8D42-6D64BDE71CA6} = {DBA159C5-FF68-42E4-85A7-BDA80C6F22A0}
+		{94D32E56-3005-4424-A887-D1978012244B} = {DBA159C5-FF68-42E4-85A7-BDA80C6F22A0}
+	EndGlobalSection
+EndGlobal

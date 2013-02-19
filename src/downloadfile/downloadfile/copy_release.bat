@@ -1,0 +1,1 @@
+@copy ..\Debug\downloadfile.exe ..\..\..\bin

@@ -1,0 +1,1 @@
+@copy Debug\TransmitFile.exe ..\..\..\bin

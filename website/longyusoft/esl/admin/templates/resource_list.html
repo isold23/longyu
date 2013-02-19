@@ -1,0 +1,39 @@
+<{include file="header.html"}>
+<p>
+<table width="100%" >
+  <tr class="tr1">
+    <td>名称</td>
+    <td>作者</td>
+    <td>路径</td>
+    <td>发布时间</td>
+    <td>图片路径</td>
+    <td>浏览次数</td>
+    <td>编号</td>
+    <td>规格</td>
+    <td>产地</td>
+    <td>材质</td>
+    <td>重量</td>
+    <td>价格</td>
+    <td>操作</td>
+  </tr>
+  <{foreach from=$resource_list item=resource}>
+  <tr>
+    <td><a title="<{$resource.name}>" href="admin.php?act=edit_resource&id=<{$resource.id}>"><{$resource.name}></a></td>
+    <td><{$resource.author}></td>
+    <td><{$resource.path}></td>
+    <td><{$resource.upload_time}></td>
+    <td><{$resource.image_path}></td>
+    <td><{$resource.view_time}></td>
+    <td><{$resource.number}></td>
+    <td><{$resource.spec}></td>
+    <td><{$resource.origin}></td>
+    <td><{$resource.material}></td>
+    <td><{$resource.weight}></td>
+    <td><{$resource.price}></td>
+    <td><a href="admin.php?act=edit_resource&id=<{$resource.id}>" >编辑</a> | <a href="admin.php?act=del_resource&id=<{$resource.id}>" >删除</a> </td>
+  </tr>
+  <{/foreach}>
+</table>
+<{include file="page.html"}>
+</p>
+<{include file="footer.html"}>

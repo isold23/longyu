@@ -1,0 +1,268 @@
+<{include file="header.html"}>
+<div id="subpage">
+  <div id="subpage-item">
+
+      <div id="subcontent">
+          <div id="resource-detail">
+<ul>
+<li>
+	<p>
+		<a href="<{$domain}>upload/<{$resource.image_path}>" target="_blank" alt="点击图片查看原图">
+			<img src = "<{$domain}>upload/<{$resource.image_path}>" alt="点击查看原图" onload="AutoResizeImage(300,300,this)"/>
+		</a>	
+	</p>
+</li>
+<li>
+
+	<h1><{$name}>: <{$resource.aname}></h1>
+<{if $resource.cat_id eq 11}>
+<h1><{$travel}>: <{$resource.spec}></h1>
+<h1><{$traffic}>: <{$resource.origin}></h1>
+<h1><{$stay}>: <{$resource.material}></h1>
+<h1><{$price}>: <{$resource.price}></h1>
+<{/if}>
+<h1><{$author}>: <{$resource.author}></h1>
+<h1><{$view_times}>: <{$resource.view_time}></h1>
+<h1><{$post_time}>: <{$resource.upload_time}></h1>
+     
+</li>
+
+</ul>
+
+
+          </div>
+          
+     
+          <!-- resource detail end -->
+          
+               <{if $resource.cat_id eq 11}>
+        <div class="resource_phone_item">
+        	<{$telephone_consultation}>: <{$hot_line}>
+        </div>
+        
+        
+   <div class="resource_item">
+            <!-- This is the box that all of the tabs and contents of 
+         the tabs will reside -->
+    <div id="tabs_container">
+      
+      <!-- These are the tabs -->
+      <ul class="tabs">
+        <li class="active">
+          <a href="javascript:" rel="#tab_1_contents" class="tab">旅游行程</a>
+        </li>
+        <li><a href="javascript:" rel="#tab_2_contents" class="tab">旅游费用</a></li>
+        <li><a href="javascript:" rel="#tab_3_contents" class="tab">行程特色</a></li>
+        <li><a href="javascript:" rel="#tab_4_contents" class="tab">注意事项</a></li>
+      </ul>
+      
+      <!-- This is used so the contents don't appear to the 
+           right of the tabs -->
+      <div class="clear"></div>
+      
+      <!-- This is a div that hold all the tabbed contents -->
+      <div class="tab_contents_container">
+    
+        <!-- Tab 1 Contents -->
+        <div id="tab_1_contents" class="tab_contents tab_contents_active">
+          <{$resource.remark}>
+        </div>
+    
+        <!-- Tab 2 Contents -->
+        <div id="tab_2_contents" class="tab_contents">
+          <{$resource.travel_price}>
+        </div>
+    
+        <!-- Tab 3 Contents -->
+        <div id="tab_3_contents" class="tab_contents">
+          <{$resource.travel_feature}>
+        </div>
+        
+        <!-- Tab 4 Contents -->
+        <div id="tab_4_contents" class="tab_contents">
+   <{$resource.trave_note}>
+        </div>
+    
+      </div>
+    </div>
+  </div>
+<{/if}>
+
+<{if $resource.cat_id eq 10}>
+          <div id="resource_remark">
+          	<div class="unit">
+          		<div class="unit_header1 unit-header">
+          			<h1 class="unit_header"><{$detail}></h1>
+          		</div>
+          		<div class="unit-body">
+          	<{$resource.remark}>
+          </div>
+          </div>
+          </div>
+<{/if}>
+          
+          <div id="resource_share">
+          	                                <p>
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+<span class="bds_more">分享到：</span>
+<a class="bds_tsina">新浪微博</a>
+<a class="bds_qzone">QQ空间</a>
+<a class="bds_tqq">腾讯微博</a>
+<a class="bds_renren">人人网</a>
+<a class="bds_kaixin001">开心网</a>
+<a class="bds_tieba">百度贴吧</a>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6543947" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script>
+<!-- Baidu Button END -->
+                            </p>            
+          </div>
+          
+          
+        <div id="resource_comment">
+        		            <{if $open_comment eq 1}>
+            <div class="new_notice">
+                网站已经关闭评论</div>
+            <{elseif $resource.open_type eq 1}>
+            <div class="new_notice">
+                此日志评论已经关闭</div>
+            <{else}>
+            <div class="pl">
+                <p class="p_list">
+                    <a  onclick="javascript:post()"><{$comments}></a></p>
+                <div id="load_comments_notice" style="display: none; padding-left:10px; font-size: 13px; font-family: verdana,arial;
+                    color: #FF0000">
+                    评论数据加载中......
+                  </br></br>
+                    </div>
+                <ol id="comments_list">
+                </ol>
+                <div id="replay">
+                    <a name="pl"><{$post_comment}></a>
+                    <div id="replay_box">
+                        <form action="post.php?lan=<{$lang}>&act=pl_post" method="post" name="post_comment" id="post_comment">
+                        <div id="post_comments_notice" style="display: none; padding-bottom: 5px; padding-left:10px; clear: both;
+                            font-size: 13px; font-family: verdana,arial; color: #FF0000">
+                            评论数据提交中......</div>
+                        <{insert name='comments_name' p1=$name p2=$user_website_key}>
+                        <p>
+                            <{$comments}>: <br/>
+                            <textarea name="content" cols="60" rows="5"></textarea>
+                        </p>
+                        <p>
+                            <input type="button" name="button" id="comment_button1" value="<{$post}>" onclick="post()" />
+                        </p>
+                        </form>
+                    </div>
+                </div>
+                <{/if}>
+            </div>
+        </div>
+
+      </div>
+      <!-- subcontent end -->
+      
+            <div id="sidebar">
+
+            <div id="sidebar-item">
+                <div class="unit">
+                    <div class="unit-header unit_header2">
+                        <h1 class="unit_header">
+                            <{$top_destinations}></h1>
+                    </div>
+                    <div class="unit-body">
+                        <ul>
+                        	<{foreach from=$last_resource_list item=last_resource}>
+                            <li><a href="resource.php?lan=<{$last_resource.lang}>&id=<{$last_resource.id}>"><{$last_resource.name}></a> </li>
+                         <{/foreach}>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar item end -->
+            
+                        <div id="sidebar-item">
+                <div class="unit">
+                    <div class="unit-header unit_header2">
+                        <h1 class="unit_header">
+                            <{$top_tours}></h1>
+                    </div>
+                    <div class="unit-body">
+                        <ul>
+                        	<{foreach from=$last_resource_tour_list item=last_resource_tour}>
+                            <li><a href="resource.php?lan=<{$last_resource.lang}>&id=<{$last_resource_tour.id}>"><{$last_resource_tour.name}></a> </li>
+                         <{/foreach}>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar item end -->
+      </div>
+      <!-- sidebar -->
+      
+      
+  </div>
+  <!-- sub page item -->
+</div>
+<!-- sub page end -->
+<{include file="footer.html"}>
+
+
+
+           <script language="javascript" type="text/javascript">
+
+	var id=<{$resource.id}>;
+var u='<{$domain}>';
+var geturl=u+"post.php?lan="<{$lang}>"&act=resource_comments_list&id="+id;
+
+$('#load_comments_notice').css("display","block");
+
+$.getJSON(geturl,
+function(data){
+  $('#comments_list').html(data.content); 
+  $('#load_comments_notice').css("display","none"); 
+}); 
+
+function post()
+{
+	 comment_id=$('#post_comments_id').html();
+	 $('#post_comments_notice').show();
+     var params=$('input').serialize(); 
+	 p=params+'&content='+$('textarea').val();
+	 var ajaxurl=u+'post.php?lan=<{$lang}>&act=post_resource_comment&id='+id+'&comment_id='+comment_id;
+     $.ajax({url:ajaxurl,type:'post', dataType:'json',data:p,success:update_comments});
+}
+
+function update_comments(data)
+{
+	$('#post_comments_notice').css("display","block"); 
+	if(data.error!='no')
+	{
+		$('#post_comments_notice').html(data.error);
+	}
+	else
+	{
+		$('#post_comments_notice').html('评论发布成功');
+		var post_form=$('#replay_box').html();
+		$('#replay').html('<div id="replay_box">'+post_form+'</div>');
+		$('#comments_list').html(data.content); 
+		$('textarea').val('');
+		$('#post_comments_id').remove(); //请客回复id
+	}
+}
+
+function replay(comment_id)
+{
+	$('#post_comments_notice').html('');
+	$('#post_comments_id').remove(); //请客回复id
+	var post_form=$('#replay_box').html();
+	$("#replay_box").remove();
+	$('#box-'+comment_id).append('<div id="replay_box">'+post_form+'<div id="post_comments_id" style="display:none;">'+comment_id+'</div></div>');
+}
+            </script>
+            

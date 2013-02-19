@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClientInfo>
+  <!--  server ip  -->
+  <ServerIp>192.168.0.2</ServerIp>
+  <!--  server port  -->
+  <ServerPort>8899</ServerPort>
+  <!-- user or password length  -->
+  <uplen>20</uplen>
+  <!--  user name  -->
+  <UserName>wangliwei</UserName>
+  <!--  user password  -->
+  <UserPassword>wangliwei</UserPassword>
+</ClientInfo>

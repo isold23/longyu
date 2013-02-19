@@ -1,0 +1,63 @@
+<{include file="header.html"}>
+
+<div id="subpage">
+    <div id="subpage-item">
+
+        <div id="subcontent">
+            <center>
+
+<div id="user-login">
+<form action="user.php?act=act_login" method="post"  name="form1" id="post_form">
+<{if $notice != ''}>
+<div id="home-item-header">
+<h1><{$notice}></h1>
+</div>
+<{/if}>
+
+ <div id="home-item-content">
+ <p>用户名：<br />
+ <input name="name" type="text" id="name" size="25"/></p>
+   </p>
+ <p>密码：<br />
+    <input name="password" type="password" id="password" size="25" />
+   </p>
+
+   <p>
+   <input name="safe_url" type="hidden" value="<{$safe_url}>" /> <input type="submit" name="button" id="button" value="登录" />
+  </p>
+</div>
+</form>
+</div>
+</center>
+        </div>
+        <!-- subcontent -->
+        <div id="sidebar">
+            <div id="sidebar-item">
+                <script type="text/javascript">
+                    alimama_pid = "mm_13906600_2165521_8942780";
+                    alimama_titlecolor = "000033";
+                    alimama_descolor = "3D81EE";
+                    alimama_bgcolor = "FFFFFF";
+                    alimama_bordercolor = "6C82B5";
+                    alimama_linkcolor = "FFFF66";
+                    alimama_bottomcolor = "FFFFFF";
+                    alimama_anglesize = "0";
+                    alimama_bgpic = "16";
+                    alimama_icon = "0";
+                    alimama_sizecode = "37";
+                    alimama_width = 300;
+                    alimama_height = 250;
+                    alimama_type = 2;
+                </script>
+                <script src="http://a.alimama.cn/inf.js" type="text/javascript">
+                </script>
+
+            </div>
+            <!-- sidebar item end -->
+        </div>
+        <!-- sidebar end -->
+    </div>
+    <!-- subpage item end -->
+</div>
+<!-- subpage end -->
+<{include file="footer.html"}>

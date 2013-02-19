@@ -1,0 +1,15 @@
+<div id="comments"> 
+	<ol id="comment_list"> 
+		<{foreach from=$comments_list item=comment key=key}>
+		<li id="box-<{$comment.id}>" <{if $comment.odd eq 1}>class='odd'<{/if}> >
+			<div class="comment_data">
+				<a name="<{$comment.id}>">第<{$key}>楼</a>  <{$comment.user_name}><{if $comment.user_id eq -1}>(未注册用户)<{/if}>  发表于    <{$comment.post_time}>
+				</div>
+				<{$comment.content}>
+				<div class="comment_reply"> 
+					<a href="javascript:replay(<{$comment.id}>);" rel="nofollow" id="replay-<{$comment.id}>">回复</a>
+				</div> 
+		</li>
+		<{/foreach}>
+	</ol>
+</div> 

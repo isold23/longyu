@@ -1,0 +1,15 @@
+<div id="sidebar-item">
+    <div id="unit">
+        <div id="unit-header">
+            <h1>网站链接</h1>
+        </div>
+        <div id="unit-body">
+            <ul>
+                <{foreach from=$web_link_list item=web_link}>
+                            <li><a href="<{$web_link.link_url}>"><{$web_link.name}></a> </li>
+                <{/foreach}>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- sidebar item end -->

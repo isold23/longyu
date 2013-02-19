@@ -1,0 +1,11 @@
+rm -rf mkdp
+rm -rf Person.inl
+rm -rf Person.cpp
+rm -rf testdp
+rm -rf *.exe
+rm -rf .deps
+rm -rf *.suo
+rm -rf *.user
+rm -rf Debug
+rm -rf Release
+rm -rf *.ncb

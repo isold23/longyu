@@ -1,0 +1,194 @@
+	<{include file="header.html"}>
+	<div id="subpage">
+	    <div id="subpage-item">
+	        <div id="subcontent_with_border">
+	            <div id="blog-detail">
+	                <div id="blog-item">
+	                    <center>
+	                        <div id="blog_detail_title">
+	                            <h1><{$blog.title}><h1>
+	                        </div>
+	                        <div id="blog_item_author">
+	                            <span>
+	                                <a href="<{$web_url}>"><{$web_domain}></a> <{$blog.post_time}>
+	                              <{$author}>: <{$blog.author}></span>
+	                        </div>
+	                    </center>
+	                    	                    <div id="blog_item_detail_des">
+	                    	<span><{$summary}>: </span><{$blog.description}>
+	                    </div>
+	                    <div id="blog-item-detail-content">
+	                        <{$blog.content}>
+	                    </div>
+	                    <div id="blog-item-botton-side">
+	                        <p> <{$comments}>: <{$blog.comment_count}>
+	                            &nbsp;&nbsp;|&nbsp;&nbsp; <{$references}>: <{$blog.trackback_count}> &nbsp;&nbsp;|&nbsp;&nbsp;
+	                            <{$view_times}>: <{$blog.view_count}></p>
+	                       
+	                    </div>
+	                    <br/>
+	                    <div id="blog-item-botton-side">
+	                                                    <p>
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+<span class="bds_more">分享到：</span>
+<a class="bds_tsina">新浪微博</a>
+<a class="bds_qzone">QQ空间</a>
+<a class="bds_tqq">腾讯微博</a>
+<a class="bds_renren">人人网</a>
+<a class="bds_kaixin001">开心网</a>
+<a class="bds_tieba">百度贴吧</a>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6543947" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script>
+<!-- Baidu Button END -->
+</br>
+                            </p>
+	                    </div>
+	                  </br>
+	                </div>
+	                <!-- blog detail end -->
+	            </div>
+	            <!-- blog detail end -->
+	            <{if $open_comment eq 1}>
+	            <div class="new_notice">
+	                网站已经关闭评论</div>
+	            <{elseif $blog.open_type eq 1}>
+	            <div class="new_notice">
+	                此日志评论已经关闭</div>
+	            <{else}>
+	            <div class="pl">
+	                <p class="p_list">
+	                    <a  onclick="javascript:post()"><{$comments}></a></p>
+	                <div id="load_comments_notice" style="display: none; padding-left:10px; font-size: 13px; font-family: verdana,arial;
+	                    color: #FF0000">
+	                    评论数据加载中......
+	                  </br></br>
+	                    </div>
+	                <ol id="comments_list">
+	                </ol>
+	                <div id="replay">
+	                    <a name="pl"><{$post_comment}></a>
+	                    <div id="replay_box">
+	                        <form action="post.php?lan=<{$lang}>&act=pl_post" method="post" name="post_comment" id="post_comment">
+	                        <div id="post_comments_notice" style="display: none; padding-bottom: 5px; padding-left:10px; clear: both;
+	                            font-size: 13px; font-family: verdana,arial; color: #FF0000">
+	                            评论数据提交中......</div>
+	                        <{insert name='comments_name' p1=$name p2=$user_website_key}>
+	                        <p>
+	                            <{$comments}>: <br/>
+	                            <textarea name="content" cols="60" rows="5"></textarea>
+	                        </p>
+	                        <p>
+	                            <input type="button" name="button" id="comment_button1" value="<{$post}>" onclick="post()" />
+	                        </p>
+	                        </form>
+	                    </div>
+	                </div>
+	                <{/if}>
+	            </div>
+	 
+	        </div>
+	        <!-- subcontent end -->
+	        
+	        
+	        	        <div id="sidebar">
+            <div id="sidebar-item">
+                <div class="unit">
+                    <div class="unit-header unit_header2">
+                        <h1 class="unit_header">
+                            <{$travel_blog}></h1>
+                    </div>
+                    <div class="unit-body">
+                        <ul>
+                        	<{foreach from=$last_blog_list item=last_blog}>
+                            <li><a href="detail.php?lan=<{$lang}>&id=<{$last_blog.id}>"><{$last_blog.title|truncate:50:"...":true}></a> </li>
+                         <{/foreach}>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar item end -->
+            
+                        <div id="sidebar-item">
+                <div class="unit">
+                    <div class="unit-header unit_header2">
+                        <h1 class="unit_header">
+                            <{$travel_advice}></h1>
+                    </div>
+                    <div class="unit-body">
+                        <ul>
+                        	<{foreach from=$last_trave_blog_list item=last_travel_blog}>
+                            <li><a href="detail.php?lan=<{$lang}>&id=<{$last_travel_blog.id}>"><{$last_travel_blog.title|truncate:50:"...":true}></a> </li>
+                         <{/foreach}>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar item end -->
+	        </div>
+	        <!-- sidebar -->
+	        
+	        
+	    </div>
+	    <!-- sub page item -->
+	</div>
+	<!-- sub page end -->
+	<{include file="footer.html"}>
+	
+	
+	           <script language="javascript" type="text/javascript">
+	
+		var id=<{$blog.id}>;
+	var u='<{$domain}>';
+	var geturl="/post.php?lan=<{$lang}>&act=comments_list&id="+id;
+	
+	$('#load_comments_notice').css("display","block");
+	
+	$.getJSON(geturl,
+	function(data){
+	  $('#comments_list').html(data.content); 
+	  $('#load_comments_notice').css("display","none"); 
+	}); 
+	
+	function post()
+	{
+		 comment_id=$('#post_comments_id').html();
+		 $('#post_comments_notice').show();
+	     var params=$('input').serialize(); 
+		 p=params+'&content='+$('textarea').val();
+		 var ajaxurl='/post.php?lan=<{$lang}>&act=post_comment&id='+id+'&comment_id='+comment_id;
+	     $.ajax({url:ajaxurl,type:'post', dataType:'json',data:p,success:update_comments});
+	}
+	
+	function update_comments(data)
+	{
+		$('#post_comments_notice').css("display","block"); 
+		if(data.error!='no')
+		{
+			$('#post_comments_notice').html(data.error);
+		}
+		else
+		{
+			$('#post_comments_notice').html('评论发布成功');
+			var post_form=$('#replay_box').html();
+			$('#replay').html('<div id="replay_box">'+post_form+'</div>');
+			$('#comments_list').html(data.content); 
+			$('textarea').val('');
+			$('#post_comments_id').remove(); //请客回复id
+		}
+	}
+	
+	function replay(comment_id)
+	{
+		$('#post_comments_notice').html('');
+		$('#post_comments_id').remove(); //请客回复id
+		var post_form=$('#replay_box').html();
+		$("#replay_box").remove();
+		$('#box-'+comment_id).append('<div id="replay_box">'+post_form+'<div id="post_comments_id" style="display:none;">'+comment_id+'</div></div>');
+	}
+	            </script>

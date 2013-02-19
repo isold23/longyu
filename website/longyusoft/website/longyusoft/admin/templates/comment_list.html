@@ -1,0 +1,24 @@
+<{include file="header.html"}>
+<{include file="page.html"}>
+<p>
+<table id="datalist">
+  <tr>
+    <th class="th1" style="width:20%">评论日志</th>
+    <th class="th1" style="width:20%">时间</th>
+    <th class="th1" style="width:20%">内容</th>
+    <th class="th1" style="width:20%">IP</th>
+    <th class="th1" style="width:20%">操作</th>
+  </tr>
+  <{foreach from=$comment_list item=comment}>
+  <tr>
+    <td style="width:20%"><a  href="../detail.php?id=<{$comment.id}>"><{$comment.title}></a></td>
+    <td style="width:20%"><{$comment.post_time}></td>
+    <td style="width:20%"><a href="admin.php?act=edit_comment&id=<{$comment.id}>" title="<{$comment.content}>" ><{$comment.short_comment}></a></td>
+     <td style="width:20%"><{$comment.ip}></td>
+    <td style="width:20%"><a href="admin.php?act=edit_comment&amp;id=<{$comment.id}>" >编辑</a> | <a href="admin.php?act=del_comment&amp;id=<{$comment.id}>" >删除</a> </td>
+  </tr>
+  <{/foreach}>
+</table>
+<{include file="page.html"}>
+</p>
+<{include file="footer.html"}>

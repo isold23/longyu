@@ -1,0 +1,16 @@
+            <div id="sidebar-item">
+                <div class="unit">
+                    <div class="unit-header unit_header2">
+                        <h1 class="unit_header">
+                            日志类别</h1>
+                    </div>
+                    <div class="unit-body">
+                        <ul>
+                        	<{foreach from=$blog_category_list item=blog_category}>
+                            <li><a href="blog.php?cat=<{$blog_category.id}>"><{$blog_category.name}>[<{$blog_category.blog_count}>]</a> </li>
+                         <{/foreach}>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar item end -->

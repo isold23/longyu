@@ -1,0 +1,52 @@
+<{include file="header.html"}>
+<p>
+<form action="" method="post" name="form1" enctype="multipart/form-data">
+<table width="100%" height="275" border="1">
+    <tr>
+      <td>标题</td>
+      <td width="720"><input type="text" name="module_title" id="module_title" value="<{$module.title}>" /></td>
+    </tr>
+  
+             <tr>
+      <td width="150">图片</td>
+      <td>
+      	<input type="text" name="image_path" id="image_path" value="<{$image_path}>" />
+      	<input id="browsefile" type="file" name="browsefile"/>
+				<input type="button" id="upload_btn" name="upload_btn" value="上传" onclick="upload1_btn_click()"/>
+			</td>
+    </tr>
+ 
+
+    <tr>
+    <td>描述</td>
+    <td><textarea name="module_desc" cols="50" rows="5" id="module_desc"><{$module.description}></textarea></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>
+    <input name="module_id" id="module_id" type="hidden" value="<{$module.id}>" />
+    
+    <input type="submit" name="button" id="button" value="添加" onclick="submit1_btn_click()"/>
+    </td>
+  </tr>
+</table>
+
+</form>
+</p>
+<{include file="footer.html"}>
+
+<script type="text/javascript">
+	
+	function submit1_btn_click()
+	{
+		this.document.form1.action='admin.php?act=<{$type}>';
+		document.form1.submit(); 
+	}
+	
+	function upload1_btn_click()
+	{
+		this.document.form1.action='admin.php?act=upload_file';
+		document.form1.submit(); 
+	}
+
+</script>

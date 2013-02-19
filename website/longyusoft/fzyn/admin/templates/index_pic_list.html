@@ -1,0 +1,22 @@
+<{include file="header.html"}>
+<p>
+<form action="admin.php?act=<{$type}>" method="post">
+<table width="100%" border="1">
+  <tr>
+  	 <td>标题</td>
+    <td>图片地址</td>
+    <td>图片描述</td>
+    <td>操作</td>
+  </tr>
+  <{foreach from=$index_pic_list item=index_pic}>
+  <tr>
+  	<td><{$index_pic.title}></td>
+    <td><{$index_pic.image_path}></td>
+   <td><{$index_pic.description}></td>
+    <td><a href="admin.php?act=edit_index_pic&id=<{$index_pic.id}>" >编辑</a> | <a href="admin.php?act=del_index_pic&id=<{$index_pic.id}>" >删除</a> </td>
+  </tr>
+  <{/foreach}>
+</table>
+</form>
+</p>
+<{include file="footer.html"}>

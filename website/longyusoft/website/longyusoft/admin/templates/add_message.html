@@ -1,0 +1,16 @@
+<{include file="header.html"}>
+<p>
+<form action="admin.php?act=<{$type}>" method="post">
+  <table>
+    <tr>
+      <td width="150" class="td2">留言内容</td>
+     <td><textarea name="message_content" id="message_content" cols="45" rows="5"><{$message.content}></textarea></td>
+    </tr>
+   <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="button" id="button" value="提交" /></td>
+    </tr>
+  </table>
+</form>
+</p>
+<{include file="footer.html"}>

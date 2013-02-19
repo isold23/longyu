@@ -1,0 +1,53 @@
+<{include file="header.html"}>
+<script type="text/javascript" src="include/niceditor/nicEdit.js"></script>
+<form action="admin.php?act=<{$type}>" method="post">
+  <table>
+  <br/>
+    <tr>
+      <td class="td2">博客名字:
+    <br/>
+      <input type="text" name="title" id="title" width="300px" value="<{$blog.title}>" /></td>
+    </tr>
+    <tr>
+      <td class="td2">选择分类:<br/>
+      <select name="cat" width="720px">
+      <{foreach from=$cat_list item=cat}>
+        <option value="<{$cat.id}>" <{if $blog.cat_id eq $cat.id }> selected="selected"<{/if}> ><{$cat.name}></option>
+        <{foreach from=$cat.children item=children}>
+     		 <option value="<{$children.id}>" <{if $blog.id eq $children.id }>selected="selected"<{/if}> >&nbsp;&nbsp;<{$children.name}></option>
+      	<{/foreach}>
+      <{/foreach}>
+      
+      </select></td>
+        </tr>
+     <tr>
+      <td class="td2">
+      标签:<br/>
+      <textarea name="tag" id="tag" cols="45" rows="1"><{$blog.tag}></textarea></td>
+    </tr>
+         <tr>
+      <td class="td2">
+      关键字:<br/>
+      	<input type="text" name="key_word" id="key_word" value="<{$blog.key_word}>" />
+			</td>
+    </tr>
+    <tr>
+      <td class="td2">
+      博客描述:<br/>
+      <textarea name="description" id="description" cols="45" rows="5"><{$blog.description}></textarea></td>
+    </tr>
+    <tr>
+      <td class="td2">博客内容:<br/>
+      <div id="content_box" style="background:#fff">
+<textarea name="editor" id="editor" class="ckeditor cke_1009 cke cke_reset cke_chrome cke_editor_editor23 cke_ltr cke_browser_ie cke_browser_ie10" cols="52" rows="10"><{$blog.content}></textarea>
+	  </div>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="submit" name="button" id="button" style="width:50px;height:30px;" value="提交" /></td>
+    </tr>
+  </table>
+</form>
+<{include file="footer.html"}>
+
+

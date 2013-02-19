@@ -1,0 +1,25 @@
+<{include file="header.html"}>
+<p>
+<form action="admin.php?act=<{$type}>" method="post">
+<table width="100%" border="1">
+  <tr>
+    <td>友情链接名称</td>
+    <td>友情链接url地址</td>
+    <td>排序</td>
+    <td>操作</td>
+  </tr>
+  <{foreach from=$friend_link_list item=link}>
+  <tr>
+    <td><{$link.name}></td>
+    <td><{$link.link_url}></td>
+    <td><input name="sort[<{$link.id}>][]" type="text" value="<{$link.lnk_sort}>" size="5" /></td>
+    <td><a href="admin.php?act=edit_friend_link&id=<{$link.id}>" >编辑</a> | <a href="admin.php?act=del_friend_link&id=<{$link.id}>" >删除</a> </td>
+  </tr>
+  <{/foreach}>
+    <tr>
+    <td colspan="4"><input type="submit" name="button" id="button" value="修改排序" /></td>
+    </tr>
+</table>
+</form>
+</p>
+<{include file="footer.html"}>

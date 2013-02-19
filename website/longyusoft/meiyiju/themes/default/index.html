@@ -1,0 +1,394 @@
+<{include file="header.html"}>
+<!-- index page body start -->
+<div id="index-page">
+    <div id="index-page-item">
+        <div id="index_pic">
+            <div id="unit">
+             	                <div id="slider1">
+                	<ul id="slider1Content">        
+                        <li class="slider1Image">
+               	 					<a href=""><img src = "<{$domain}><{$templates_dir}>images/1.png" alt=""/></a>
+                         	<span class="right"><strong><{$web_name}></strong><br />客厅效果</span>
+                        </li>
+                                                <li class="slider1Image">
+               	 					<a href=""><img src = "<{$domain}><{$templates_dir}>images/2.png" alt=""/></a>
+                         	<span class="right"><strong><{$web_name}></strong><br />客厅效果</span>
+                        </li>
+                                                <li class="slider1Image">
+               	 					<a href=""><img src = "<{$domain}><{$templates_dir}>images/3.png" alt=""/></a>
+                         	<span class="right"><strong><{$web_name}></strong><br /><{$index_pic.description}></span>
+                        </li>
+                                                <li class="slider1Image">
+               	 					<a href=""><img src = "<{$domain}><{$templates_dir}>images/4.png" alt=""/></a>
+                         	<span class="right"><strong><{$web_name}></strong><br /><{$index_pic.description}></span>
+                        </li>
+                                                <li class="slider1Image">
+               	 					<a href=""><img src = "<{$domain}><{$templates_dir}>images/5.png" alt=""/></a>
+                         	<span class="right"><strong><{$web_name}></strong><br /><{$index_pic.description}></span>
+                        </li>
+                    <div class="clear s3sliderImage"></div>
+                  </ul>
+                </div>
+            </div>
+            <!-- unit end -->
+        </div>
+        <!-- left end -->
+    </div>
+    <!-- index page item end -->
+    
+
+
+
+        <div id="index-page-item">
+        <div id="left">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>
+                        美宜居热门案例</h1>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                        	<{foreach from=$hot_resource_list item=hot_resource}>
+                            <li><a href="resource.php?id=<{$hot_resource.id}>">【<{$hot_resource.bname}>】&nbsp<{$hot_resource.aname|truncate:50:"...":true}></a> </li>
+                         <{/foreach}>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="middle">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>
+                        美宜居最新案例</h1>
+                    <h2>
+                        <a href="resource.php">more</a>
+                    </h2>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                        	<{foreach from=$last_resource_list item=last_resource}>
+                            <li><a href="resource.php?id=<{$last_resource.id}>">【<{$last_resource.bname}>】&nbsp<{$last_resource.aname|truncate:78:"...":true}>&nbsp&nbsp&nbsp&nbsp<{$last_resource.upload_time|truncate:10:"":true}></a> </li>
+                         <{/foreach}>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>
+                        美宜居工作流程</h1>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                            <li><a href="#">1、免费量房</a> </li>
+                            <li><a href="#">2、免费设计方案</a> </li>
+                            <li><a href="#">3、免费预算报价</a> </li>
+                            <li><a href="#">4、免费上门服务</a> </li>
+                            <li><a href="#">5、签订装修合同</a> </li>
+                            <li><a href="#">6、施工</a> </li>
+                            <li><a href="#">7、验收</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- right end -->
+    </div>
+    <!-- index page item end -->
+    
+        <div id="index-page-item">
+    	<div id="ad_one">
+    		<script type="text/javascript"> 
+alimama_pid="mm_13906600_2395151_9224623"; 
+alimama_titlecolor="000033"; 
+alimama_descolor ="3D81EE"; 
+alimama_bgcolor="FFFFFF"; 
+alimama_bordercolor="6C82B5"; 
+alimama_linkcolor="FFFF66"; 
+alimama_bottomcolor="FFFFFF"; 
+alimama_anglesize="0"; 
+alimama_bgpic="6"; 
+alimama_icon="0"; 
+alimama_sizecode="12"; 
+alimama_width=468; 
+alimama_height=60; 
+alimama_type=2; 
+</script> 
+<script src="http://a.alimama.cn/inf.js" type="text/javascript"> 
+</script>
+    	</div>
+    	<div id="ad_two">
+<script language="javascript" type="text/javascript">
+	yigao_title_color = "null";
+	yigao_content_color = "null";
+	yigao_background_color = "null";
+	yigao_border_color = "D9D9D9";
+	yigao_title_bold = "0";
+	yigao_content_bold = "0";
+	yigao_title_underline = "0";
+	yigao_content_underline = "0";
+	yigao_width = 468;
+	yigao_height = 60;
+	yigao_sid = "5b79542b34d570c2";
+	yigao_msid = "bb15748fb7e46796";
+	yigao_uid = 72924;
+	yigao_zid = 126034;
+	yigao_pid = 3;
+	yigao_type = 1;
+	yigao_adamount = 1;
+	yigao_cols = 1;
+</script>
+<script language="javascript" src="http://monitor.yigao.com/info.js"></script>
+
+
+    	</div>
+    </div>
+    	   <!-- index page item end -->
+
+    
+        <div id="index-page-item">
+        <div id="left">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>
+                        热门装修知识</h1>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                        	<{foreach from=$hot_blog_list item=hot_log}>
+                            <li><a href="detail.php?id=<{$hot_log.id}>">【<{$hot_log.name}>】&nbsp<{$hot_log.title|truncate:50:"...":true}></a> </li>
+                         <{/foreach}>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="middle">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>
+                        最新装修知识</h1>
+                    <h2>
+                        <a href="blog.php">more</a>
+                    </h2>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                        	<{foreach from=$last_blog_list item=last_blog}>
+                            <li><a href="detail.php?id=<{$last_blog.id}>">【<{$last_blog.name}>】&nbsp<{$last_blog.title|truncate:50:"...":true}>
+                            	&nbsp&nbsp&nbsp&nbsp<span><{$last_blog.post_time|truncate:10:"":true}>
+                            	</span>
+                            	</a>
+                            	 </li>
+                         <{/foreach}>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- middle end -->
+        <div id="right">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>
+                        装修知识分类</h1>
+                </div>
+                <div id="unit-body">
+                    <ul>
+                        	<{foreach from=$blog_category_list item=blog_category}>
+                            <li><a href="blog.php?cat=<{$blog_category.id}>"><{$blog_category.name}>【<{$blog_category.blog_count}>】</a> </li>
+                         <{/foreach}>
+                    </ul>
+                </div>
+                <!--unit body end -->
+            </div>
+            <!-- unit end -->
+        </div>
+        <!-- right end -->
+    </div>
+    <!-- index-page-item end-->
+    
+             <div id="index-page-item">
+    	<div id="ad-longfan">
+    		<img src="./ad/ad_longfan.jpg" width="946"/>
+    	</div>
+    <!-- unit end -->
+    </div>
+    <!-- index-page-item end-->
+    
+    <div id="index-page-item">
+        <div id="unit">
+                <div id="unit-header">
+                    <h1>
+                        精品案例展示</h1>
+                                            <h2>
+                        <a href="resource.php">more</a>
+                    </h2>
+                </div>
+                <div id="unit-body">
+                	
+<div id="photo_list">
+    <ol id="scroll">
+    	
+    		<{foreach from=$last_resource_list_18 item=last_resource_18}>
+ <li> <a href="resource.php?id=<{$last_resource_18.id}>">
+                            	<img src = "<{$domain}>upload/<{$last_resource_18.image_path}>" alt="" width="150px" height="150px"/>
+                            	
+                            	</a>
+                            	<center>
+                            	<h1><a href="resource.php?id=<{$last_resource_18.id}>"><{$last_resource_18.name}></a></h1>
+                            </center>
+                            </li>
+ <{/foreach}>
+                         
+ </ol>
+</div>
+
+   <script type="text/javascript">
+    var id = function(el) {
+            return document.getElementById(el);
+        },
+        c = id('photo_list');
+    if(c) {
+        var	ol = id('scroll'),
+            lis = ol.getElementsByTagName('li'),
+            itemCount = lis.length,
+            width = lis[0].offsetWidth, //获得每个img容器的宽度
+            marquee = function() {
+                c.scrollLeft += 2;
+                if(c.scrollLeft % width <= 1){  //当 c.scrollLeft 和 width 相等时，把第一个img追加到最后面
+                    ol.appendChild(ol.getElementsByTagName('li')[0]);
+                    c.scrollLeft = 0;
+                };
+            },
+            speed = 50; //数值越大越慢
+
+        ol.style.width = width*itemCount + 'px'; //加载完后设置容器长度
+        
+        var timer = setInterval(marquee, speed);
+        c.onmouseover = function() {
+            clearInterval(timer);
+        };
+        c.onmouseout = function() {
+            timer = setInterval(marquee, speed);
+        };
+    };
+</script>             	
+                	
+                	
+                	
+                	</div>
+                <!-- unit body end -->
+        </div>
+        <!-- baby picturte end -->
+    </div>
+    <!-- index page item end -->
+    
+        <div id="index-page-item">
+        <div id="left">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>
+                        联系我们</h1>
+                                            <h2>
+                        <a href="contactus.php">more</a>
+                    </h2>
+                </div>
+                <div id="unit-body">
+                	<p>咨询热线：<{$hot_line}></p>
+                	<p>业务咨询：<{$hot_line}></p>
+                	<p>在线咨询：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1045781181&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:1045781181:41 &r=0.3734641310805096" alt="点击这里给我发消息" title="点击这里给我发消息"></a></p>
+                	<p>电子邮件：<{$email}></p>
+                	<p>邮编：067000</p>
+                	<p>详细地址：<{$address}></p>
+                <div id="con">
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="middle">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>
+                        美宜居客户留言</h1>
+                 <h2>
+                        <a href="message.php">more</a>
+                    </h2>
+                </div>
+                <div id="unit-body">
+                   
+                        	<{foreach from=$last_message_list item=last_message}>
+                            <p><{$last_message.content|truncate:78:"":true}>&nbsp&nbsp&nbsp&nbsp<{$last_message.post_time|truncate:10:"":true}></p>
+                         <{/foreach}>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>
+                        VIP客户</h1>
+                </div>
+                <div id="unit-body">
+               
+                        	<{foreach from=$new_user_list item=user}>
+                            <p><{$user.name}></p> 
+                         <{/foreach}>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- right end -->
+    </div>
+    <!-- index page item end -->
+        <div id="index-page-item">
+        	        <div id="friend-links">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>
+                        友情链接</h1>
+                </div>
+                <div id="unit-body">
+                	<p>
+                	        <{foreach from=$friend_link_list item=friend_link}>
+                            <a href="<{$friend_link.link_url}>"><{$friend_link.name}></a>
+                         <{/foreach}>
+                  </p>
+                </div>
+            </div>
+        </div>
+        <!-- friend links end -->
+        
+                	        <div id="cooperation">
+            <div id="unit">
+                <div id="unit-header">
+                    <h1>
+                        合作品牌</h1>
+                </div>
+                <div id="unit-body">
+                	<p>
+                	       
+             <a href="#">马可波罗瓷砖</a>
+             <a href="#">宏宇陶瓷</a>
+             <a href="#">蒙地卡罗陶瓷</a>
+             <a href="#">先超吊顶</a>
+             <a href="#">欧人地板</a>
+   
+             <a href="#">宏耐地板</a>
+             <a href="#">tata木门</a>
+             <a href="#">立邦漆</a>
+             <a href="#">箭牌卫浴</a>
+
+                  </p>
+                </div>
+            </div>
+        </div>
+        <!-- friend links end -->
+        
+        </div>
+        <!-- index page item end -->
+</div>
+<!--index page body end -->
+
+
+
+<{include file="footer.html"}>

@@ -1,0 +1,1 @@
+SUBDIRS = Common TaskProcessor/src TaskProcessor/Test

@@ -1,0 +1,6 @@
+<div class="page">
+共<{$page_count}>页
+<{foreach from=$page_arr item=page}>
+<a href="<{$url}><{$page.value}>" <{if $pg eq $page.value}>class="page_current"<{/if}> ><{$page.name}></a>
+<{/foreach}>
+</div>

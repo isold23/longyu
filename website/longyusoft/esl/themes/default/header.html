@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="google-site-verification" content="lfjbQk5SKAEgwpNRyX9DsmIG_9eieZ0WFsyWiTJzpLA" />
+    <meta name="keywords" content="爱德曼旅游, 肯尼亚, 旅游" />
+    <meta name="description" content="<{$page_title}>" />
+    
+    <title><{$page_title}></title>
+    	
+    
+    <link rel="icon" href="<{$domain}><{$templates_dir}>images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="<{$domain}><{$templates_dir}>images/favicon.ico" type="image/x-icon" />
+    	
+    <link href="<{$domain}><{$templates_dir}>style.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="<{$domain}><{$templates_dir}>scrollable-horizontal.css">
+	<link rel="stylesheet" type="text/css" href="<{$domain}><{$templates_dir}>scrollable-buttons.css">
+	<link rel="stylesheet" type="text/css" href="<{$domain}><{$templates_dir}>boxed-02.css">
+		
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{$domain}feed.php" />
+    
+    <script type="text/javascript" language="javascript" src="<{$domain}>res/jquery.js"></script>
+    <script type="text/javascript" src="<{$domain}>res/jquery.cycle.js"></script>
+    <script type="text/javascript" src="<{$domain}>res/s3Slider.js"></script>
+    	
+	<script src="<{$domain}>res/reflection.js"></script>
+		
+<script language="javascript" type="text/javascript">
+// Load this script when page loads
+$(document).ready(function(){
+
+ // Set up a listener so that when anything with a class of 'tab' 
+ // is clicked, this function is run.
+ $('.tab').click(function () {
+
+  // Remove the 'active' class from the active tab.
+  $('#tabs_container > .tabs > li.active')
+	  .removeClass('active');
+	  
+  // Add the 'active' class to the clicked tab.
+  $(this).parent().addClass('active');
+
+  // Remove the 'tab_contents_active' class from the visible tab contents.
+  $('#tabs_container > .tab_contents_container > div.tab_contents_active')
+	  .removeClass('tab_contents_active');
+
+  // Add the 'tab_contents_active' class to the associated tab contents.
+  $(this.rel).addClass('tab_contents_active');
+
+ });
+});
+    </script>
+			
+		<script type="text/javascript">
+    $(document).ready(function() {
+        $('#slider1').s3Slider({
+            timeOut: 4000 
+        });
+    });
+</script>
+    
+    <script language="javascript" type="text/javascript">
+
+function AutoResizeImage(maxWidth,maxHeight,objImg){
+var img = new Image();
+img.src = objImg.src;
+var hRatio;
+var wRatio;
+var Ratio = 1;
+var w = img.width;
+var h = img.height;
+wRatio = maxWidth / w;
+hRatio = maxHeight / h;
+if (maxWidth ==0 && maxHeight==0){
+Ratio = 1;
+}else if (maxWidth==0){//
+if (hRatio<1) Ratio = hRatio;
+}else if (maxHeight==0){
+if (wRatio<1) Ratio = wRatio;
+}else if (wRatio<1 || hRatio<1){
+Ratio = (wRatio<=hRatio?wRatio:hRatio);
+}
+if (Ratio<1){
+w = w * Ratio;
+h = h * Ratio;
+}
+objImg.height = h;
+objImg.width = w;
+objImg.style.marginTop = ((maxHeight-objImg.height)/2)+"px";
+}
+
+</script>
+
+
+
+
+    
+</head>
+<body>
+				<div id="top">
+        <div id="header">
+            <div id="login">
+
+                <div id="login-item">
+                    <{if $user_id eq -1}> <a href="#logindialog" name="modal"><{$login}></a> &nbsp&nbsp| <{else}> <span><{$welcome}></span>&nbsp <{$user_name}> &nbsp&nbsp <a href="user.php?lan=cn&act=logout"><{$logout}></a> &nbsp&nbsp| <{/if}> &nbsp 
+                    <{if $user_id eq -1}> <a href="#regdialog" name="modal"><{$register}></a> &nbsp&nbsp| <{else}> <a href="user.php?lan=<{$lang}>&act=profile"><{$user_info}></a> &nbsp&nbsp| <{/if}> &nbsp
+                        	<a href="javascript:;" onclick="javascript:addfavor('http://www.erdemannsafari.com','<{$web_name}>');"><{$bookmark}></a>&nbsp&nbsp&nbsp|&nbsp&nbsp
+                        	<a href="#helpdialog" name="modal""><{$help}></a>
+                </div>
+                <!--end login-item-->
+            </div>
+            <!--end login-->
+            <div id="logo-item">
+                <div id="logo">
+   
+                </div>
+            </div>
+            <!--end log-item-->
+                        <div id="menu-item">
+                <ul id="menu-one" class="menu">
+                    <li><a href="main.php?lan=<{$lang}>"><{$menu_home}></a></li>
+                    <li><a href="about.php?lan=<{$lang}>"><{$menu_about_us}></a></li>
+                    <li><a href="blog.php?lan=<{$lang}>&cat=3"><{$menu_travel_blog}></a></li>
+                    <li><a href="resource.php?lan=<{$lang}>&cat=10"><{$menu_destinations}></a></li>
+                    <li><a href="resource.php?lan=<{$lang}>&cat=11"><{$menu_tours}></a></li>
+                    <li><a href="blog.php?lan=<{$lang}>&cat=4"><{$menu_advice}></a></li>
+                    
+                    <li><a href="contactus.php?lan=<{$lang}>"><{$menu_contact_us}></a></li>
+                </ul>
+                                <div id="hot_line">
+                	<{$hot_line_key}>：<{$hot_line}>
+                </div>
+            </div>
+            <!--end menu-item-->
+        </div>
+        <!--end header-->
+      </div>
+      <!--end top-->
+        <div id="boxes">
+            <!-- Start of Login Dialog -->
+            <div id="logindialog" class="window">
+                <form action="user.php?act=act_login" method="post">
+                <div class="unit-header unit_header3">
+                    <h1 class="unit_header">
+                        <{$login}></h1>
+                    <h2 class="unit_header">
+                        <a href="#" class="close">close</a></h2>
+                </div>
+                <div class="unit-body">
+                    <p>
+                        <{$user_name_key}>: <br />
+                        <input name="name" type="text" id="name" size="25" />
+                    </p>
+                    <p>
+                        <{$user_password_key}>: <br />
+                        <input name="password" type="password" id="password" size="25" />
+                    </p>
+                    <p>
+                        <input name="safe_url" type="hidden" value="<{$safe_url}>" />
+                        <input type="submit" name="button" id="button" value="<{$login}>" />
+                    </p>
+                </div>
+                </form>
+            </div>
+            <!-- End of Login Dialog -->
+            <!-- Start of reg Dialog -->
+            <div id="regdialog" class="window">
+            <form action="user.php?act=act_reg" method="post">
+            	
+                <div class="unit-header unit_header3">
+                    <h1 class="unit_header">
+                        <{$register}></h1>
+                    <h2 class="unit_header">
+                        <a href="#" class="close">close</a></h2>
+                </div>
+                <div class="unit-body">
+                    <p>
+                        <{$user_name_key}>: <br />
+                        <input name="user_name" type="text" id="user_name" />
+                    </p>
+                    <p>
+                        <{$user_password_key}>: <br />
+                        <input type="password" name="password" id="password" />
+                    </p>
+                    <p>
+                        <{$confirm_password_key}>: <br />
+                        <input type="password" name="re_password" id="re_password" />
+                    </p>
+                    <p>
+                        <{$email_key}>: <br />
+                        <input name="email" type="text" id="email" size="50" />
+                        <span id="email_notice"></span>
+                    </p>
+                    <p>
+                        <{$user_website_key}>: <br />
+                        <input name="homepage" type="text" id="homepage" size="50" />
+                    </p>
+                    <p>
+                        <input type="submit" name="button" id="button" value="<{$register}>" />
+                    </p>
+                </div>
+                </form>
+            </div>
+            <!-- End of reg Dialog -->
+            
+           <!-- Start of help Dialog -->
+            <div id="helpdialog" class="window">
+                <form action="admin/admin.php?lan=<{$lang}>&act=login" method="post">
+                <div class="unit-header unit_header3">
+                    <h1 class="unit_header">
+                        <{$help}></h1>
+                    <h2 class="unit_header">
+                        <a href="#" class="close">close</a></h2>
+                </div>
+                <div class="unit-body">
+                    <p>
+爱德曼旅游公司，于2004年在肯尼亚内罗毕注册成立，是爱德曼集团旗下子公司。主要提供国际和本地的旅游及相关服务。
+                    </p>
+                    <p>
+我们能够为您提供及时服务，是来自于一个庞大的专业从业人员的团体。这个团体中，有合格的人员负责一项或几项相关业务，使得我们在这个服务行业使您满意。
+                    </p>
+                    <p>
+我们的客户来自世界各地，他们充分享受了我们提供的服务，包括休闲、探险、野生动物猎奇、野生动物拍摄、登山、深海捕鱼，以及本地商业投资考察。
+                    </p>
+                    <p>
+我们与当地主要的酒店、旅馆、航空公司建立了牢固的合作关系，使我们的游客在各个方面，可以享受最优惠的价格。
+                    </p>
+                    <p>
+爱德曼旅游有足够的服务能力，以满足游客的各种需求（旅游、探险、摄影、蜜月旅游、商务），也可提供地面交通、机票、住宿和租车等服务。您的每一项需求都会有专门接待，及时找到解决途径并最快落实，让您有满意的逗留是我们的目标。
+                    </p>
+                </div>
+                </form>
+            </div>
+            <!-- End of help Dialog -->
+            
+            <!-- Mask to cover the whole screen -->
+            <div id="mask">
+            </div>
+        </div>
+        <!-- boxes end -->
+            <div id="wrapper">
+        <div id="content">

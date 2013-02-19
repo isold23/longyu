@@ -1,0 +1,14 @@
+prefix=F:/MMShow/3rdparty
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 54.25.100
+Requires: libavutil = 51.58.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir} -lavcodec -lm -lbz2 -lz -lpsapi
+Libs.private: 
+Cflags: -I${includedir}

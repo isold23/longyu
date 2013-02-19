@@ -1,0 +1,20 @@
+<{include file="header.html"}>
+<p>
+<form action="admin.php?act=<{$type}>" method="post">
+<table width="100%" border="1">
+  <tr>
+    <td>友情链接名称</td>
+    <td>友情链接url地址</td>
+    <td>操作</td>
+  </tr>
+  <{foreach from=$web_friend_link_list item=link}>
+  <tr>
+    <td><{$link.name}></td>
+    <td><{$link.link_url}></td>
+    <td><a href="admin.php?act=edit_web_friend_link&id=<{$link.id}>" >编辑</a> | <a href="admin.php?act=del_web_friend_link&id=<{$link.id}>" >删除</a> </td>
+  </tr>
+  <{/foreach}>
+</table>
+</form>
+</p>
+<{include file="footer.html"}>

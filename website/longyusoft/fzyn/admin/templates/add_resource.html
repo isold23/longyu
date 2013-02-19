@@ -1,0 +1,175 @@
+<{include file="header.html"}>
+<p>
+<script type="text/javascript" src="include/niceditor/nicEdit.js"></script>
+<script type="text/javascript" src="../include/ckeditor/ckeditor.js"></script>
+<form action="" method="post" name="form1" enctype="multipart/form-data">
+  <table width="100%"  border="1">
+    <tr>
+      <td width="150">名称</td>
+      <td width="720"><input type="text" name="title" id="title" value="<{$resource.name}>" /></td>
+    </tr>
+    
+            <tr>
+      <td>选择分类</td>
+      <td>
+      <select name="cat">
+      <{foreach from=$cat_list item=cat}>
+        <option value="<{$cat.id}>" <{if $resource.cat_id eq $cat.id }> selected="selected"<{/if}> ><{$cat.name}></option>
+        <{foreach from=$cat.children item=children}>
+     		 <option value="<{$children.id}>" <{if $blog.id eq $children.id }>selected="selected"<{/if}> >&nbsp;&nbsp;<{$children.name}></option>
+      	<{/foreach}>
+      <{/foreach}>
+      
+      </select></td>
+        </tr>
+        
+             <tr>
+      <td width="150">图片</td>
+      <td>
+      	<input type="text" name="image_path" id="image_path" value="<{$image_path}>" />
+      	<input id="browsefile" type="file" name="browsefile"/>
+				<input type="button" id="upload_btn" name="upload_btn" value="上传" onclick="upload_btn_click()"/>
+			</td>
+    </tr>
+    
+         <tr>
+      <td width="150">是否精品</td>
+      <td width="720">
+      	<{if $resource.is_fine eq 1}>
+      	<input type="radio" name="fine_radio" id="yes_radio" value="yes_radio"  checked="checked"/>是
+      	<input type="radio" name="fine_radio" id="no_radio" value="no_radio" />否
+	    <{else}>
+	    <input type="radio" name="fine_radio" id="yes_radio" value="yes_radio" />是
+      	<input type="radio" name="fine_radio" id="no_radio" value="no_radio"  checked="checked"/>否
+	    <{/if}>
+      </td>
+      
+    </tr>		
+ 
+     <tr>
+      <td width="150">编号</td>
+      <td width="720"><input type="text" name="number" id="number" value="<{$resource.number}>" /></td>
+    </tr>
+    
+    <tr>
+      <td width="150">规格</td>
+      <td width="720"><input type="text" name="spec" id="spec" value="<{$resource.spec}>" /></td>
+    </tr>
+    
+        
+    <tr>
+      <td width="150">产地</td>
+      <td width="720"><input type="text" name="origin" id="origin" value="<{$resource.origin}>" /></td>
+    </tr>
+    
+        <tr>
+      <td width="150">材质</td>
+      <td width="720"><input type="text" name="material" id="material" value="<{$resource.material}>" /></td>
+    </tr>
+    
+            <tr>
+      <td width="150">重量</td>
+      <td width="720"><input type="text" name="weight" id="weight" value="<{$resource.weight}>" /></td>
+    </tr>
+    
+            <tr>
+      <td width="150">价格</td>
+      <td width="720"><input type="text" name="price" id="price" value="<{$resource.price}>" /></td>
+    </tr>
+    
+    <tr>
+      <td>备注</td>
+      <td>
+      <div id="edit_notice" style="font-size: 13px;font-family: verdana,arial; color:#FF0000"></div>
+      <div id="edit_mode"><input type="checkbox" id="edit_mode_checkbox" name="checkbox" value="0" onclick="edit_mode(this.checked?1:0)" />高级模式（支持上传图片，上传文件等 <图片宽度不要超过550像素--550px>)</div>
+      <div id="content_box" style="background:#fff">
+      <textarea id="editor" name="editor" style="height:500px;width:900px"><{$resource.remark}></textarea>
+      <!-- {literal} -->
+		<script type="text/javascript">
+		bkLib.onDomLoaded(function() {
+			new nicEditor({buttonList : ['fontSize','bold','italic','underline','image','link','unlink']}).panelInstance('editor');
+		});
+		</script>
+	  <!-- {/literal} -->
+	  </div>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>评论设置</td>
+      <td>开放
+      <input name="blog_comment" type="radio" value="0" <{if $blog.open_type eq 0}>checked<{/if}> />
+      关闭
+      <input name="blog_comment" type="radio" value="1" <{if $blog.open_type eq 1}>checked<{/if}>/></td></td>
+    </tr>
+    <tr>
+      <td>权限控制</td>
+      <td><p>查看密码：
+          <input type="text" name="password" id="password" value="<{$blog.password}>" />
+（如果不需要设置查看密码，请保留为空）</p>
+      <p>允许查看的用户组（默认为所有用户组）：<br />
+      <!--{foreach from=$group_list item=group}-->
+          <input name="group[]" type="checkbox" value="<{$group.group_id}>" <{if $group.flag eq 1}>checked="checked"<{/if}> />
+          <{$group.group_name}>
+        <br />
+      <!--{/foreach}-->
+      </p>
+
+</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="button" name="submit_btn" id="submit_btn" value="提交" onclick="submit_btn_click()"/></td>
+    </tr>
+  </table>
+</form>
+</p>
+
+<{include file="footer.html"}>
+
+<script type="text/javascript">
+	
+	function submit_btn_click()
+	{
+		this.document.form1.action='admin.php?act=<{$type}>';
+		document.form1.submit(); 
+	}
+	
+	function upload_btn_click()
+	{
+		this.document.form1.action='admin.php?act=upload_file';
+		document.form1.submit(); 
+	}
+
+</script>
+
+
+
+<script type="text/javascript">
+var ajax_post=2;
+var content;
+<!-- {literal} -->
+function edit_mode(check)
+{
+	if(check==1)
+	{
+		content=$('#editor').html();
+		$('#edit_mode').html('编辑器加载中...');
+		$("#content_box").css('background','');
+		$('#content_box').html('<textarea id="editor" name="editor" style="height:500px;width:900px">'+content+'</textarea>');
+		CKEDITOR.replace( 'editor',
+		{
+			toolbar :
+			[
+			[ 'Source','Image','Flash', 'Link', 'Unlink', 'Anchor','Code' ],
+			[ '-', 'Bold', 'Italic', 'Underline', 'Strike' ],
+			[ '-','TextColor','BGColor'],
+			]
+		});
+		$('#edit_mode').html('');
+	}
+}
+
+<!-- {/literal} -->
+</script>
+

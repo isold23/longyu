@@ -1,0 +1,936 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\PropertyManagerApp.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""          // 标准组件\r\n"
+    "#include ""l.CHS\\afxprint.rc""        // 打印/打印预览资源\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.CHS\\afxribbon.rc""               // MFC 功能区和控件条资源\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PropertyManagerApp.ico"
+IDR_PropertyManagerTYPE ICON                    "res\\PropertyManagerAppDoc.ico"
+IDI_FWD                 ICON                    "res\\forward.ico"
+IDI_GO                  ICON                    "res\\go.ico"
+IDI_EDIT                ICON                    "res\\edit.ico"
+IDI_MANAGER             ICON                    "res\\Manage.ico"
+IDI_FAMILY              ICON                    "res\\Family.ico"
+IDI_REPAIR_INFO         ICON                    "res\\RepairInfo.ico"
+IDI_REPAIR_MGR          ICON                    "res\\RepairMgr.ico"
+IDI_EDIT1               ICON                    "res\\Edit1.ico"
+IDI_MEMBER              ICON                    "res\\MemberSet.ico"
+IDI_HOUSE               ICON                    "res\\House.ico"
+IDI_GRADE               ICON                    "res\\Grade.ico"
+IDI_USERS               ICON                    "res\\Users.ico"
+IDI_OPS                 ICON                    "res\\Ops.ico"
+IDI_OK                  ICON                    "res\\OK.ico"
+IDI_PWD                 ICON                    "res\\Password.ico"
+IDI_BKGND               ICON                    "res\\Bkgnd.ico"
+IDI_ADD                 ICON                    "res\\add.ico"
+IDI_DEL                 ICON                    "res\\del.ico"
+IDI_LOGIN               ICON                    "res\\login.ico"
+IDI_MANAGERS            ICON                    "res\\Managers.ico"
+IDI_RESET               ICON                    "res\\reset.ico"
+IDR_EMPTY               ICON                    "res\\icon1.ico"
+IDI_PRINTER             ICON                    "res\\printer.ico"
+IDI_CFG                 ICON                    "res\\cfg.ico"
+IDS_WAY                 ICON                    "res\\road.ico"
+IDS_GREEN               ICON                    "res\\green.ico"
+IDS_ELECTRONIC          ICON                    "res\\bulb.ico"
+IDS_WATER               ICON                    "res\\water.ico"
+IDS_WARM                ICON                    "res\\fire.ico"
+IDS_OTHER               ICON                    "res\\resetop.ico"
+ID_MAP_MODE             ICON                    "res\\map.ico"
+ID_LIST_MODE            ICON                    "res\\list.ico"
+ID_ENGINEER_MODE        ICON                    "res\\engineer.ico"
+ID_BKGND_MANAGER        ICON                    "res\\admin.ico"
+ID_LIST_PROJECT         ICON                    "res\\project.ico"
+ID_LIST_ZONE            ICON                    "res\\zone.ico"
+ID_LIST_BLOCK           ICON                    "res\\block.ico"
+ID_LIST_APARTMENT       ICON                    "res\\apartment.ico"
+ID_LIST_HOME            ICON                    "res\\home.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar256.bmp"
+IDB_MAIN                BITMAP                  "res\\main.bmp"
+IDR_MAP                 BITMAP                  "res\\MapOp.bmp"
+IDR_EMPTY               BITMAP                  "res\\empty.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      IDR_EMPTY
+    BUTTON      IDR_EMPTY
+    SEPARATOR
+    BUTTON      ID_MAP_NON
+    SEPARATOR
+    BUTTON      ID_MAP_GAUGE
+    BUTTON      ID_MAP_ERASE
+    SEPARATOR
+    BUTTON      ID_MAP_ZOOMOUT
+    BUTTON      ID_MAP_ZOOMIN
+    BUTTON      ID_MAP_ZOOMFIT
+    BUTTON      ID_MAP_ZOOMRESET
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                    ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        POPUP "工具栏和停靠窗口(&T)"
+        BEGIN
+            MENUITEM "<占位符>",                       ID_VIEW_TOOLBAR
+        END
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        POPUP "应用程序外观(&A)"
+        BEGIN
+            MENUITEM "Windows 2000(&2)",            ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office XP(&X)",               ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "Windows XP(&W)",              ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 2003(&3)",             ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio.NET 2005(&5)",  ID_VIEW_APPLOOK_VS_2005
+            POPUP "Office 2007(&7)"
+            BEGIN
+                MENUITEM "蓝色样式(&B)",                    ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "黑色样式(&L)",                    ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "银色样式(&S)",                    ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "水绿色样式(&A)",                   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+    END
+    POPUP "工具(&T)"
+    BEGIN
+        MENUITEM "系统设置(S)......",               ID_SYSCFG
+        MENUITEM SEPARATOR
+        MENUITEM "选项(&G)......",                ID_OPTIONS
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 PropertyManagerApp(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_EDIT MENU 
+BEGIN
+    POPUP "编辑"
+    BEGIN
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+IDR_POPUP_SORT MENU 
+BEGIN
+    POPUP "排序"
+    BEGIN
+        MENUITEM "按字母顺序排序(&S)",                 ID_SORTING_SORTALPHABETIC
+        MENUITEM "按类型排序(&T)",                   ID_SORTING_SORTBYTYPE
+        MENUITEM "按访问排序(&E)",                   ID_SORTING_SORTBYACCESS
+        MENUITEM "按类型分组(&Y)",                   ID_SORTING_GROUPBYTYPE
+    END
+END
+
+IDR_POPUP_EXPLORER MENU 
+BEGIN
+    POPUP "资源管理器"
+    BEGIN
+        MENUITEM "打开(&O)",                      ID_OPEN
+        MENUITEM "打开方式(&W)....",                ID_OPEN_WITH
+        MENUITEM SEPARATOR
+        MENUITEM "编译(&C)",                      ID_DUMMY_COMPILE
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "删除(&R)",                      ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "属性(&P)...",                   ID_PROPERTIES
+    END
+END
+
+IDR_OUTPUT_POPUP MENU 
+BEGIN
+    POPUP "弹出项"
+    BEGIN
+        MENUITEM "复制(&C)",                      ID_EDIT_COPY
+        MENUITEM "清除(&C)",                      ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "隐藏(&H)",                      ID_VIEW_OUTPUTWND
+    END
+END
+
+IDR_THEME_MENU MENU 
+BEGIN
+    MENUITEM "Office 2007 (蓝色样式)(&B)",      ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (黑色样式)(&L)",      ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (银色样式)(&S)",      ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (水绿色样式)(&A)",     ID_VIEW_APPLOOK_OFF_2007_AQUA
+END
+
+IDR_EMPTY MENU 
+BEGIN
+    MENUITEM "Empty",                       0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 PropertyManagerApp"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "PropertyManagerApp，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_FORM DIALOGEX 0, 0, 317, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_LIST_MAIN DIALOGEX 0, 0, 351, 286
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+FONT 12, "宋体", 400, 0, 0x86
+BEGIN
+    PUSHBUTTON      "收费项目资料录入编辑",IDC_BTN_LIST_INCOME_RECORD,17,68,87,33
+    PUSHBUTTON      "维修管理",IDC_BTN_LIST_REPAIR,132,68,87,33
+    PUSHBUTTON      "维修统计",IDC_BTN_LIST_REPAIR_SUM,247,68,87,33
+    PUSHBUTTON      "资料录入编辑",IDC_BTN_LIST_MATERIAL_REC,16,104,87,33
+    PUSHBUTTON      "单位员工资料录入编辑",IDC_BTN_LIST_MEMBER_REC,132,104,87,33
+    PUSHBUTTON      "单位部门资料录入编辑",IDC_BTN_LIST_DEPART_REC,247,104,87,33
+    PUSHBUTTON      "业主资料查询",IDC_BTN_LIST_PROPOWNER,132,143,87,52
+    PUSHBUTTON      "收费单据统计查询",IDC_BTN_LIST_RECEIPT_SUMUP_QUERY,7,234,101,20
+    PUSHBUTTON      "应收费用统计查询",IDC_BTN_LIST_EXPECT_SUMUP_QUERY,125,234,101,20
+    PUSHBUTTON      "状态图表显示",IDC_BTN_LIST_STATE_CHART,243,234,101,20
+    PUSHBUTTON      "收费明细统计查询",IDC_BTN_LIST_RECEIPT_DETAILS_QUERY,7,257,101,20
+    PUSHBUTTON      "应收费用台帐管理",IDC_BTN_LIST_EXPECT_ACCOUNT,125,257,101,20
+    PUSHBUTTON      "数据统计报表 ",IDC_BTN_LIST_SUMUP_REPORT,243,257,101,20
+    LTEXT           "",IDC_STC_BUTTON1,106,78,24,14
+    LTEXT           "",IDC_STC_BUTTON2,221,80,24,14
+    LTEXT           "",IDC_STC_BUTTON3,106,114,24,14
+    LTEXT           "",IDC_STC_BUTTON4,221,116,24,14
+    LTEXT           "日常管理",IDC_BTN_LIST_MAIN,111,6,126,51
+    CONTROL         "",IDC_STC_LINE,"Static",SS_ETCHEDHORZ,7,222,337,1
+END
+
+IDD_BKGND DIALOGEX 0, 0, 420, 271
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_TABLE DIALOGEX 0, 0, 317, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "自定义1",IDC_TABLE,"XTPReport",WS_TABSTOP,0,0,317,183
+END
+
+IDD_LOGIN DIALOGEX 0, 0, 289, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登录"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_CB_NAME,137,27,130,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_PWD,137,54,130,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "登录",IDOK,224,103,50,14
+    CONTROL         "记住密码",IDC_CHK_SAVE_PWD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,110,105,48,10
+    CONTROL         "自动登录",IDC_CHK_AUTO_LOGIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,162,105,48,10
+    EDITTEXT        IDC_EDIT_ADDR,152,149,114,14,ES_AUTOHSCROLL
+    LTEXT           "帐号",IDC_STC2,116,28,17,8
+    LTEXT           "密码",IDC_STC3,116,57,17,8
+    GROUPBOX        "",IDC_STC1,109,7,166,83
+    LTEXT           "服务器地址",IDC_STC4,108,151,41,8
+    GROUPBOX        "",IDC_MARK,5,134,277,9
+    CONTROL         "",IDC_CHK_EXPAND,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,273,119,13,12
+    LTEXT           "",IDC_BTN_STC,2,5,102,102
+END
+
+IDD_LIST_PANE DIALOGEX 0, 0, 232, 235
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE_CMD,"SysTreeView32",TVS_LINESATROOT | TVS_SHOWSELALWAYS | TVS_FULLROWSELECT | TVS_NOHSCROLL | WS_TABSTOP,0,0,231,211
+    CONTROL         "",IDC_TREE_DETAILS,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | NOT WS_VISIBLE | WS_HSCROLL | WS_TABSTOP,0,0,231,211
+    PUSHBUTTON      "操作",IDC_BTN_CMD,0,211,116,23
+    PUSHBUTTON      "详细",IDC_BTN_DETAILS,115,211,116,23
+END
+
+IDD_LIST DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_BKGND_MAIN DIALOGEX 0, 0, 529, 374
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "操作管理",IDC_BTN_OPMGR,36,12,150,104
+    PUSHBUTTON      "分组管理",IDC_BTN_GROUPMGR,189,12,150,104
+    PUSHBUTTON      "用户管理",IDC_BTN_USERMGR,342,12,150,104
+    GROUPBOX        "当前用户",IDC_STC_MAIN,57,123,400,147
+    LTEXT           "登录帐户",IDC_STC_NAME,134,141,33,8
+    EDITTEXT        IDC_EDIT_NAME,181,141,193,14,WS_DISABLED
+    LTEXT           "可执行操作",IDC_STC_OP,134,183,40,8
+    CONTROL         "修改密码",IDC_CHK_CHANGE_PWD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,280,48,10
+    EDITTEXT        IDC_EDIT_PWD,199,311,175,14,ES_PASSWORD | ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_PWD2,199,329,175,14,ES_PASSWORD | ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "新密码",IDC_STC_PWD,151,313,25,8,NOT WS_VISIBLE
+    LTEXT           "重复新密码",IDC_STC_PWD2,151,330,41,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_OLD_PWD,199,293,175,14,ES_PASSWORD | ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "旧密码",IDC_STC_PWD3,151,296,25,8,NOT WS_VISIBLE
+    PUSHBUTTON      "提交(&S)",IDC_BTN_SUBMIT,338,346,47,14,NOT WS_VISIBLE
+    LTEXT           "所在用户组",IDC_STC_GROUP,134,166,41,8
+    EDITTEXT        IDC_EDIT_GROUP,181,166,193,14,WS_DISABLED
+    CONTROL         "",IDC_LIST_OP,"XTPReport",WS_TABSTOP,181,183,193,79,WS_EX_CLIENTEDGE
+END
+
+IDD_BKGND_OP DIALOGEX 0, 0, 278, 307
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "操作列表",IDC_STC_OPS,25,13,242,282
+    CONTROL         "",IDC_OP_LIST,"XTPReport",WS_TABSTOP,37,26,218,258,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "",IDC_BTN_PRINT,1,0,23,21
+END
+
+IDD_BKGND_GROUP DIALOGEX 0, 0, 332, 307
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "用户组列表",IDC_STC_GROUP,19,13,292,281
+    CONTROL         "",IDC_LIST_GROUP,"XTPReport",WS_TABSTOP,31,26,269,258,WS_EX_CLIENTEDGE
+END
+
+IDD_BKGND_USER DIALOGEX 0, 0, 528, 307
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "用户列表",IDC_STC_USER,19,13,305,281
+    CONTROL         "",IDC_LIST_USER,"XTPReport",WS_TABSTOP,31,26,286,242,WS_EX_CLIENTEDGE
+    GROUPBOX        "用户组列表",IDC_STC_GROUP,332,13,184,281
+    CONTROL         "",IDC_LIST_GROUP,"XTPReport",WS_TABSTOP,340,26,168,262,WS_EX_CLIENTEDGE
+    LTEXT           "用户初始密码",IDC_STC_PWD,119,277,49,8
+    EDITTEXT        IDC_EDIT_PWD,172,274,144,14,ES_AUTOHSCROLL
+END
+
+IDD_LIST_INCOME_RECORD DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_LIST_REPAIR DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_LIST_REPAIR_SUM DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_LIST_MATERIAL_REC DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_LIST_MEMBER_REC DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_LIST_DEPART_REC DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_LIST_PROPOWNER DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_LIST_RECEIPT_SUMUP_QUERY DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_LIST_EXPECT_SUMUP_QUERY DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_LIST_STATE_CHART DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_LIST_RECEIPT_DETAILS_QUERY DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_LIST_EXPECT_ACCOUNT DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_LIST_SUMUP_REPORT DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_BKGND_LVL DIALOGEX 0, 0, 278, 308
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_ADMIN_LIST,"XTPReport",WS_TABSTOP,31,26,218,258,WS_EX_CLIENTEDGE
+    GROUPBOX        "管理列表",IDC_STC_ADMIN,19,13,244,282
+    PUSHBUTTON      "",IDC_BTN_TEST,0,0,14,12
+END
+
+IDD_WORKER DIALOGEX 0, 0, 123, 53
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPSIBLINGS
+FONT 16, "微软雅黑", 700, 0, 0x86
+BEGIN
+    LTEXT           "",IDC_STC_TITLE,11,12,97,11
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,11,29,97,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "PropertyManagerApp.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "PropertyManagerApp.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_LIST_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 344
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+
+    IDD_BKGND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 413
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 286
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_BKGND_OP, DIALOG
+    BEGIN
+        RIGHTMARGIN, 184
+        BOTTOMMARGIN, 273
+    END
+
+    IDD_BKGND_GROUP, DIALOG
+    BEGIN
+        RIGHTMARGIN, 320
+    END
+
+    IDD_BKGND_LVL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 301
+    END
+
+    IDD_WORKER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 116
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 46
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。请确保 OLE 库是正确的版本。"
+    ID_NAVIGATOR_BAR        "导航栏"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "廊坊服务中心基础数据管理平台\n\nPropertyManager\nPropertyManagerApp Files (*.pmdoc)\n.pmdoc\nPropertyManagerApp.Document\nPropertyManagerApp.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "PropertyManagerApp"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_BTN_LIST_DEPART_REC "单位部门资料录入编辑"
+    IDC_BTN_LIST_PROPOWNER  "业主资料查询"
+    IDC_BTN_LIST_EXPECT_SUMUP_QUERY "应用费用统计查询"
+    IDC_BTN_LIST_STATE_CHART "状态图表显示"
+    IDC_BTN_LIST_RECEIPT_DETAILS_QUERY "收费明细统计查询"
+    IDC_BTN_LIST_EXPECT_ACCOUNT "应用费用台帐管理"
+    IDC_BTN_LIST_SUMUP_REPORT "数据统计报表"
+    IDC_BTN_LIST_MAIN       "日常管理"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_BTN_BKGNDMAIN       "后台管理"
+    IDC_BTN_OPMGR           "操作管理"
+    IDC_BTN_GROUPMGR        "分组管理"
+    IDC_BTN_USERMGR         "用户管理"
+    IDC_BTN_LVLMGR          "级别管理"
+    IDC_CHK_CHANGE_PWD      "修改密码"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_BTN_LIST_INCOME_RECORD "收费项目资料录入编辑"
+    IDC_BTN_LIST_REPAIR     "维修管理"
+    IDC_BTN_LIST_REPAIR_SUM "维修统计"
+    IDC_BTN_LIST_RECEIPT_SUMUP_QUERY "收费单据统计查询"
+    IDC_BTN_LIST_MATERIAL_REC "资料录入编辑"
+    IDC_BTN_LIST_MEMBER_REC "单位员工资料录入编辑"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+    ID_FILE_PAGE_SETUP      "更改打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "更改打印机选项和打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_DIRECT    "使用当前选项打印活动文档\n快速打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_LIST_MODE            "列表模式"
+    ID_ENGINEER_MODE        "工程模式"
+    ID_BKGND_MANAGER        "后台管理"
+    IDS_BUILDING            "建筑"
+    IDS_WAY                 "道路"
+    IDS_GREEN               "绿化"
+    IDS_ELECTRONIC          "电力"
+    IDS_WATER               "水"
+    IDS_WARM                "暖通"
+    IDS_OTHER               "其它"
+    IDS_NAVIGATOR           "操作导航"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENUBAR             "菜单栏"
+    IDS_STANDARD            "标准"
+    IDS_MAP                 "地图"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MAP_NON              "指定地图无操作\n无操作"
+    ID_MAP_ZOOMOUT          "放大地图\n放大"
+    ID_MAP_ZOOMIN           "缩小地图\n缩小"
+    ID_MAP_ZOOMFIT          "缩放至窗口大小\n合适"
+    ID_MAP_ZOOMRESET        "还原至地图大小\n还原"
+    ID_MAP_GAUGE            "开始进行地图测距\n测距"
+    ID_MAP_ERASE            "删除选中测距\n删除"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预览"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MAP_MODE             "地图模式"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STATUS_PANE1        "窗格 1"
+    IDS_STATUS_PANE2        "窗格 2"
+    IDS_TOOLBAR_STANDARD    "标准"
+    IDS_TOOLBAR_CUSTOMIZE   "自定义..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTLOOKBAR          "Outlook 栏"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILE_VIEW           "文件视图"
+    IDS_CLASS_VIEW          "类视图"
+    IDS_OUTPUT_WND          "输出"
+    IDS_PROPERTIES_WND      "属性"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXPLORER            "资源管理器"
+    IDS_EDIT_MENU           "编辑"
+END
+
+
+STRINGTABLE 
+BEGIN
+    IDS_BUILD_TAB           "生成"
+    IDS_DEBUG_TAB           "调试"
+    IDS_FIND_TAB            "查找"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MAP_TOOLBAR         "地图工具栏"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\PropertyManagerApp.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"          // 标准组件
+#include "l.CHS\afxprint.rc"        // 打印/打印预览资源
+#if !defined(_AFXDLL)
+#include "l.CHS\afxribbon.rc"               // MFC 功能区和控件条资源
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

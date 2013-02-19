@@ -1,0 +1,39 @@
+<XStudioSysDefault ButtonShowTip="1" Cfg="cfg.xml" Images="../Images">
+  <RecordFormats>
+    <Elem Val=".mpg"/>
+  </RecordFormats>
+  <AudioSampleRates>
+    <Elem Val="44100"/>
+  </AudioSampleRates>
+  <AudioBitrates>
+    <Elem Val="64000"/>
+  </AudioBitrates>
+  <VideoFpses>
+    <Elem Val="10"/>
+    <Elem Val="12"/>
+    <Elem Val="15"/>
+    <Elem Val="18"/>
+    <Elem Val="20"/>
+    <Elem Val="25"/>
+    <Elem Val="30"/>
+  </VideoFpses>
+  <VideoBitrates>
+    <Elem Val="262144"/>
+    <Elem Val="524288"/>
+    <Elem Val="1048576"/>
+    <Elem Val="1572864"/>
+    <Elem Val="2097152"/>
+    <Elem Val="3145728"/>
+    <Elem Val="4194304"/>
+    <Elem Val="5242880"/>
+    <Elem Val="6291456"/>
+    <Elem Val="7340032"/>
+    <Elem Val="8388608"/>
+  </VideoBitrates>
+  <OutputSizes>
+    <Elem Width="720" Height="576"/>
+    <Elem Width="720" Height="480"/>
+    <Elem Width="1920" Height="1080"/>
+    <Elem Width="1208" Height="720"/>
+  </OutputSizes>
+</XStudioSysDefault>
