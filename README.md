@@ -1,5 +1,5 @@
 longyu
 ======
 
-Website,Soft
-http://www.longyusoft.com
+code list:
+http://www.longyu23.com
