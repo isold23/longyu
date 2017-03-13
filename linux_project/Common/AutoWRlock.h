@@ -3,13 +3,10 @@
 /*
   *file AutoWRlock.h
   *brief linux read and write autolock class
-  *author peiwenhao
+  *author isold.wang@gmail.com
   *version 0.1
   *date 2010.11.26
   */
-/*******************************************************************************
- * include
- *******************************************************************************/
 #ifdef WIN32
 
 #else
@@ -20,9 +17,6 @@
 #include "define.h"
 #include <string>
 
-/*******************************************************************************
- * class/struct
- *******************************************************************************/
 class CRWSection
 {
 public:
